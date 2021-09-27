@@ -14,149 +14,37 @@
               <p>Recent Works</p>
             </div>
 
-            <div class="row">
-              <div class="col-lg-12 d-flex justify-content-center">
-                <ul id="portfolio-flters">
-                  <li data-filter="*" class="filter-active">All</li>
-                  <li data-filter=".filter-app">App</li>
-                  <li data-filter=".filter-card">Card</li>
-                  <li data-filter=".filter-web">Web</li>
-                </ul>
+            <div class="row portfolio-container">
+            @foreach ($projects as $project)
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 portfolio-item filter-{{$project->type}}">
+              <div class="portfolio-wrap">
+                <img src="assets/img/projects/{{$project->url}}" class="img-fluid" alt="">
+                <div class="image-hover-content black-hover">
+                                                        <span class="hover-content">
+                                                            <span class="image-hover-title">{{$project->title}}</span>
+                                                            @if(isset($project->location) && isset($project->date))
+                                                            <span class="image-hover-subtitle">{{$project->location}} | 
+                                                            {!! date('d/M/y', strtotime($project->date)) !!}  </span>
+                                                            @elseif (isset($project->location))
+                                                            <span class="image-hover-subtitle">{{$project->location}}</span>
+                                                            @elseif (isset($project->date))
+                                                            <span class="image-hover-subtitle">{!! date('d/M/y', strtotime($project->date)) !!} </span>
+                                                            @else
+                                                            <span class="image-hover-subtitle">{{$project->name}}</span>
+                                                            @endif
+                                                            <span class="image-hover-para">{{$project->subtitle}}</span>
+                                                            <a href="/project?id={{$project->id}}" class="btn btn-default" title="">See</a>
+                                                        </span>
+                                                </div>
               </div>
             </div>
-
-            <div class="row portfolio-container">
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                   <div class="image-hover-content black-hover">
-                                                                                                        <span class="hover-content">
-                                                                                                            <span class="image-hover-title">Villa in the Woods</span>
-                                                                                                            <span class="image-hover-subtitle">Homes</span>
-                                                                                                            <span class="image-hover-para">An Eco-Conscious Sanctuary in the Himalayas</span>
-                                                                                                            <a href="/project?id=1" class="btn btn-default" title="">See</a>
-                                                                                                        </span>
-                                                                                                </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                   <div class="image-hover-content black-hover">
-                                                                                                        <span class="hover-content">
-                                                                                                            <span class="image-hover-title">Villa in the Woods</span>
-                                                                                                            <span class="image-hover-subtitle">Homes</span>
-                                                                                                            <span class="image-hover-para">An Eco-Conscious Sanctuary in the Himalayas</span>
-                                                                                                            <a href="/project?id=1" class="btn btn-default" title="">See</a>
-                                                                                                        </span>
-                                                                                                </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                   <div class="image-hover-content black-hover">
-                                                                                                        <span class="hover-content">
-                                                                                                            <span class="image-hover-title">Villa in the Woods</span>
-                                                                                                            <span class="image-hover-subtitle">Homes</span>
-                                                                                                            <span class="image-hover-para">An Eco-Conscious Sanctuary in the Himalayas</span>
-                                                                                                            <a href="/project?id=1" class="btn btn-default" title="">See</a>
-                                                                                                        </span>
-                                                                                                </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                  <div class="image-hover-content black-hover">
-                                                                                                       <span class="hover-content">
-                                                                                                           <span class="image-hover-title">Villa in the Woods</span>
-                                                                                                           <span class="image-hover-subtitle">Homes</span>
-                                                                                                           <span class="image-hover-para">An Eco-Conscious Sanctuary in the Himalayas</span>
-                                                                                                           <a href="/project?id=1" class="btn btn-default" title="">See</a>
-                                                                                                       </span>
-                                                                                               </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                  <div class="image-hover-content black-hover">
-                                                                                                       <span class="hover-content">
-                                                                                                           <span class="image-hover-title">Villa in the Woods</span>
-                                                                                                           <span class="image-hover-subtitle">Homes</span>
-                                                                                                           <span class="image-hover-para">An Eco-Conscious Sanctuary in the Himalayas</span>
-                                                                                                           <a href="/project?id=1" class="btn btn-default" title="">See</a>
-                                                                                                       </span>
-                                                                                               </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                   <div class="image-hover-content black-hover">
-                                                                                                        <span class="hover-content">
-                                                                                                            <span class="image-hover-title">Villa in the Woods</span>
-                                                                                                            <span class="image-hover-subtitle">Homes</span>
-                                                                                                            <span class="image-hover-para">An Eco-Conscious Sanctuary in the Himalayas</span>
-                                                                                                            <a href="/project?id=1" class="btn btn-default" title="">See</a>
-                                                                                                        </span>
-                                                                                                </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                   <div class="image-hover-content black-hover">
-                                                                                                        <span class="hover-content">
-                                                                                                            <span class="image-hover-title">Villa in the Woods</span>
-                                                                                                            <span class="image-hover-subtitle">Homes</span>
-                                                                                                            <span class="image-hover-para">An Eco-Conscious Sanctuary in the Himalayas</span>
-                                                                                                            <a href="/project?id=1" class="btn btn-default" title="">See</a>
-                                                                                                        </span>
-                                                                                                </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                   <div class="image-hover-content black-hover">
-                                                                                                        <span class="hover-content">
-                                                                                                            <span class="image-hover-title">Villa in the Woods</span>
-                                                                                                            <span class="image-hover-subtitle">Homes</span>
-                                                                                                            <span class="image-hover-para">An Eco-Conscious Sanctuary in the Himalayas</span>
-                                                                                                            <a href="/project?id=1" class="btn btn-default" title="">See</a>
-                                                                                                        </span>
-                                                                                                </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                   <div class="image-hover-content black-hover">
-                                                                                                        <span class="hover-content">
-                                                                                                            <span class="image-hover-title">Villa in the Woods</span>
-                                                                                                            <span class="image-hover-subtitle">Homes</span>
-                                                                                                            <span class="image-hover-para">An Eco-Conscious Sanctuary in the Himalayas</span>
-                                                                                                            <a href="/project?id=1" class="btn btn-default" title="">See</a>
-                                                                                                        </span>
-                                                                                                </div>
-                </div>
-              </div>
+          @endforeach
 
             </div>
 
           </div>
         </section>
+        @include('components.research')
 
         <!-- ======= Clients Section ======= -->
         <section id="clients" class="clients section-bg">
@@ -192,98 +80,6 @@
 
           </div>
         </section><!-- End Clients Section -->
-
-        <section class="spacer">
-          <div class="testimonial-section">
-            <div class="testi-user-img">
-              <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img class="u3" src="https://md-aqil.github.io/images/2091127763_1_1_1.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="u2" src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <div class="user-saying">
-              <div class="swiper-container testimonial">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper ">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="quote">
-                      <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-                      <p>
-                        “This is best and biggest unified platform
-                        for instant online admission. We can easily
-                        take admission for any course in any institute..“
-                      </p>
-                      <div class="name">-Ramkishor Verma-</div>
-                      <div class="designation">University Student</div>
-
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="quote">
-                      <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-
-                      <p>
-                        “This is best and biggest unified platform
-                        for instant online admission. We can easily
-                        take admission for any course in any institute..“
-                      </p>
-                      <div class="name">-Ramkishor Verma-</div>
-                      <div class="designation">University Student</div>
-
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="quote">
-                      <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-
-                      <p>
-                        “This is best and biggest unified platform
-                        for instant online admission. We can easily
-                        take admission for any course in any institute..“
-                      </p>
-                      <div class="name">-Ramkishor Verma-</div>
-                      <div class="designation">University Student</div>
-
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="quote">
-                      <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-
-                      <p>
-                        “This is best and biggest unified platform
-                        for instant online admission. We can easily
-                        take admission for any course in any institute..“
-                      </p>
-                      <div class="name">-Ramkishor Verma-</div>
-                      <div class="designation">University Student</div>
-
-                    </div>
-                  </div>
-
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination swiper-pagination-white"></div>
-
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section id="blog" class="blog">
           <div class="custom-container">

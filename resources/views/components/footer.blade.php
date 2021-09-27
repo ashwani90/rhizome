@@ -1,4 +1,4 @@
-<footer id="footer">
+<footer id="footer" style="display:block;margin-bottom:10px;">
     <div class="container">
       <span class="copyright" style="float: left;">
         &copy; Copyright <strong><span>Studio Rhizome</span></strong>.

@@ -5,14 +5,10 @@
 @section('content')
     @parent
     <section id="breadcrumbs" class="breadcrumbs pt-1">
-          <div class="container">
-
-            <div class="d-flex justify-content-between align-items-center">
-              <h2>Contact</h2>
-
+    <div class="section-title pl-5">
+              <p>Contact us</p>
             </div>
-
-          </div>
+          
         </section>
     <section id="contact" class="contact" style="margin-top: -50px;">
           <div class="contact-container">

@@ -5,56 +5,103 @@
 @section('content')
     @parent
      <section class="breadcrumbs">
-     <div class="about-us-section">
-             <div class="slide-section">
-                    <h3>about us </h3>
-                     <p>We are an award-winning interdisciplinary design practice that believes in delivering enriching design solutions
-                     through a value–driven process empowering all stakeholders and the environment.<p>
+     
+     <div class="container-fluid">
+     <div class="section-title pl-5">
+     <h1 style="color:red;">About Us</h1>
+            </div>
+                 <div class="row">
+                     <div class="col-xs-12 col-md-6 about-rhiz-box">
+                         <img src="assets/img/rhizome.jpg">
+                     </div>
+                     <div class="col-xs-12 col-md-6 about-rhiz-box">
+                         <p style="font-size: 17px;"><b style="color: red; font-size: 21px;">Rhizome is a knowledge system of A-Centered
+multiplicities.</b></br>
+A system of learning which challenges traditional
+model by interconnection and non- hierarchical
+approach. Explored initially as an application of
+post-structural thought, Rhizome is characterized by
+ceaselessly
+established
+connections
+between
+semiotic chains, organizations of power and
+circumstances relative to the arts, sciences and
+social struggles. Rhizome challenges the known
+truth and arrives at a new dimension by using
+principles
+of
+Connections,
+Heterogeneity,
+Multiplicity, Asignifying Rapture, Cartography and
+Decalcomania.
+</p>
+                     </div>
+                    
+                 </div>
              </div>
-
-     </div>
+     
      </section>
      <section class="introduction">
      <div class="about-content">
              <div class="container">
                  <div class="row">
                      <div class="col-xs-12 col-lg-12">
-                         <h1>creating meaning, celebrating context</h1>
-                     </div>
-                     <div class="col-xs-12 col-sm-6">
-                         <p><em></em>Founded in 2002 by Ambrish Arora, Ankur Choksi and Sidhartha Talwar, Studio Lotus is acknowledged as a thought leader in the country for its work in the domain of Architecture and Spatial Design.
-                             <br><br>
-                             Our work is grounded on the principles of Conscious design, an approach that celebrates local resources, cultural influences, a keen attention to detail and an inclusive process. We follow an iterative and incremental methodology of innovation and root our learning in history and local context. We aim to craft benchmark solutions that address society changing ways of living and working.</p>
-                     </div>
-                     <div class="col-xs-12 col-sm-6">
-                         <p>We explore ways to engage the user, the way they move through the space. We like taking design to an extremely conceptual stage. We find inspiration in ordinary things, everyday events and chance encounters.
-                             <br><br>
-                             The firm takes a deeply contextual approach to its work and combines this with a strong focus on the tactile and sensory qualities of the space. Our design process looks at sustainability through the multiple lenses of cultural, social and environmental impact. There is an active engagement in integrating localised skills and resources with state-of-the art materials and technologies. </p>
+                         <h3  style="color:red;text-align: justify;text-justify: inter-word;">“Rhizome has no beginning or end; it is always in the middle, between
+things, interbeing, intermezzo.”</h3>
                      </div>
                  </div>
              </div>
          </div>
      </section>
+     <!-- <hr />
+     <div class="col-xs-12 col-lg-12" style="display:flex; justify-content:center;">
+                         <h3  style="color:red;text-align: justify;text-justify: inter-word;">Our Focus is to Deliver Projects which are</h3>
+                     </div>
+     <section style="display:flex;justify-content:center;cursor: pointer;">
+                  <div class="custom-container-fluid" style="display:flex; justify-content:space-between;">
+                  <div id="projects" class="skew">
+					<div>
+            <a class="circle">
+              <p>Organized</p>
+            </a>
+            <a class="circle">
+              <p>Efficient</p>
+            </a>
+            <a class="circle">
+              <p>Innovative</p>
+            </a>
+            <a class="circle">
+              <p>Harmonic</p>
+            </a>
+            <a class="circle">
+              <p>Exceptional</p>
+            </a>
+          </div>
+					
+	</div>
+                      </div>
+              </section> -->
      <section class="team-section">
      <div class="row">
      		  <div class="col-xs-6 col-sm-4">
                      <!-- Grid Box -->
                      <a href="/team" class="grid-box team-grid-link about-orange-overlay">
-                         <span>Clients</span>
+                         <span>Team</span>
                      </a>
                  </div>
 
                  <div class="col-xs-6 col-sm-4">
                      <!-- Grid Box -->
-                     <a href="/" class="team-grid-link grid-box about-orange-overlay">
-                        <span>Team</span>
+                     <a href="/text-projects" class="team-grid-link grid-box about-orange-overlay">
+                        <span>Projects</span>
                      </a>
                  </div>
 
      		  <div class="col-xs-6 col-sm-4">
                      <!-- Grid Box -->
-                     <a href="/" class="team-grid-link grid-box about-orange-overlay">
-                        <span>Core</span>
+                     <a class="team-grid-link grid-box about-orange-overlay">
+                        <span>Clients</span>
                      </a>
                  </div>
              </div>

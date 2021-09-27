@@ -6,17 +6,29 @@
           <div class="carousel-inner" role="listbox">
 
             <!-- Slide 1 -->
-            <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+            <div class="carousel-item active" style="background-image: url(assets/img/slide/banner_1.png)">
 
             </div>
 
             <!-- Slide 2 -->
-            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+            <div class="carousel-item" style="background-image: url(assets/img/slide/banner_2.png)">
 
             </div>
 
             <!-- Slide 3 -->
-            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+            <div class="carousel-item" style="background-image: url(assets/img/slide/banner_3.png)">
+
+            </div>
+            <div class="carousel-item" style="background-image: url(assets/img/slide/banner_4.jpg)">
+
+            </div>
+            <div class="carousel-item" style="background-image: url(assets/img/slide/banner_5.jpg)">
+
+            </div>
+            <div class="carousel-item" style="background-image: url(assets/img/slide/banner_6.jpg)">
+
+            </div>
+            <div class="carousel-item" style="background-image: url(assets/img/slide/banner_7.jpg)">
 
             </div>
 

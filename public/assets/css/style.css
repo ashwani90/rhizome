@@ -8,11 +8,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 .row {
     margin: 0!important;
@@ -29,6 +31,14 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+}
+.res_item {
+  height: 150px;
+  width: 150px;
+  color: white;
+  background-image: linear-gradient( to right bottom,
+    rgba(255,00,0,.9),
+    rgba( 255, 165 ,0 ,.9));
 }
 
 /*--------------------------------------------------------------
@@ -69,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0;
   position: fixed;
   top: 0;
-  background:rgba(0, 0, 0, .5);
+  background:transparent;
 }
 
 #header.header-scrolled {
@@ -95,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  width: 200px;
 }
 
 @media (max-width: 992px) {
@@ -127,15 +137,18 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #556270;
+  color: red;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+  transform: scale(1);
+  transition: all .3s ease-in;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #d9232d;
+  color: rgb(255, 0, 13);
+  transform: scale(1.2);
 }
 
 .nav-menu .drop-down ul {
@@ -374,7 +387,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(30, 35, 40, 0.6);
 }
 
 #hero .carousel-container {
@@ -446,19 +458,19 @@ h1, h2, h3, h4, h5, h6 {
 #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
   background: none;
   font-size: 36px;
+  font-weight: bold;
   line-height: 1;
   width: auto;
   height: auto;
-  background: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   padding: 10px;
   transition: 0.3s;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 0, 0, 0.8);
 }
 
 #hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
-  background: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.8);
+  background: rgba(228, 181, 181, 0.3);
+  color: rgba(255, 0, 0, 0.8);
 }
 
 #hero .carousel-indicators li {
@@ -797,8 +809,8 @@ section {
   /*background: rgba(0,0,0,0.7);*/
     background-image: linear-gradient( to right bottom,
     rgba(10,10,10,.9),
-    rgba( 169, 169 ,169 ,.9),
-    rgba(192,192,192,.9));
+    rgba( 169, 169 ,169 ,.7),
+    rgba(192,192,192,.5));
   position: absolute;
   left: 0;
   right: 0;
@@ -917,7 +929,7 @@ section {
 
 .image-hover-content .image-hover-subtitle {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: bold;
     -webkit-font-smoothing: antialiased;
     font-style: normal;
     font-stretch: normal;
@@ -1037,10 +1049,6 @@ section {
 
 }
 
-.research__head {
-    z-index: 1;
-}
-
 .research-item {
     position: relative;
     margin: 0;
@@ -1090,6 +1098,7 @@ section {
     left: 30px;
     font-weight: 800;
     color: white;
+    z-index: 100;
 }
 
 /*--------------------------------------------------------------
@@ -2311,7 +2320,7 @@ section {
   background: white;
   padding: 0 0 30px 0;
   color: black;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 #footer .footer-top {
@@ -2441,7 +2450,7 @@ section {
 
 #footer .container .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 12px;
 }
 
 
@@ -2471,7 +2480,7 @@ section {
 /* about us section design*/
 
 .project-row-1 {
-    margin: 80px 100px;
+    /* margin: 80px 100px; */
 }
 .btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .modal-header:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
     clear: both;
@@ -2522,6 +2531,10 @@ section {
     justify-content: center;
     align-items: center;
 }
+.about-us-section:hover .slide-section {
+  opacity: 1;
+  transform: translateY(0px);
+}
 
 .about-us-section h3 {
     display: block;
@@ -2558,8 +2571,7 @@ section {
 }
 
 .about-us-section .slide-section:hover {
-    opacity: 1;
-    transform: translateY(0px);
+    
 }
 
 .about-content h1 {
@@ -2576,8 +2588,8 @@ section {
 
 .about-us-section .slide-section {
     opacity: 0;
-    transform: translateY(40px);
-    transition: all .5s ease-in;
+    transform: translateY(100px);
+    transition: all 1s ease-in-out;
 }
 
 .about-us-section:hover {
@@ -2625,14 +2637,14 @@ section {
     height: 250px;
 }
 .og-expanded {
-    height: 250px;
+    height: 300px;
 }
 .og-expanded>a::before {
     content: '';
     position: absolute;
     top: 3px;
     left: 3px;
-    height: 250px;
+    height: 300px;
     width: 100%;
     background-image: linear-gradient(
         to right bottom,
@@ -2641,7 +2653,7 @@ section {
     z-index: 1;
 }
 .og-expanded>a::after {
-    top: 240px;
+    top: 290px;
     border: solid transparent;
     content: " ";
     height: 0;
@@ -2708,6 +2720,13 @@ section {
     margin: 0 auto;
     position: relative;
 }
+
+@media screen and (max-width: 800px) {
+  .og-expander-inner {
+    padding: 50px 15px;
+  }
+}
+
 .php-email-form {
     padding: 50px;
 }
@@ -2748,4 +2767,129 @@ section {
 .tag-og img {
     filter: grayscale(1);
     cursor: pointer;
+}
+
+.icofont-navigation-menu:before{
+  color: red;
+  transform: scale(1.3);
+}
+
+#projects {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#projects h2{
+	color: white;
+	font-family: BrandonGrotesque, Brandon Grotesque;
+	font-size: 1em;
+	margin-bottom: 1.5em;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: 2px;
+
+
+}
+#projects a p {
+  margin-top: 1em;;
+}
+
+#projects a:hover{
+  color: white;
+}
+
+.circle {
+	display: inline-block;
+	height: 150px;
+	width: 150px; 
+	line-height: 18px;
+	border-radius: 50%;
+	color: white;
+
+}
+#projects div {
+  display: flex;
+  flex-wrap: wrap;
+}
+#projects div:hover {
+ color: white;
+}
+#projects div a{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+	z-index: 1;
+	background-image: linear-gradient( to right bottom,
+    rgba(255,00,0,.9),
+    rgba( 255, 165 ,0 ,.9));
+}
+
+#projects div{
+	margin-top: 1em;
+	font-size: 1em;
+	font-family: BrandonGrotesque, Brandon Grotesque;
+	font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.custom-container-fluid {
+  margin: 5px 5px;;
+}
+.research-wrap {
+  filter: grayscale(100);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.research-wrap:hover {
+  filter: grayscale(0);
+}
+
+.project-image div{
+  overflow: hidden;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid white;
+}
+
+.project-image-long div {
+  height: 100vh;
+}
+
+.project-image-small .row div {
+  height: 50vh;
+}
+.project-info {
+  padding-top: 10px;
+}
+.project-info h1{
+  padding-top: 10px;
+  color: red;
+}
+
+.project-info ul{
+  padding: 0;
+  margin-top: 30px;
+  font-size: 17px;
+  list-style-type: none;
+}
+.background-class {
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-rhiz-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.custom-list:hover {
+  background: #eee;
+  cursor: pointer;
 }
