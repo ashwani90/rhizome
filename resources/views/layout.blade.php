@@ -5,11 +5,11 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>@yield('title', 'Studio Rhizome')</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Studio Rhizome is an architecture practice involved in developing solutions for contemporary design, architecture and urban issues." name="description">
+  <meta content="architectural design architecture architect near me residential houses industrial interior" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo2.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->

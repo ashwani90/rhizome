@@ -3,7 +3,7 @@
 
       <!-- <h1 class="logo"><a href="index.html">Rhizome</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="{{ url('/') }}" class="logo"><img src="assets/img/logo.jpg" alt="" class="img-fluid"></a>
+      <a href="{{ url('/') }}" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
       <nav class="nav-menu d-none d-lg-block">
 

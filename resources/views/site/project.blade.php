@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Project')
+@section('title', 'Project Architecture')
 
 @section('content')
     @parent
@@ -24,9 +24,19 @@
                                             <ul>
                                                 <li><b>Project Office - </b> Gurugram</li>
                                                     <li>Typology - {{$project->type}}</li>
-                                                    <li>Scale - 85 Keys</li>
-                                                    <li>Interior Design</li>
-                                                    <li>Studio B.Architects</li>
+                                                    @if($project->scale)
+                                                    <li>Scale - {{$project->scale}}</li>
+                                                    @endif
+                                                    @if($project->scope)
+                                                    <li>{{$project->scope}}</li>
+                                                    @endif
+                                                    @if($project->opened)
+                                                    <li>Completion - {{$project->opened}}</li>
+                                                    @endif
+                                                    @if($project->studio)
+                                                    <li>{{$project->studio}}</li>
+                                                    @endif
+                                                    
                                             </ul>
                                         </div>
                                     </div>

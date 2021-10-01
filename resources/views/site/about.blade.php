@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Studio Rhizome - Projects')
+@section('title', 'About Studio Rhizome Team - Architects')
 
 @section('content')
     @parent
@@ -100,8 +100,8 @@ things, interbeing, intermezzo.”</h3>
 
      		  <div class="col-xs-6 col-sm-4">
                      <!-- Grid Box -->
-                     <a class="team-grid-link grid-box about-orange-overlay">
-                        <span>Clients</span>
+                     <a href="/social-posts" class="team-grid-link grid-box about-orange-overlay">
+                        <span>Instagram</span>
                      </a>
                  </div>
              </div>

@@ -11,7 +11,9 @@ Route::get('/about', [RhizomeController::class, 'about'])->name('about');
 Route::get('/contact', [RhizomeController::class, 'contact'])->name('contact');
 Route::get('/team', [RhizomeController::class, 'team'])->name('team');
 Route::get('/project', [RhizomeController::class, 'project'])->name('project');
-Route::get('/text-projects', [RhizomeController::class, 'textPro'])->name('projectst');
+Route::get('/text-projects', [RhizomeController::class, 'textPro'])->name('text_projectst');
+Route::get('/social-posts', [RhizomeController::class, 'instaPosts'])->name('social_posts');
+Route::post('/send_mail', [RhizomeController::class, 'send_mail'])->name('send_mail');
 /*
 |--------------------------------------------------------------------------
 | Web Routes
