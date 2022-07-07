@@ -12,6 +12,23 @@ use App\Mail\ContactMail;
 
 class RhizomeController extends Controller
 {
+
+    public $dynamic_classes = [
+        '1' => "col-lg-12 col-md-12 ",
+        '2' => "col-lg-8 col-md-8 col-sm-12",
+        '3' => "col-lg-4 col-md-4 col-sm-12",
+        '4' => "col-lg-8 col-md-8 col-sm-12",
+        '5' => "col-lg-4 col-md-4 col-sm-12"
+    ];
+
+    public $dynamic_heights = [
+        '1' => "full-height",
+        '2' => "full-height",
+        '3' => "full-height",
+        '4' => "half-height",
+        '5' => "half-height",
+    ];
+
     /**
      * Show the landing page of the website
      *
@@ -20,10 +37,23 @@ class RhizomeController extends Controller
      */
     public function index()
     {
-        $projects = DB::table('projects')->where('priority', '>', 0)->where('id', '<>', 61)->orderBy('priority', 'desc')->limit(12)->get();
-        $data = $this->getInstagramPosts(3);
+        $projects = DB::table('projects')->where('priority', '>', 0)->where('id', '<>', 61)->orderBy('priority', 'desc')->limit(13)->get();
+        // $data = $this->getInstagramPosts(3);
+
+        $i=0;
+        foreach ($projects as $project) {
+            $project->class = $this->dynamic_classes[$project->image_dim];
+            $project->height = $this->dynamic_heights[$project->image_dim];
+            if ($project->next_horizontal) {
+                $projects[$i]->nextPro = $projects[$i+1];
+                $projects[$i+1]->not_show = true;
+            }else {
+                $projects[$i]->nextPro = null;
+            }
+            $i++;
+        }
         
-        return view('site.index', ['projects' => $projects, 'instaData' => $data]);
+        return view('site.index', ['projects' => $projects]);
     }
 
     /**
@@ -35,6 +65,19 @@ class RhizomeController extends Controller
     public function projects()
     {
         $projects = DB::table('projects')->where('priority', '>', 0)->orderBy('priority', 'desc')->get();
+        $i=0;
+        foreach ($projects as $project) {
+            $project->class = $this->dynamic_classes[$project->image_dim];
+            $project->height = $this->dynamic_heights[$project->image_dim];
+            if ($project->next_horizontal) {
+                $projects[$i]->nextPro = $projects[$i+1];
+                $projects[$i+1]->not_show = true;
+            }else {
+                $projects[$i]->nextPro = null;
+            }
+            $i++;
+        }
+
         return view('site.projects', ['projects' => $projects]);
     }
 
@@ -117,6 +160,7 @@ class RhizomeController extends Controller
 
     public function project(Request $request)
     {
+        $projects = DB::table('projects')->where('priority', '>', 0)->where('id', '<>', 61)->orderBy('priority', 'desc')->limit(3)->get();
         $allProjectTypes = [
             'industrial'=> 'Industrial',
             'institutional' => 'Institutional',
@@ -133,7 +177,7 @@ class RhizomeController extends Controller
         $project = DB::table('projects')->find($id);
         $project->type = $allProjectTypes[$project->type];
         $projectImages = DB::table('project_images')->where(['project_id'=>$id, 'enabled'=>1])->orderBy('priority')->get();
-        return view('site.project', ['project' => $project, 'images' => $projectImages]);
+        return view('site.project', ['project' => $project, 'images' => $projectImages, 'projects' => $projects]);
     }
 
     private function getInstagramPosts($count) {

@@ -4,18 +4,21 @@
 
 @section('content')
     @parent
+    <section id="breadcrumbs" class="breadcrumbs pt-1">
+    <div class="section-title pl-5">
+              <p>About Us</p>
+            </div>
+          
+        </section>
      <section class="breadcrumbs">
      
      <div class="container-fluid">
-     <div class="section-title pl-5">
-     <h1 style="color:red;">About Us</h1>
-            </div>
-                 <div class="row">
-                     <div class="col-xs-12 col-md-6 about-rhiz-box">
-                         <img src="assets/img/rhizome.jpg">
-                     </div>
-                     <div class="col-xs-12 col-md-6 about-rhiz-box">
-                         <p style="font-size: 17px;"><b style="color: red; font-size: 21px;">Rhizome is a knowledge system of A-Centered
+
+            
+                 <div class="container">
+                     
+                     <div class="col-xs-12 col-md-12 about-rhiz-box">
+                         <p style="font-size: 23px;"><b style="color: red; font-size: 26px;">Rhizome is a knowledge system of A-Centered
 multiplicities.</b></br>
 A system of learning which challenges traditional
 model by interconnection and non- hierarchical
@@ -82,30 +85,7 @@ things, interbeing, intermezzo.”</h3>
 	</div>
                       </div>
               </section> -->
-     <section class="team-section">
-     <div class="row">
-     		  <div class="col-xs-6 col-sm-4">
-                     <!-- Grid Box -->
-                     <a href="/team" class="grid-box team-grid-link about-orange-overlay">
-                         <span>Team</span>
-                     </a>
-                 </div>
-
-                 <div class="col-xs-6 col-sm-4">
-                     <!-- Grid Box -->
-                     <a href="/text-projects" class="team-grid-link grid-box about-orange-overlay">
-                        <span>Projects</span>
-                     </a>
-                 </div>
-
-     		  <div class="col-xs-6 col-sm-4">
-                     <!-- Grid Box -->
-                     <a href="/social-posts" class="team-grid-link grid-box about-orange-overlay">
-                        <span>Instagram</span>
-                     </a>
-                 </div>
-             </div>
-     </section>
+     
 
 @endsection
 

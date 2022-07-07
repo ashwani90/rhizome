@@ -3,8 +3,17 @@
 @section('title', 'Studio Team - Architect')
 
 @section('content')
-    
-     <section id="blog" class="blog breadcrumbs container-fluid">
+<section id="breadcrumbs" class="breadcrumbs top-moved">
+<div class="section-title pl-5">
+              <p>Social Posts</p>
+            </div>
+              <!-- <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2>Expertise</h2>
+                </div>
+              </div> -->
+            </section>
+     <section id="blog" class="blog container-fluid">
      <div class="custom-container">
           
           <div class="row">

@@ -4,9 +4,8 @@
 
 
 @section('content')
-
-    @parent
     @include('components.carousel')
+    @include('components.research')
         <section id="portfolio" class="portfolio">
           <div class="custom-container">
 
@@ -16,9 +15,17 @@
 
             <div class="row portfolio-container">
             @foreach ($projects as $project)
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 portfolio-item filter-{{$project->type}}">
-              <div class="portfolio-wrap">
-                <img src="assets/img/projects/{{$project->url}}" class="img-fluid" alt="">
+          @if ($project->not_show)
+            @continue
+          @endif
+
+          @if ($project->next_empty)
+            @if ($project->image_dim == 5 && !$project->add_below)
+            <div class="{{$project->class}} full-height  portfolio-item filter-{{$project->type}}" >
+              <div class="row"  style="margin:0;padding:0;">
+                <div class="col-md-12 sol-sm-12 half-height">
+                <div class="portfolio-wrap background-class" style="background-image: url(assets/img/projects/{{$project->url}});height:100%;background-position:center;">
+                
                 <div class="image-hover-content black-hover">
                                                         <span class="hover-content">
                                                             <span class="image-hover-title">{{$project->title}}</span>
@@ -33,18 +40,134 @@
                                                             <span class="image-hover-subtitle">{{$project->name}}</span>
                                                             @endif
                                                             <span class="image-hover-para">{{$project->subtitle}}</span>
-                                                            <a href="/project?id={{$project->id}}" class="btn btn-default" title="">See</a>
+                                                            <a href="/project?id={{$project->id}}" class="btn btn-default" title="">View</a>
+                                                        </span>
+                                                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 half-height">
+              <div class="text-place">
+           <p >Be it master plans, buildings or interiors, <sup>our Process focuses on innovation</sup> that enriches our Clients’ lives and businesses, and hopes to add value to all it touches.</p>
+</div>      
+          </div>
+                </div>
+              
+              </div>
+            </div>
+            @elseif ($project->image_dim == 4 || $project->image_dim == 2 || ($project->image_dim == 5 && $project->add_below))
+            <div class="{{$project->class}} {{$project->height}} portfolio-item filter-{{$project->type}}" >
+              
+                <div class="portfolio-wrap background-class" style="background-image: url(assets/img/projects/{{$project->url}});height:100%;background-position:center;">
+                
+                <div class="image-hover-content black-hover">
+                                                        <span class="hover-content">
+                                                            <span class="image-hover-title">{{$project->title}}</span>
+                                                            @if(isset($project->location) && isset($project->date))
+                                                            <span class="image-hover-subtitle">{{$project->location}} | 
+                                                            {!! date('d/M/y', strtotime($project->date)) !!}  </span>
+                                                            @elseif (isset($project->location))
+                                                            <span class="image-hover-subtitle">{{$project->location}}</span>
+                                                            @elseif (isset($project->date))
+                                                            <span class="image-hover-subtitle">{!! date('d/M/y', strtotime($project->date)) !!} </span>
+                                                            @else
+                                                            <span class="image-hover-subtitle">{{$project->name}}</span>
+                                                            @endif
+                                                            <span class="image-hover-para">{{$project->subtitle}}</span>
+                                                            <a href="/project?id={{$project->id}}" class="btn btn-default" title="">View</a>
+                                                        </span>
+                                                </div>
+</div>
+</div>
+              <div class="col-lg-4 col-md-4 col-sm-12 {{$project->height}} portfolio-item filter-{{$project->type}}" >
+                <div class="text-place">
+                <p >Be it master plans, buildings or interiors, <sup>our Process focuses on innovation</sup> that enriches our Clients’ lives and businesses, and hopes to add value to all it touches.</p>
+</div>
+           
+                </div>
+            @endif
+            @elseif ($project->next_horizontal)
+            
+            <div class="{{$project->class}} full-height  portfolio-item filter-{{$project->type}}" >
+              <div class="row" style="margin:0;padding:0;">
+                <div class="col-md-12 sol-sm-12 half-height">
+                <div class="portfolio-wrap background-class" style="background-image: url(assets/img/projects/{{$project->url}});height:100%;background-position:center;">
+                
+                <div class="image-hover-content black-hover">
+                                                        <span class="hover-content">
+                                                            <span class="image-hover-title">{{$project->title}}</span>
+                                                            @if(isset($project->location) && isset($project->date))
+                                                            <span class="image-hover-subtitle">{{$project->location}} | 
+                                                            {!! date('d/M/y', strtotime($project->date)) !!}  </span>
+                                                            @elseif (isset($project->location))
+                                                            <span class="image-hover-subtitle">{{$project->location}}</span>
+                                                            @elseif (isset($project->date))
+                                                            <span class="image-hover-subtitle">{!! date('d/M/y', strtotime($project->date)) !!} </span>
+                                                            @else
+                                                            <span class="image-hover-subtitle">{{$project->name}}</span>
+                                                            @endif
+                                                            <span class="image-hover-para">{{$project->subtitle}}</span>
+                                                            <a href="/project?id={{$project->id}}" class="btn btn-default" title="">View</a>
+                                                        </span>
+                                                </div>
+              </div>
+</div>
+              <div class="col-md-12 col-sm-12 half-height" style="padding-top: 5px;">
+              <div class="portfolio-wrap background-class" style="background-image: url(assets/img/projects/{{$project->nextPro->url}});height:100%;background-position:center;">
+                
+                <div class="image-hover-content black-hover">
+                                                        <span class="hover-content">
+                                                            <span class="image-hover-title">{{$project->nextPro->title}}</span>
+                                                            @if(isset($project->nextPro->location) && isset($project->nextPro->date))
+                                                            <span class="image-hover-subtitle">{{$project->nextPro->location}} | 
+                                                            {!! date('d/M/y', strtotime($project->nextPro->date)) !!}  </span>
+                                                            @elseif (isset($project->nextPro->location))
+                                                            <span class="image-hover-subtitle">{{$project->nextPro->location}}</span>
+                                                            @elseif (isset($project->nextPro->date))
+                                                            <span class="image-hover-subtitle">{!! date('d/M/y', strtotime($project->nextPro->date)) !!} </span>
+                                                            @else
+                                                            <span class="image-hover-subtitle">{{$project->nextPro->name}}</span>
+                                                            @endif
+                                                            <span class="image-hover-para">{{$project->nextPro->subtitle}}</span>
+                                                            <a href="/project?id={{$project->id}}" class="btn btn-default" title="">View</a>
                                                         </span>
                                                 </div>
               </div>
             </div>
+              
+              </div>
+            </div>
+            @else
+            <div class="{{$project->class}} {{$project->height}} portfolio-item filter-{{$project->type}}" >
+              <div class="portfolio-wrap background-class" style="background-image: url(assets/img/projects/{{$project->url}});height:100%;background-position:center;">
+                
+                <div class="image-hover-content black-hover">
+                                                        <span class="hover-content">
+                                                            <span class="image-hover-title">{{$project->title}}</span>
+                                                            @if(isset($project->location) && isset($project->date))
+                                                            <span class="image-hover-subtitle">{{$project->location}} | 
+                                                            {!! date('d/M/y', strtotime($project->date)) !!}  </span>
+                                                            @elseif (isset($project->location))
+                                                            <span class="image-hover-subtitle">{{$project->location}}</span>
+                                                            @elseif (isset($project->date))
+                                                            <span class="image-hover-subtitle">{!! date('d/M/y', strtotime($project->date)) !!} </span>
+                                                            @else
+                                                            <span class="image-hover-subtitle">{{$project->name}}</span>
+                                                            @endif
+                                                            <span class="image-hover-para">{{$project->subtitle}}</span>
+                                                            <a href="/project?id={{$project->id}}" class="btn btn-default" title="">View</a>
+                                                        </span>
+                                                </div>
+              </div>
+            </div>
+          @endif
+
+          
           @endforeach
 
             </div>
 
           </div>
         </section>
-        @include('components.research')
+       
 
         <!-- ======= Clients Section ======= -->
         <section id="clients" class="clients section-bg">
@@ -80,50 +203,3 @@
 
           </div>
         </section><!-- End Clients Section -->
-
-        <section id="blog" class="blog">
-          <div class="custom-container">
-          
-            <div class="row">
-              @if ($instaData)
-            @foreach ($instaData as $data)
-              <div class="col-lg-4  col-md-6 d-flex align-items-stretch  blog-box" data-aos="fade-up">
-                <article class="entry">
-
-                  <div class="entry-img">
-                    @if (@isset($data['caption'])) 
-                      <img src="{{$data['media_url']}}" alt="{{$data['caption']}}" class="img-fluid">
-                    @else
-                    <img src="{{$data['media_url']}}"  class="img-fluid">
-                    @endif
-                    
-                  </div>
-
-                  <h2 class="entry-title">
-                  @if (@isset($data['caption'])) 
-                  <a href="{{$data['permalink']}}">{{$data['caption']}}</a>
-                    @else
-                    <a href="{{$data['permalink']}}">Instagram Post</a>
-                    @endif
-                    
-                  </h2>
-
-                  <div class="entry-meta">
-                    <ul>
-                      <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <time datetime="{{date('Y-m-d', strtotime($data['timestamp']))}}">{{date('Y-m-d', strtotime($data['timestamp']))}}</time></li>
-                    </ul>
-                  </div>
-
-                </article><!-- End blog entry -->
-              </div>
-              @endforeach
-              @endif
-
-                </article><!-- End blog entry -->
-              </div>
-
-            </div>
-
-          </div>
-        </section><!-- End Blog Section -->
-@endsection
