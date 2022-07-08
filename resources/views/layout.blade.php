@@ -1,54 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>@yield('title', 'Studio Rhizome')</title>
-  <meta content="Studio Rhizome is an architecture practice involved in developing solutions for contemporary design, architecture and urban issues." name="description">
-  <meta content="architectural design architecture architect near me residential houses industrial interior" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/logo2.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-<link href="">
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/custom.css" rel="stylesheet">
-  <link href="assets/css/testimonial.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/swiper.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
-        rel="stylesheet">
-</head>
-<body>
-<main id="main">
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>@yield('title', 'Studio Rhizome')</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="ThemeZaa">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <meta name="description" content="Litho is a clean and modern design, BootStrap 5 responsive, business and portfolio multipurpose HTML5 template with 37+ ready homepage demos.">
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="assets/images/favicon.png">
+        <link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" type="text/css" href="assets/css/font-icons.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/theme-vendors.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+        
+    </head>
+    <body class="h-100">
     @include('components.header')
-    @yield('content')
+    <div class="main-content">
+    @include('components.carousel')
+    
 
-</main>
-@include('components.footer')
-</body>
+
+        <!-- start page loader -->
+        <div class="page-loader"></div>
+        <!-- end page loader -->
+        <!-- start header -->
+        <!-- end header -->
+        <!-- start slider section -->
+        @yield('content')
+</div>
+        @include('components.footer')
+        <!-- end slider section -->
+        <!-- start scroll to top -->
+        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
+        <!-- end scroll to top -->
+        <!-- javascript -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/theme-vendors.min.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        
+    </body>
 </html>
-
-
-

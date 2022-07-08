@@ -1,134 +1,59 @@
-<section id="breadcrumbs" class="breadcrumbs top-moved">
-<div class="section-title pl-5">
-              <p>Expertise</p>
-            </div>
-              <!-- <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h2>Expertise</h2>
+        <!-- start section -->
+        <section id="about" class="big-section">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 justify-content-center">
+                    <!-- start feature box item -->
+                    <div class="col text-center md-margin-50px-bottom wow animate__fadeIn" data-wow-delay="0.1s">
+                        <a href="#" class="text-medium-gray text-sunglow-hover cursor-default">
+                            <i class="line-icon-Vector-5 icon-large padding-20px-bottom"></i>
+                            <span class="alt-font font-weight-600 text-extra-dark-gray text-uppercase d-block">Good design</span>
+                        </a>
+                    </div>
+                    <!-- end feature box item -->
+                    <!-- start feature box item -->
+                    <div class="col text-center md-margin-50px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        <a href="#" class="text-medium-gray text-sunglow-hover cursor-default">
+                            <i class="line-icon-Police icon-large padding-20px-bottom"></i>
+                            <span class="alt-font font-weight-600 text-extra-dark-gray text-uppercase d-block">Inspiring ideas</span>
+                        </a>
+                    </div>
+                    <!-- end feature box item -->
+                    <!-- start feature box item -->
+                    <div class="col text-center md-margin-50px-bottom wow animate__fadeIn" data-wow-delay="0.3s">
+                        <a href="#" class="text-medium-gray text-sunglow-hover cursor-default">
+                            <i class="line-icon-Bee icon-large padding-20px-bottom"></i>
+                            <span class="alt-font font-weight-600 text-extra-dark-gray text-uppercase d-block">Innovative code</span>
+                        </a>
+                    </div>
+                    <!-- end feature box item -->
+                    <!-- start feature box item -->
+                    <div class="col text-center sm-margin-50px-bottom wow animate__fadeIn" data-wow-delay="0.4s">
+                        <a href="#" class="text-medium-gray text-sunglow-hover cursor-default">
+                            <i class="line-icon-Medal-2 icon-large padding-20px-bottom"></i>
+                            <span class="alt-font font-weight-600 text-extra-dark-gray text-uppercase d-block">Best quality</span>
+                        </a>
+                    </div>
+                    <!-- end feature box item -->
+                    <!-- start feature box item -->
+                    <div class="col text-center wow animate__fadeIn" data-wow-delay="0.5s">
+                        <a href="#" class="text-medium-gray text-sunglow-hover cursor-default">
+                            <i class="line-icon-Idea-5 icon-large padding-20px-bottom"></i>
+                            <span class="alt-font font-weight-600 text-extra-dark-gray text-uppercase d-block">Brand analysis</span>
+                        </a>
+                    </div>
+                    <!-- end feature box item -->
                 </div>
-              </div> -->
-            </section>
-    <section style="padding:0px!important; margin: 0 10px;" id="portfolio" class="portfolio">
-        <div class="custom-container">
-          <div class="row portfolio-cusatome-container">
-            <div class="col-lg-6 col-sm-12 research-item filter-app">
-              <div class="research-wrap" style="background-image: url(assets/img/banner_rest/banner_12.jpg)">
-                <!-- <img src="assets/img/banner_rest/banner_12.jpg" class="img-fluid" alt=""> -->
-                <h1 class="research__head">Design
-                </h1>
-                <div class="hover_research_item">
-                  <ul>
-                    <li>Masterplanning
-                    </li>
-                    <li>Urban Design
-                    </li>
-                    <li>Architecture Design
-                    </li>
-                    <li>Interior Design
-                    </li>
-                  </ul>
+                <div class="row align-items-end justify-content-center margin-10-half-rem-top md-margin-7-rem-top">
+                    <div class="col-12 col-lg-3 pe-lg-0 md-margin-25px-bottom sm-margin-15px-bottom text-center text-lg-start wow animate__fadeIn" data-wow-delay="0.2s">
+                        <span class="alt-font font-weight-600 title-large text-sunglow d-block letter-spacing-minus-5px sm-letter-spacing-minus-1-half">hello<span class="text-extra-dark-gray">.</span></span>
+                    </div>
+                    <div class="col-12 col-lg-5 col-md-10 text-lg-end md-margin-25px-bottom text-center text-lg-start wow animate__fadeIn" data-wow-delay="0.4s">
+                        <h4 class="alt-font font-weight-600 text-extra-dark-gray d-block mb-0 padding-2-half-rem-right letter-spacing-minus-1px lg-no-padding-right">Award winning agency specialising in creative design</h4>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-9 padding-30px-left md-padding-15px-left text-center text-lg-start wow animate__fadeIn" data-wow-delay="0.6s">
+                        <p class="w-80 margin-15px-bottom lg-w-100">Lorem ipsum dolor sit amet consectetur eiusmod tempor incididunt labore magna ut enim ad minim veniam nostrud.</p>
+                        <a href="about-us.html" class="btn btn-link btn-extra-large text-extra-dark-gray font-weight-600">Agency info</a>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-lg-6 col-sm-12 research-item filter-web">
-              <div class="research-wrap"  style="background-image: url(assets/img/banner_rest/banner_22.jpg)">
-                <!-- <img src="assets/img/banner_rest/banner_22.jpg" class="img-fluid" alt=""> -->
-                <h1 class="research__head">Sustainability
-                </h1>
-                <div class="hover_research_item">
-                  <ul>
-                    <li>Energy Simulations
-                    </li>
-                    <li>Energy Audits
-                    </li>
-                    <li>Green Certification
-                    </li>
-                    <li>Net Zero Design
-                    </li>
-                    <li>Innovative Technologies
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 research-item filter-app">
-              <div class="research-wrap" style="background-image: url(assets/img/banner_rest/banner_23.jpg)">
-                <!-- <img src="assets/img/banner_rest/banner_23.jpg" class="img-fluid" alt=""> -->
-                <h1  class="research__head">Allied Engineering
-                </h1>
-                <div class="hover_research_item">
-                  <ul>
-                    <li>Structure
-                    </li>
-                    <li>Mechanical
-                    </li>
-                    <li>Electrical
-                    </li>
-                    <li>Fire Protection
-                    </li>
-                    <li>Plumbing
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 research-item filter-card">
-              <div class="research-wrap" style="background-image: url(assets/img/banner_rest/banner_42.jpg)">
-                <img src="assets/img/banner_rest/banner_42.jpg" class="img-fluid" alt="">
-                <h1 class="research__head">Project Management
-                </h1>
-                <div class="hover_research_item">
-                  <ul>
-                    <li>Construction Administration
-                    </li>
-                    <li>Project Management
-                    </li>
-                    <li>Value Engineering
-                    </li>
-                    <li>Quantity Estimation
-                    </li>
-                    <li>Quality Control
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- <section class="container-fluid">
-                  <div class="custom-container-fluid">
-                  <div id="projects" class="skew">
-					<div>
-            <a class="circle">
-              <p>hotels & resorts</p>
-            </a>
-            <a class="circle">
-              <p>Mixuse</p>
-            </a>
-            <a class="circle">
-              <p>Residential</p>
-            </a>
-            <a class="circle">
-              <p>Institutions</p>
-            </a>
-            <a class="circle">
-              <p>Houses</p>
-            </a>
-            <a class="circle">
-              <p>Architecture & Interior</p>
-            </a>
-            <a class="circle">
-              <p>Interiors & Retail</p>
-            </a>
-            <a class="circle">
-              <p>Hospitals</p>
-            </a>
-            <a class="circle">
-              <p>Industrial</p>
-            </a>
-          </div>
-					
-	</div>
-                       </div>
-              </section> -->
+        </section>
