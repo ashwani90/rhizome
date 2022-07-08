@@ -1,67 +1,95 @@
-<section class="bg-gradient-white-light-gray">
+<section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;height:150px; margin-top: -120px;">
             <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-12 col-lg-6 position-relative text-center md-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                        <img src="https://via.placeholder.com/476x652" alt="" />
-                        <div class="absolute-middle-center">
-                            <a href="https://www.youtube.com/watch?v=g0f_BRYJLJE" class="popup-youtube video-icon-box video-icon-large position-relative">
-                                <span>
-                                    <span class="video-icon bg-white">
-                                        <i class="icon-simple-line-control-play text-extra-dark-gray"></i>
-                                        <span class="video-icon-sonar">
-                                            <span class="video-icon-sonar-bfr bg-white opacity-7"></span>
-                                            <span class="video-icon-sonar-afr bg-white"></span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-4 col-lg-5 offset-lg-1 col-md-7">
-                        <h4 class="alt-font font-weight-600 text-extra-dark-gray margin-4-half-rem-bottom letter-spacing-minus-1px text-center text-lg-start wow animate__fadeInRight" data-wow-delay="0.2s">Browse amazing design services!</h4>
-                        <!-- start feature box item -->
-                        <div class="feature-box feature-box-left-icon-middle margin-4-half-rem-bottom wow animate__fadeInRight" data-wow-delay="0.3s">
-                            <div class="feature-box-icon feature-box-icon-rounded dark bg-white w-85px h-85px rounded-circle box-shadow-small margin-40px-right">
-                                <i class="line-icon-Cursor-Click2 icon-very-medium"></i>
-                                <div class="feature-box-icon-hover bg-extra-dark-gray rounded-circle"></div>
-                            </div>
-                            <div class="feature-box-content last-paragraph-no-margin">
-                                <span class="alt-font font-weight-500 margin-5px-bottom d-block text-extra-dark-gray">Powerfull options</span>
-                                <p>Lorem ipsum dolor consectet eiusmod tempor incididunt</p>
-                            </div>
-                        </div>
-                        <!-- end feature box item -->
-                        <!-- start feature box item -->
-                        <div class="feature-box feature-box-left-icon-middle margin-4-half-rem-bottom wow animate__fadeInRight" data-wow-delay="0.4s">
-                            <div class="feature-box-icon feature-box-icon-rounded dark bg-white w-85px h-85px rounded-circle box-shadow-small margin-40px-right">
-                                <i class="line-icon-Sand-watch2 icon-very-medium"></i>
-                                <div class="feature-box-icon-hover bg-extra-dark-gray rounded-circle"></div>
-                            </div>
-                            <div class="feature-box-content last-paragraph-no-margin">
-                                <span class="alt-font font-weight-500 margin-5px-bottom d-block text-extra-dark-gray">Unlimited variations</span>
-                                <p>Lorem ipsum dolor consectet eiusmod tempor incididunt</p>
-                            </div>
-                        </div>
-                        <!-- end feature box item -->
-                        <!-- start feature box item -->
-                        <div class="feature-box feature-box-left-icon-middle wow animate__fadeInRight" data-wow-delay="0.5s">
-                            <div class="feature-box-icon feature-box-icon-rounded dark bg-white w-85px h-85px rounded-circle box-shadow-small margin-40px-right">
-                                <i class="line-icon-Idea-5 icon-very-medium"></i>
-                                <div class="feature-box-icon-hover bg-extra-dark-gray rounded-circle"></div>
-                            </div>
-                            <div class="feature-box-content last-paragraph-no-margin">
-                                <span class="alt-font font-weight-500 margin-5px-bottom d-block text-extra-dark-gray">Effective strategy</span>
-                                <p>Lorem ipsum dolor consectet eiusmod tempor incididunt</p>
-                            </div>
-                        </div>
-                        <!-- end feature box item -->
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center margin-7-rem-top lg-margin-4-half-rem-top wow animate__fadeIn" data-wow-delay="0.6s">
-                        <span class="alt-font text-extra-dark-gray text-large">Are you interested in working with us? <a href="#pricing" class="font-weight-600 text-decoration-line-bottom text-extra-dark-gray text-black-hover section-link">Let's started now</a></span>
+                <div class="row align-items-stretch justify-content-center extra-small-screen" style="height:100px;">
+                    <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">
+                        <h2 class="text-extra-dark-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Our Expertise</h2>
                     </div>
                 </div>
             </div>
         </section>
-      
+<section class="py-0 wow animate__fadeIn" >
+                <div class="container-fluid lg-padding-30px-lr xs-padding-15px-lr">
+                    <div class="row row-cols-1 row-cols-xl-4 row-cols-md-2">
+                        <!-- start interactive banner item -->
+                        <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style="min-height: 600px">                        
+                            <figure class="m-0" style="height:100%">
+                                <img src="assets/img/banner_rest/banner_12.jpg" alt="" style="height:100%"/>
+                                <div class="opacity-very-light bg-black"></div>
+                                <figcaption>
+                                    <div class="interactive-banners-content align-items-start padding-4-rem-all last-paragraph-no-margin">
+                                        <h6 class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">Architecture design</h6>
+                                        <span class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                    </div>
+                                    <div class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                        <div class="padding-4-rem-all last-paragraph-no-margin">
+                                            <p class="interactive-banners-action-content w-85 md-w-95">Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+                                            <a href="portfolio-boxed-metro.html" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- end interactive banner item -->
+                        <!-- start interactive banner item -->
+                        <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.4s" style="min-height: 600px">                        
+                            <figure class="m-0" style="height:100%">
+                                <img src="assets/img/banner_rest/banner_22.jpg" alt=""  style="height:100%"/>
+                                <div class="opacity-very-light bg-black"></div>
+                                <figcaption>
+                                    <div class="interactive-banners-content align-items-start padding-4-rem-all last-paragraph-no-margin">
+                                        <h6 class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">Structure design</h6>
+                                        <span class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                    </div>
+                                    <div class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                        <div class="padding-4-rem-all last-paragraph-no-margin">
+                                            <p class="interactive-banners-action-content w-85 md-w-95">Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+                                            <a href="portfolio-boxed-metro.html" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- end interactive banner item -->
+                        <!-- start interactive banner item -->
+                        <div class="col interactive-banners-style-09 sm-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.6s" style="min-height: 600px">
+                            <figure class="m-0" style="height:100%">
+                                <img src="assets/img/banner_rest/banner_23.jpg" alt=""  style="height:100%"/>
+                                <div class="opacity-very-light bg-black"></div>
+                                <figcaption>
+                                    <div class="interactive-banners-content align-items-start padding-4-rem-all last-paragraph-no-margin">
+                                        <h6 class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">Furnitures design</h6>
+                                        <span class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                    </div>
+                                    <div class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                        <div class="padding-4-rem-all last-paragraph-no-margin">
+                                            <p class="interactive-banners-action-content w-85 md-w-95">Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+                                            <a href="portfolio-boxed-metro.html" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- end interactive banner item -->
+                        <!-- start interactive banner item -->
+                        <div class="col interactive-banners-style-09 wow animate__fadeIn" data-wow-delay="0.8s" style="min-height: 600px">
+                            <figure class="m-0" style="height:100%">
+                                <img src="assets/img/banner_rest/banner_42.jpg" alt=""  style="height:100%"/>
+                                <div class="opacity-very-light bg-black"></div>
+                                <figcaption>
+                                    <div class="interactive-banners-content align-items-start padding-4-rem-all last-paragraph-no-margin">
+                                        <h6 class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">Landscape design</h6>
+                                        <span class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                    </div>
+                                    <div class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                        <div class="padding-4-rem-all last-paragraph-no-margin">
+                                            <p class="interactive-banners-action-content w-85 md-w-95">Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+                                            <a href="portfolio-boxed-metro.html" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- end interactive banner item -->
+                    </div>
+                </div>
+            </section>

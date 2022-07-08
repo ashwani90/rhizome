@@ -2860,7 +2860,7 @@ header .header-always-fixed-scroll .navbar-brand .mobile-logo { transition-durat
 header .header-cart-icon .cart-count { position: absolute; top: -6px; right: -10px; width: 16px; height: 16px; text-align: center; font-size: 9px; line-height: 16px; border-radius: 100%; }
 
 /* header push button */
-.navbar.navbar-dark .push-button > span, .sticky .navbar.header-dark .push-button > span { background: #fff; }
+.navbar.navbar-dark .push-button > span, .sticky .navbar.header-dark .push-button > span { background: #000; }
 .navbar.navbar-dark .push-button:hover, .sticky .navbar.header-dark .push-button:hover { opacity: 0.6; }
 .navbar.navbar-light .push-button > span, .sticky .navbar.header-light .push-button > span { background: #232323; }
 .navbar.navbar-light .push-button:hover, .sticky .navbar.header-light .push-button:hover { opacity: 0.6; }
@@ -2906,7 +2906,7 @@ header .header-cart-icon .cart-count { position: absolute; top: -6px; right: -10
 .push-menu .push-menu-wrapper .mCSB_inside>.mCSB_container { margin: 0 !important; padding: 0 15px !important; }
 
 /* hamburger menu */
-.hamburger-menu { position: fixed; top: 0; right: -100%; width: 50%; height: 100%; z-index: 1031; overflow-y: auto; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; }
+.hamburger-menu { position: fixed; top: 0; right: -100%; width: 25%; height: 100%; z-index: 1031; overflow-y: auto; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; }
 .hamburger-menu.full-width { width: 100%; }
 .show-menu .hamburger-menu { right: 0; }
 .menu-list-wrapper { overflow: auto; height: calc(100vh - 150px); }

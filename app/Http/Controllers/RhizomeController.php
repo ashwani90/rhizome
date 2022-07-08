@@ -126,7 +126,8 @@ class RhizomeController extends Controller
      */
     public function about()
     {
-        return view('site.about');
+        $persons = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->get();
+        return view('site.about', ['persons' => $persons]);
     }
 
     /**

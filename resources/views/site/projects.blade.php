@@ -4,186 +4,65 @@
 
 @section('content')
     @parent
-    <section id="breadcrumbs" class="breadcrumbs pt-1" style="padding-bottom:0;margin-bottom:0;">
-    <div class="section-title pl-5">
-              <p>Projects</p>
+    <section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;">
+            <div class="container">
+                <div class="row align-items-stretch justify-content-center extra-small-screen">
+                    <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">
+                        <h2 class="text-extra-dark-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Our Projects</h2>
+                    </div>
+                </div>
             </div>
-          
         </section>
-    <section style="padding-top:0px; margin: 0 10px;" id="portfolio" class="portfolio">
-        <div class="custom-container">
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-house">House</li>
-                <li data-filter=".filter-masterplanning">Master Planning</li>
-                <li data-filter=".filter-interior">Interior</li>
-                <li data-filter=".filter-institutional">Institutional</li>
-                <li data-filter=".filter-residential">Residential</li>
-                <li data-filter=".filter-mixuse">Mixuse</li>
-                <li data-filter=".filter-industrial">Industrial</li>
-                <li data-filter=".filter-hotels">Hotels & Resorts</li>
-                <li data-filter=".filter-others">Others</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row portfolio-container">
-          @foreach ($projects as $project)
-          @if ($project->not_show)
-            @continue
-          @endif
-
-          @if ($project->next_empty)
-            @if ($project->image_dim == 5 && !$project->add_below)
-            <div class="{{$project->class}} full-height  portfolio-item filter-{{$project->type}} image-type-{{$project->image_dim}}" >
-              <div class="row"  style="margin:0;padding:0;">
-                <div class="col-md-12 sol-sm-12 half-height">
-                <div class="portfolio-wrap background-class" style="background-image: url(assets/img/projects/{{$project->url}});height:100%;background-position:center;">
-                
-                <div class="image-hover-content black-hover">
-                                                        <span class="hover-content">
-                                                            <span class="image-hover-title">{{$project->title}}</span>
-                                                            @if(isset($project->location) && isset($project->date))
-                                                            <span class="image-hover-subtitle">{{$project->location}} | 
-                                                            {!! date('d/M/y', strtotime($project->date)) !!}  </span>
-                                                            @elseif (isset($project->location))
-                                                            <span class="image-hover-subtitle">{{$project->location}}</span>
-                                                            @elseif (isset($project->date))
-                                                            <span class="image-hover-subtitle">{!! date('d/M/y', strtotime($project->date)) !!} </span>
-                                                            @else
-                                                            <span class="image-hover-subtitle">{{$project->name}}</span>
-                                                            @endif
-                                                            <span class="image-hover-para">{{$project->subtitle}}</span>
-                                                            <a href="/project?id={{$project->id}}" class="btn btn-default" title="">View</a>
-                                                        </span>
-                                                </div>
-              </div>
-              <div class="col-md-12 col-sm-12 half-height">
-              <div class="text-place">
-           <p >Be it master plans, buildings or interiors, <sup>our Process focuses on innovation</sup> that enriches our Clients’ lives and businesses, and hopes to add value to all it touches.</p>
-</div>      
-          </div>
+        <section class="pt-0" style="margin-top:-70px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <!-- start filter navigation -->
+                        <ul class="portfolio-filter grid-filter nav nav-tabs justify-content-center border-0 text-uppercase font-weight-500 alt-font padding-6-rem-bottom md-padding-4-half-rem-bottom sm-padding-2-rem-bottom">
+                        <li class="nav active"><a data-filter="*" href="#">All</a></li>
+                            
+                        <li class="nav"><a data-filter=".house" href="#">House</a></li>
+                            <li class="nav"><a data-filter=".masterplanning" href="#">Master Planning</a></li>
+                            <li class="nav"><a data-filter=".interior" href="#">Interior</a></li>
+                            <li class="nav"><a data-filter=".institutional" href="#">Institutional</a></li>
+                            <li class="nav"><a data-filter=".residential" href="#">Residential</a></li>
+                            <li class="nav"><a data-filter=".mixuse" href="#">Mixuse</a></li>
+                            <li class="nav"><a data-filter=".industrial" href="#">Industrial</a></li>
+                            <li class="nav"><a data-filter=".hotels" href="#">Hotels & Resorts</a></li>
+                            <li class="nav"><a data-filter=".others" href="#">Others</a></li>
+                        </ul>
+                        <!-- end filter navigation -->
+                    </div>
                 </div>
-              
-              </div>
             </div>
-            @elseif ($project->image_dim == 4 || $project->image_dim == 2 || ($project->image_dim == 5 && $project->add_below))
-            <div class="{{$project->class}} {{$project->height}} portfolio-item filter-{{$project->type}} image-type-{{$project->image_dim}}" >
-              
-                <div class="portfolio-wrap background-class" style="background-image: url(assets/img/projects/{{$project->url}});height:100%;background-position:center;">
-                
-                <div class="image-hover-content black-hover">
-                                                        <span class="hover-content">
-                                                            <span class="image-hover-title">{{$project->title}}</span>
-                                                            @if(isset($project->location) && isset($project->date))
-                                                            <span class="image-hover-subtitle">{{$project->location}} | 
-                                                            {!! date('d/M/y', strtotime($project->date)) !!}  </span>
-                                                            @elseif (isset($project->location))
-                                                            <span class="image-hover-subtitle">{{$project->location}}</span>
-                                                            @elseif (isset($project->date))
-                                                            <span class="image-hover-subtitle">{!! date('d/M/y', strtotime($project->date)) !!} </span>
-                                                            @else
-                                                            <span class="image-hover-subtitle">{{$project->name}}</span>
-                                                            @endif
-                                                            <span class="image-hover-para">{{$project->subtitle}}</span>
-                                                            <a href="/project?id={{$project->id}}" class="btn btn-default" title="">View</a>
-                                                        </span>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 filter-content">
+                        <ul class="portfolio-colorful portfolio-wrapper grid grid-loading grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large text-center" data-opacity="0.9" data-backgroundcolor="#58bc4b,#d9a026,#813ea9,#82bc13,#214bdf,#e28e1a,#04c05c,#e52d8c,#029bd3,#e77345,#0575c4,#e2731a,#9fb012,#13c7b8,#e8074c,">
+                        @foreach ($projects as $project)      
+                        <li class="grid-sizer"></li>
+                            <!-- start portfolio item -->
+                            <li class="grid-item {{$project->type}} grid-item-double wow animate__fadeIn">
+                                <a href="single-project-page-01.html">
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image">
+                                            <img src="assets/img/projects/{{$project->url}}" alt="" />
+                                            <div class="portfolio-hover bg-transparent-white justify-content-between d-flex flex-row align-items-end padding-3-rem-tb padding-4-rem-lr xl-padding-2-rem-all">
+                                                <div class="text-start">
+                                                    <div class="alt-font text-small text-white text-uppercase margin-5px-bottom opacity-7 move-top-bottom-self"><span>{{$project->title}}</span></div>
+                                                    <h6 class="font-weight-600 alt-font text-white text-uppercase no-margin-bottom move-bottom-top-self"><span>{{$project->subtitle}}</span></h6>
                                                 </div>
-</div>
-</div>
-              <div class="col-lg-4 col-md-4 col-sm-12 {{$project->height}} portfolio-item filter-{{$project->type}}" >
-                <div class="text-place">
-                <p >Be it master plans, buildings or interiors, <sup>our Process focuses on innovation</sup> that enriches our Clients’ lives and businesses, and hopes to add value to all it touches.</p>
-</div>
-           
+                                                <span class="position-absolute top-50px right-50px move-right-left lg-top-30px lg-right-30px sm-top-20px sm-right-20px"><i class="ti-arrow-top-right icon-small text-white"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            @endforeach
+                            <!-- end portfolio item -->
+                        </ul>
+                    </div>
                 </div>
-            @endif
-            @elseif ($project->next_horizontal)
-            
-            <div class="{{$project->class}} full-height  portfolio-item filter-{{$project->type}} image-type-{{$project->image_dim}}" >
-              <div class="row" style="margin:0;padding:0;">
-                <div class="col-md-12 sol-sm-12 half-height">
-                <div class="portfolio-wrap background-class" style="background-image: url(assets/img/projects/{{$project->url}});height:100%;background-position:center;">
-                
-                <div class="image-hover-content black-hover">
-                                                        <span class="hover-content">
-                                                            <span class="image-hover-title">{{$project->title}}</span>
-                                                            @if(isset($project->location) && isset($project->date))
-                                                            <span class="image-hover-subtitle">{{$project->location}} | 
-                                                            {!! date('d/M/y', strtotime($project->date)) !!}  </span>
-                                                            @elseif (isset($project->location))
-                                                            <span class="image-hover-subtitle">{{$project->location}}</span>
-                                                            @elseif (isset($project->date))
-                                                            <span class="image-hover-subtitle">{!! date('d/M/y', strtotime($project->date)) !!} </span>
-                                                            @else
-                                                            <span class="image-hover-subtitle">{{$project->name}}</span>
-                                                            @endif
-                                                            <span class="image-hover-para">{{$project->subtitle}}</span>
-                                                            <a href="/project?id={{$project->id}}" class="btn btn-default" title="">View</a>
-                                                        </span>
-                                                </div>
-              </div>
-</div>
-              <div class="col-md-12 col-sm-12 half-height" style="padding-top: 5px;">
-              <div class="portfolio-wrap background-class" style="background-image: url(assets/img/projects/{{$project->nextPro->url}});height:100%;background-position:center;">
-                
-                <div class="image-hover-content black-hover">
-                                                        <span class="hover-content">
-                                                            <span class="image-hover-title">{{$project->nextPro->title}}</span>
-                                                            @if(isset($project->nextPro->location) && isset($project->nextPro->date))
-                                                            <span class="image-hover-subtitle">{{$project->nextPro->location}} | 
-                                                            {!! date('d/M/y', strtotime($project->nextPro->date)) !!}  </span>
-                                                            @elseif (isset($project->nextPro->location))
-                                                            <span class="image-hover-subtitle">{{$project->nextPro->location}}</span>
-                                                            @elseif (isset($project->nextPro->date))
-                                                            <span class="image-hover-subtitle">{!! date('d/M/y', strtotime($project->nextPro->date)) !!} </span>
-                                                            @else
-                                                            <span class="image-hover-subtitle">{{$project->nextPro->name}}</span>
-                                                            @endif
-                                                            <span class="image-hover-para">{{$project->nextPro->subtitle}}</span>
-                                                            <a href="/project?id={{$project->nextPro->id}}" class="btn btn-default" title="">View</a>
-                                                        </span>
-                                                </div>
-              </div>
             </div>
-              
-              </div>
-            </div>
-            @else
-            <div class="{{$project->class}} {{$project->height}} portfolio-item filter-{{$project->type}} image-type-{{$project->image_dim}}" >
-              <div class="portfolio-wrap background-class" style="background-image: url(assets/img/projects/{{$project->url}});height:100%;background-position:center;">
-                
-                <div class="image-hover-content black-hover">
-                                                        <span class="hover-content">
-                                                            <span class="image-hover-title">{{$project->title}}</span>
-                                                            @if(isset($project->location) && isset($project->date))
-                                                            <span class="image-hover-subtitle">{{$project->location}} | 
-                                                            {!! date('d/M/y', strtotime($project->date)) !!}  </span>
-                                                            @elseif (isset($project->location))
-                                                            <span class="image-hover-subtitle">{{$project->location}}</span>
-                                                            @elseif (isset($project->date))
-                                                            <span class="image-hover-subtitle">{!! date('d/M/y', strtotime($project->date)) !!} </span>
-                                                            @else
-                                                            <span class="image-hover-subtitle">{{$project->name}}</span>
-                                                            @endif
-                                                            <span class="image-hover-para">{{$project->subtitle}}</span>
-                                                            <a href="/project?id={{$project->id}}" class="btn btn-default" title="">View</a>
-                                                        </span>
-                                                </div>
-              </div>
-            </div>
-          @endif
-
-          
-          @endforeach
-        </div>
-        </div>
-        </div>
-      </section>
-
-      <div class="fixed-circle">
-      <a href="{{ url('/text-projects') }}"><i class="icofont-listing-box"></i></a>
-      </div>
-
+        </section>
 @endsection

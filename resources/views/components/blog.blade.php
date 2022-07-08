@@ -21,7 +21,7 @@
                                         <a href="blog-post-layout-01.html" class="blog-comment text-extra-small text-extra-dark-gray-hover"><i class="far fa-comment"></i><span>52</span></a>
                                     </div>
                                     <div class="blog-post-image">
-                                        <a href="blog-post-layout-01.html" title=""><img src="https://via.placeholder.com/800x580" alt=""></a>
+                                        <a href="blog-post-layout-01.html" title=""><img src="assets/img/blog-1.jpg" alt=""></a>
                                         <div class="alt-font blog-category"><a href="blog-masonry.html" class="text-uppercase text-extra-dark-gray-hover">Fashion</a></div>
                                     </div>
                                     <div class="post-details padding-3-rem-lr padding-2-half-rem-tb lg-padding-2-rem-all md-padding-2-half-rem-tb md-padding-3-rem-lr">
@@ -40,7 +40,7 @@
                                         <a href="blog-post-layout-02.html" class="blog-comment text-extra-small text-extra-dark-gray-hover"><i class="far fa-comment"></i><span>40</span></a>
                                     </div>
                                     <div class="blog-post-image">
-                                        <a href="blog-post-layout-02.html" title=""><img src="https://via.placeholder.com/800x580" alt=""></a>
+                                        <a href="blog-post-layout-02.html" title=""><img src="assets/img/blog-2.jpg" alt=""></a>
                                         <div class="alt-font blog-category"><a href="blog-masonry.html" class="text-uppercase text-extra-dark-gray-hover">Lifestyle</a></div>
                                     </div>
                                     <div class="post-details padding-3-rem-lr padding-2-half-rem-tb lg-padding-2-rem-all md-padding-2-half-rem-tb md-padding-3-rem-lr">
@@ -59,7 +59,7 @@
                                         <a href="blog-post-layout-03.html" class="blog-comment text-extra-small text-extra-dark-gray-hover"><i class="far fa-comment"></i><span>42</span></a>
                                     </div>
                                     <div class="blog-post-image">
-                                        <a href="blog-post-layout-03.html" title=""><img src="https://via.placeholder.com/800x580" alt=""></a>
+                                        <a href="blog-post-layout-03.html" title=""><img src="assets/img/blog-3.jpg" alt=""></a>
                                         <div class="alt-font blog-category"><a href="blog-masonry.html" class="text-uppercase text-extra-dark-gray-hover">Design</a></div>
                                     </div>
                                     <div class="post-details padding-3-rem-lr padding-2-half-rem-tb lg-padding-2-rem-all md-padding-2-half-rem-tb md-padding-3-rem-lr">

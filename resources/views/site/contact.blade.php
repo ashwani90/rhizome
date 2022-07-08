@@ -4,77 +4,171 @@
 
 @section('content')
     @parent
-    <section id="breadcrumbs" class="breadcrumbs pt-1">
-    <div class="section-title pl-5">
-              <p>Contact us</p>
-            </div>
-          
-        </section>
-    <section id="contact" class="contact" style="margin-top: -50px;">
-          <div class="contact-container">
-          <div class="row">
-          <div class="col-lg-4 col-sm-12 contact-comp">
-          <div class="pl-4 pt-2">
-                                      <div class="info">
-                                        <div class="address">
-                                          <i class="icofont-google-map"></i>
-                                          <h4>Location:</h4>
-                                          <p>P 2/21, DLF Phase 2, Gurugram, Haryana 122001</p>
-                                        </div>
-
-                                        <div class="email">
-                                          <i class="icofont-envelope"></i>
-                                          <h4>Email:</h4>
-                                          <p>info@studiorhizome.com</p>
-                                        </div>
-
-                                        <div class="phone">
-                                          <i class="icofont-phone"></i>
-                                          <h4>Call:</h4>
-                                          <p>+91 01244351477</p>
-                                        </div>
-
-                                      </div>
-
-                                    </div>
-                                    </div>
-            <div class="col-lg-8 col-sm-12 contact-comp">
-            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.7747818849425!2d77.08510031554358!3d28.486328497432797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce402455385a9%3A0xf232434f358e9d5a!2sStudio%20Rhizome!5e0!3m2!1sen!2sin!4v1633022847818!5m2!1sen!2sin" frameborder="0" allowfullscreen loading="lazy"></iframe>
-            </div>
-            </div>
-
-          </div>
-        </section><!-- End Contact Section -->
-         <section class="form-container contact" style"margin: 0!important; padding: 0!important;">
-                    <div class="container">
-
-                    <form action="/send_mail" method="post" role="form" class="php-email-form">
-                    @csrf
-                                      <div class="form-row">
-                                        <div class="col-md-6 form-group">
-                                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                          <div class="validate"></div>
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                          <div class="validate"></div>
-                                        </div>
-                                      </div>
-                                      <div class="form-group">
-                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                        <div class="validate"></div>
-                                      </div>
-                                      <div class="form-group">
-                                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                        <div class="validate"></div>
-                                      </div>
-                                      <div class="mb-3">
-                                        <div class="loading">Loading</div>
-                                        <div class="error-message"></div>
-                                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                                      </div>
-                                      <div class="text-center"><button type="submit">Send Message</button></div>
-                                    </form>
+    <section class="half-section bg-light-gray parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg2.jpg');padding-bottom:0;">
+            <div class="container">
+                <div class="row align-items-stretch justify-content-center extra-small-screen" style="height: 150px;">
+                    <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">
+                        <h2 class="text-extra-dark-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Contact Us</h2>
                     </div>
-                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light-gray" style="padding:0 0 20px 0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- start fancy text box item -->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 md-margin-30px-bottom xs-margin-15px-bottom">
+                        <div class="feature-box feature-box-hide-show-hover bg-white border-radius-6px overflow-hidden box-shadow-large box-shadow-extra-large-hover">
+                            <div class="feature-box-move-bottom-top padding-5-rem-lr padding-15px-tb lg-padding-2-half-rem-lr md-padding-4-half-rem-lr">
+                                <div class="feature-box-icon">
+                                    <i class="line-icon-Mail-Read d-block icon-medium text-fast-blue margin-25px-bottom"></i>
+                                </div>
+                                <div class="feature-box-content last-paragraph-no-margin">
+                                    <span class="text-extra-dark-gray text-extra-medium d-block alt-font font-weight-500">How can we help you?</span>
+                                    <a href="mailto:info@yourdomain.com" class="alt-font text-decoration-underline">Send us an email</a>
+                                </div>
+                                <div class="move-bottom-top margin-10px-top last-paragraph-no-margin">
+                                    <p>Lorem ipsum is simply dummy text of the printing industry</p>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay"></div>
+                        </div>
+                    </div>
+                    <!-- end fancy text box item -->
+                    <!-- start fancy text box item -->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 md-margin-30px-bottom xs-margin-15px-bottom">
+                        <div class="feature-box feature-box-hide-show-hover bg-white border-radius-6px overflow-hidden box-shadow-large box-shadow-extra-large-hover">
+                            <div class="feature-box-move-bottom-top padding-5-rem-lr padding-15px-tb lg-padding-2-half-rem-lr md-padding-4-half-rem-lr">
+                                <div class="feature-box-icon">
+                                    <i class="line-icon-Phone-2 d-block icon-medium text-fast-blue margin-25px-bottom"></i>
+                                </div>
+                                <div class="feature-box-content last-paragraph-no-margin">
+                                    <span class="text-extra-dark-gray text-extra-medium d-block alt-font font-weight-500">Feel free to get in touch?</span>
+                                    <a href="#" class="alt-font text-decoration-underline">Give us a call toady</a>
+                                </div>
+                                <div class="move-bottom-top margin-10px-top last-paragraph-no-margin">
+                                    <p>Lorem ipsum is simply dummy text of the printing industry</p>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay"></div>
+                        </div>
+                    </div>
+                    <!-- end fancy text box item -->
+                    <!-- start fancy text box item -->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8">
+                        <div class="feature-box feature-box-hide-show-hover bg-white border-radius-6px overflow-hidden box-shadow-large box-shadow-extra-large-hover">
+                            <div class="feature-box-move-bottom-top padding-5-rem-lr padding-15px-tb lg-padding-2-half-rem-lr md-padding-4-half-rem-lr">
+                                <div class="feature-box-icon">
+                                    <i class="line-icon-Approved-Window d-block icon-medium text-fast-blue margin-25px-bottom"></i>
+                                </div>
+                                <div class="feature-box-content last-paragraph-no-margin">
+                                    <span class="text-extra-dark-gray text-extra-medium d-block alt-font font-weight-500">Ready to request a quote?</span>
+                                    <a href="#project" class="alt-font text-decoration-underline section-link">Describe your project</a>
+                                </div>
+                                <div class="move-bottom-top margin-10px-top last-paragraph-no-margin">
+                                    <p>Lorem ipsum is simply dummy text of the printing industry</p>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay"></div>
+                        </div>
+                    </div>
+                    <!-- end fancy text box item -->
+                </div>
+            </div>
+        </section>
+        <section class="wow animate__fadeIn" style="padding:30px 0 30px 0;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-xl-6 col-lg-7 text-center margin-4-half-rem-bottom md-margin-3-rem-bottom">
+                                <h4 class="alt-font font-weight-600 text-extra-dark-gray">How we can help you?</h4>
+                            </div>
+                            <div class="col-12">
+                                <!-- start contact form -->
+                                <form action="email-templates/contact-form.php" method="post">
+                                    <div class="row row-cols-1 row-cols-md-2">
+                                        <div class="col margin-4-rem-bottom sm-margin-25px-bottom">
+                                            <input class="medium-input bg-white margin-25px-bottom required" type="text" name="name" placeholder="Your name">
+                                            <input class="medium-input bg-white margin-25px-bottom required" type="email" name="email" placeholder="Your email address">
+                                            <input class="medium-input bg-white mb-0" type="tel" name="phone" placeholder="Your mobile">
+                                        </div>
+                                        <div class="col margin-4-rem-bottom sm-margin-10px-bottom">
+                                            <textarea class="medium-textarea h-200px bg-white" name="comment" placeholder="Your message"></textarea>
+                                        </div>
+                                        <div class="col text-start sm-margin-30px-bottom">
+                                            <input type="checkbox" name="terms_condition" id="terms_condition" value="1" class="terms-condition d-inline-block align-top w-auto mb-0 margin-5px-top margin-10px-right">
+                                            <label for="terms_condition" class="text-small d-inline-block align-top w-85">I accept the terms & conditions and I understand that my data will be hold securely in accordance with the <a href="privacy.html" target="_blank" class="text-decoration-underline text-extra-dark-gray">privacy policy</a>.</label>
+                                        </div>
+                                        <div class="col text-center text-md-end">
+                                            <input type="hidden" name="redirect" value="">
+                                            <button class="btn btn-medium btn-gradient-light-purple-light-orange mb-0 submit" type="submit">Send Message</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-results d-none"></div>
+                                </form>
+                                <!-- end contact form -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-extra-dark-gray fancy-box-background big-section cover-background" style="background-image: url('https://via.placeholder.com/1929x807');padding:50px 0 30px 0;" >
+            <div class="opacity-very-light opacity-0-half z-index-minus-1 bg-gradient-sky-blue-pink"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-7 col-md-9 text-center margin-3-rem-bottom sm-margin-3-half-rem-bottom">
+                        <h4 class="alt-font text-white font-weight-600">Rhizome offices round the world</h4>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center">
+                    <!-- start fancy text box item -->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 fancy-box-item md-margin-30px-bottom xs-margin-15px-bottom">
+                        <div class="bg-banner-image cover-background" style="background-image: url(assets/img/india.png)"><div class="opacity-medium bg-gradient-sky-blue-pink"></div></div>
+                        <div class="feature-box feature-box-left-icon-middle feature-box-dark-hover padding-4-rem-lr padding-3-rem-tb bg-white border-radius-5px overflow-hidden lg-padding-3-rem-lr">
+                            <div class="feature-box-icon margin-15px-right">
+                                <img src="assets/img/india.png" class="w-35px d-block" alt="contact us img flag-01" />
+                            </div>
+                            <div class="feature-box-content">
+                                <span class="alt-font d-block font-weight-500 text-extra-dark-gray">India - Gurugram</span>
+                            </div>
+                            <div class="bg-medium-gray margin-20px-tb w-100 h-1px"></div>
+                            <p class="margin-10px-bottom w-85 lg-w-100 sm-w-75 xs-w-85">P 2/21, DLF Phase 2, Gurugram, Haryana 122001</p>
+                            <span class="d-block font-weight-500 margin-10px-top text-extra-dark-gray line-height-20px w-100">Phone: +91 01244351477</span>
+                            <a href="mailto:info@yourdomain.com" class="text-fast-blue text-decoration-underline">info@studiorhizome.com</a>
+                            <div class="feature-box-overlay bg-extra-dark-gray"></div>
+                        </div>
+                    </div>
+                    <!-- end fancy text box item -->
+                    <!-- start fancy text box item -->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 fancy-box-item md-margin-30px-bottom xs-margin-15px-bottom">
+                        <div class="bg-banner-image cover-background" style="background-image: url(assets/img/australia.png)"><div class="opacity-medium bg-gradient-sky-blue-pink"></div></div>
+                        <div class="feature-box feature-box-left-icon-middle feature-box-dark-hover padding-4-rem-lr padding-3-rem-tb bg-white border-radius-5px overflow-hidden lg-padding-3-rem-lr">
+                            <div class="feature-box-icon margin-15px-right">
+                                <img src="assets/img/australia.png" class="w-35px d-block" alt="contact us img flag-02" />
+                            </div>
+                            <div class="feature-box-content">
+                                <span class="alt-font d-block font-weight-500 text-extra-dark-gray">Australia - Sydney</span>
+                            </div>
+                            <div class="bg-medium-gray margin-20px-tb w-100 h-1px"></div>
+                            <p class="margin-10px-bottom w-85 lg-w-100 sm-w-75 xs-w-85">P 2/21, DLF Phase 2, Gurugram, Haryana 122001</p>
+                            <span class="d-block font-weight-500 margin-10px-top text-extra-dark-gray line-height-20px w-100">Phone: +91 01244351477</span>
+                            <a href="mailto:info@yourdomain.com" class="text-fast-blue text-decoration-underline">info@studiorhizome.com</a>
+                            <div class="feature-box-overlay bg-extra-dark-gray"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-0 wow animate__fadeIn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col h-600px p-0 md-h-450px xs-h-300px">
+                        <iframe class="w-100 h-100 filter-grayscale-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.7747818849425!2d77.08510031554358!3d28.486328497432797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce402455385a9%3A0xf232434f358e9d5a!2sStudio%20Rhizome!5e0!3m2!1sen!2sin!4v1633022847818!5m2!1sen!2sin"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
 @endsection

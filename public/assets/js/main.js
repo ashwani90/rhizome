@@ -581,13 +581,13 @@
     /****** Colorful portfolio ******/
     if ( $( '.portfolio-colorful' ).length > 0 ) {
         var gridItemCount   = $( '.portfolio-colorful' ).find( '.grid-item' ).length,
-            colorList       = $( '.portfolio-colorful' ).attr( 'data-backgroundcolor' ) || '#2e94eb',
-            colorOpacity    = $( '.portfolio-colorful' ).attr( 'data-opacity' ) || 1,
+            colorList       = $( '.portfolio-colorful' ).attr( 'data-backgroundcolor' ) || 'black',
+            colorOpacity    = $( '.portfolio-colorful' ).attr( 'data-opacity' ) || .6,
             colorArray      = colorList.split( ',' ),
             colorCount      = colorArray.length;
         for ( var gridCount = 0; gridCount < gridItemCount; gridCount++ ) {
             var color   = colorArray[gridCount];
-            var rgbaCol = 'rgba(' + parseInt( color.slice(-6, -4), 16 ) + ',' + parseInt( color.slice(-4, -2), 16 ) + ',' + parseInt( color.slice(-2), 16 ) + ',' + colorOpacity + ')';
+            var rgbaCol = 'rgba(0,0,0,.7)';
             $( '.portfolio-colorful' ).find( '.portfolio-hover:eq(' + gridCount + ')' ).css('background-color', rgbaCol );
             if ( colorCount < gridItemCount ) {
                 colorArray.push( colorArray[gridCount] );

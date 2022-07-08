@@ -2,7 +2,7 @@
             <div id="remove_wheel" class="swiper-container vertical-white-move slider-vertical swiper-container-vertical" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 0, "direction": "vertical", "autoplay": { "delay": 2000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-vertical-pagination", "clickable": true }, "allowTouchMove": true, "mousewheel": false, "loop": true, "iOSEdgeSwipeThreshold": 200, "keyboard": { "enabled": true, "onlyInViewport": true } }' data-slider-md-direction="horizontal" data-slider-number-pagination="1">
                 <div class="swiper-wrapper">
                     <!-- start swiper slide -->
-                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/slide/banner_1.png')">
+                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/slide/banner_1.png'); opacity: 0.9;">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -19,7 +19,7 @@
                     </div>
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
-                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/slide/banner_2.png')">
+                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/slide/banner_2.png'); opacity: 0.9;">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -36,7 +36,7 @@
                     </div>
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
-                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/slide/banner_3.png')">
+                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/slide/banner_3.png'); opacity: 0.9;">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -53,7 +53,7 @@
                     </div>
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
-                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/slide/banner_4.jpg')">
+                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/slide/banner_4.jpg'); opacity: 0.9;">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -70,7 +70,7 @@
                     </div>
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
-                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/banner_5.jpg')">
+                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/banner_5.jpg'); opacity: 0.9;">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -86,7 +86,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/banner_6.jpg')">
+                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/banner_6.jpg'); opacity: 0.9;">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -102,7 +102,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/banner_7.jpg')">
+                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/banner_7.jpg'); opacity: 0.9;">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">

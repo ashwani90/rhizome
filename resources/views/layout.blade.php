@@ -21,19 +21,14 @@
     </head>
     <body class="h-100">
     @include('components.header')
-    <div class="main-content">
-    @include('components.carousel')
     
-
-
-        <!-- start page loader -->
-        <div class="page-loader"></div>
         <!-- end page loader -->
         <!-- start header -->
         <!-- end header -->
         <!-- start slider section -->
         @yield('content')
-</div>
+
+        
         @include('components.footer')
         <!-- end slider section -->
         <!-- start scroll to top -->
