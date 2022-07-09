@@ -4926,3 +4926,7 @@ input[type="checkbox"].error { box-shadow: 0px 0px 0px 1px rgb(255 0 0), 1px 1px
 .gdpr-container { position: absolute; bottom: 0; width: 100%; padding: 20px 20px; }
 .gdpr-container .gdpr-content { display: inline-block; margin-right: 20px;}
 .gdpr-container .btn { display: inline-block; }
+
+.navbar-brand > img {
+    max-height: 60px;
+}

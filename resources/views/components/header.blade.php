@@ -4,12 +4,12 @@
                     <div class="container-fluid h-100px md-h-70px">
                         <div class="col-6 col-lg-2 me-auto ps-lg-0">
                             <a class="navbar-brand" href="{{url('/')}}">
-                            <img src="assets/img/logo6.png" data-at2x="assets/img/logo6.png" class="default-logo" alt="">
-                            <img src="assets/img/logo6.png" data-at2x="assets/img/logo6.png" class="alt-logo" alt="">
-                            <img src="assets/img/logo6.png" data-at2x="assets/img/logo6.png" class="mobile-logo" alt="">
+                            <img src="assets/img/logo6.png" data-at2x="assets/img/logo6.png" class="default-logo" alt="" style="max-height: 60px;">
+                            <img src="assets/img/logo6.png" data-at2x="assets/img/logo6.png" class="alt-logo" alt="" style="max-height: 60px;">
+                            <img src="assets/img/logo6.png" data-at2x="assets/img/logo6.png" class="mobile-logo" alt="" style="max-height: 60px;">
                             </a>
                         </div>
-                        <div class="col-auto text-end">
+                        <div class="col-auto text-end" style="transform: scale(1.5); margin-right: 15px;">
                             <div class="header-push-button">
                                 <a href="javascript:void(0);" class="push-button ">
                                     <span></span>
