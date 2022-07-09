@@ -38,6 +38,20 @@
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/theme-vendors.min.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
-        
+        <script>
+
+            // TODO: need background color of pixel point
+//             $(window).on("scroll", function(ev) {
+//   var x = 50;
+//   var y = 32;
+
+//   html2canvas(document.body).then(function(canvas) {
+//      var ctx = canvas.getContext('2d');
+//      var p = ctx.getImageData(x, y, 1, 1).data; 
+//      var hex = "#" + ("000000" + rgbToHex(p[0], p[1], p[2])).slice(-6);
+//      console.log(hex);
+//   });
+// });
+            </script>
     </body>
 </html>

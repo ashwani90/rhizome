@@ -2,8 +2,8 @@
             <div id="remove_wheel" class="swiper-container vertical-white-move slider-vertical swiper-container-vertical" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 0, "direction": "vertical", "autoplay": { "delay": 2000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-vertical-pagination", "clickable": true }, "allowTouchMove": true, "mousewheel": false, "loop": true, "iOSEdgeSwipeThreshold": 200, "keyboard": { "enabled": true, "onlyInViewport": true } }' data-slider-md-direction="horizontal" data-slider-number-pagination="1">
                 <div class="swiper-wrapper">
                     <!-- start swiper slide -->
-                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/banner28.jpg'); opacity: 0.9;">
-                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
+                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/banner28.jpg');">
+                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="background-color:black; opacity: 0.3;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
                                     <a href="single-project-page-01.html" class="w-30 xl-w-40 md-w-50 xs-w-80"><h1 class="alt-font font-weight-300 text-white mb-0"><span class="font-weight-600 d-block">Leather</span> collection</h1></a>
@@ -19,8 +19,8 @@
                     </div>
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
-                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/banner35.jpg'); opacity: 0.9;">
-                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
+                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/banner35.jpg'); ">
+                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="background-color:black; opacity: 0.3;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
                                     <a href="single-project-page-02.html" class="w-30 xl-w-40 md-w-50 xs-w-80"><h1 class="alt-font font-weight-300 text-white mb-0"><span class="font-weight-600 d-block">Shobon</span> london</h1></a>
@@ -36,8 +36,8 @@
                     </div>
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
-                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/banner25.jpg'); opacity: 0.9;">
-                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
+                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/banner25.jpg'); ">
+                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="background-color:black; opacity: 0.3;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
                                     <a href="single-project-page-03.html" class="w-30 xl-w-40 md-w-50 xs-w-80"><h1 class="alt-font font-weight-300 text-white mb-0"><span class="font-weight-600 d-block">Timelee</span> watches</h1></a>
@@ -53,8 +53,8 @@
                     </div>
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
-                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/banner72.jpg'); opacity: 0.9;">
-                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
+                    <div class="swiper-slide cover-background mb-0" style="background-image: url('assets/img/banner72.jpg'); ">
+                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="background-color:black; opacity: 0.3;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
                                     <a href="single-project-page-04.html" class="w-30 xl-w-40 md-w-50 xs-w-80"><h1 class="alt-font font-weight-300 text-white mb-0"><span class="font-weight-600 d-block">Forward</span> collection</h1></a>
@@ -70,8 +70,8 @@
                     </div>
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
-                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/banner73.jpg'); opacity: 0.9;">
-                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
+                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/banner73.jpg'); ">
+                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="background-color:black; opacity: 0.3;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
                                     <a href="single-project-page-05.html" class="w-30 xl-w-40 md-w-50 xs-w-80"><h1 class="alt-font font-weight-300 text-black mb-0"><span class="font-weight-600 d-block">Bodytite</span> clothes</h1></a>
@@ -86,8 +86,8 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/banner_6.jpg'); opacity: 0.9;">
-                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
+                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/banner_6.jpg'); ">
+                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="background-color:black; opacity: 0.3;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
                                     <a href="single-project-page-05.html" class="w-30 xl-w-40 md-w-50 xs-w-80"><h1 class="alt-font font-weight-300 text-white mb-0"><span class="font-weight-600 d-block">Bodytite</span> clothes</h1></a>
@@ -102,8 +102,8 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/banner_7.jpg'); opacity: 0.9;">
-                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
+                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/banner_7.jpg'); ">
+                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="background-color:black; opacity: 0.3;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
                                     <a href="single-project-page-05.html" class="w-30 xl-w-40 md-w-50 xs-w-80"><h1 class="alt-font font-weight-300 text-black mb-0"><span class="font-weight-600 d-block">Bodytite</span> clothes</h1></a>

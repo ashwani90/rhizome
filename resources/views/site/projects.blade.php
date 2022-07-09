@@ -42,7 +42,12 @@
                         @foreach ($projects as $project)      
                         <li class="grid-sizer"></li>
                             <!-- start portfolio item -->
+                            @if ($project->is_half == 1)
+                            <li class="grid-item {{$project->type}} wow animate__fadeIn">
+                            @else
                             <li class="grid-item {{$project->type}} grid-item-double wow animate__fadeIn">
+                            @endif
+                            
                                 <a href="single-project-page-01.html">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image">
