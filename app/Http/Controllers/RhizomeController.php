@@ -38,6 +38,7 @@ class RhizomeController extends Controller
     public function index()
     {
         $projects = DB::table('projects')->where('priority', '>', 0)->where('id', '<>', 61)->orderBy('priority', 'desc')->limit(13)->get();
+        $persons = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->get();
         // $data = $this->getInstagramPosts(3);
 
         $i=0;
@@ -53,7 +54,7 @@ class RhizomeController extends Controller
             $i++;
         }
         
-        return view('site.index', ['projects' => $projects]);
+        return view('site.index', ['projects' => $projects, "persons" => $persons]);
     }
 
     /**
