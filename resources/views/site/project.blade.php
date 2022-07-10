@@ -4,7 +4,7 @@
 
 @section('content')
     @parent
-    <section class="cover-background h-700px sm-h-400px" style="background-image: url(assets/img/projects_all/{{$images[0]->url}});background-position: center;
+    <section class="cover-background h-700px sm-h-400px" style="background-image: url(assets/img/{{$images[0]->url}});background-position: center;
     background-repeat: no-repeat;
     background-size: cover;"></section>
         <!-- end banner section -->
@@ -37,9 +37,9 @@
         <section class="py-0 wow animate__fadeIn">
             <div class="container-fluid px-0">
                 <div class="row row-cols-1 row-cols-md-3 text-center g-0">
-                    <div class="col sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s"><img src="assets/img/projects_all/{{$images[1]->url}}" class="w-100 h-400" alt=""/></div>
-                    <div class="col sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.4s"><img src="assets/img/projects_all/{{$images[2]->url}}" class="w-100 h-400" alt=""/></div>
-                    <div class="col wow animate__fadeIn" data-wow-delay="0.6s"><img src="assets/img/projects_all/{{$images[3]->url}}" class="w-100 h-400" alt=""/></div>
+                    <div class="col sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s"><img src="assets/img/{{$images[1]->url}}" class="w-100 h-400" alt=""/></div>
+                    <div class="col sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.4s"><img src="assets/img/{{$images[2]->url}}" class="w-100 h-400" alt=""/></div>
+                    <div class="col wow animate__fadeIn" data-wow-delay="0.6s"><img src="assets/img/{{$images[3]->url}}" class="w-100 h-400" alt=""/></div>
                 </div>
             </div>
         </section>
@@ -71,10 +71,10 @@
                             <li class="grid-sizer"></li>
                             <!-- start lightbox gallery item -->
                             <li class="grid-item grid-item-double wow animate__fadeIn">
-                                <a href="assets/img/projects_all/{{$images[1]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                                <a href="assets/img/{{$images[1]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/projects_all/{{$images[1]->url}}" alt="" />
+                                            <img src="assets/img/{{$images[1]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -100,10 +100,10 @@
                             <!-- end lightbox gallery item -->
                             <!-- start lightbox gallery item -->
                             <li class="grid-item wow animate__fadeIn" data-wow-delay="0.2s">
-                                <a href="assets/img/projects_all/{{$images[1]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                                <a href="assets/img/{{$images[1]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/projects_all/{{$images[1]->url}}" alt="" />
+                                            <img src="assets/img/{{$images[1]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -114,10 +114,10 @@
                             <!-- end lightbox gallery item -->
                             <!-- start lightbox gallery item -->
                             <li class="grid-item wow animate__fadeIn" data-wow-delay="0.4s">
-                                <a href="assets/img/projects_all/{{$images[2]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                                <a href="assets/img/{{$images[2]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/projects_all/{{$images[2]->url}}" alt="" />
+                                            <img src="assets/img/{{$images[2]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -142,10 +142,10 @@
                             <!-- start lightbox gallery item -->
                             @if (count($images) > 4)
                             <li class="grid-item grid-item-double wow animate__fadeIn">
-                                <a href="assets/img/projects_all/{{$images[4]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                                <a href="assets/img/{{$images[4]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/projects_all/{{$images[4]->url}}" alt="" />
+                                            <img src="assets/img/{{$images[4]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -158,10 +158,10 @@
                             <!-- end lightbox gallery item -->
                             <!-- start lightbox gallery item -->
                             <li class="grid-item wow animate__fadeIn" data-wow-delay="0.2s">
-                                <a href="assets/img/projects_all/{{$images[5]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                                <a href="assets/img/{{$images[5]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/projects_all/{{$images[5]->url}}" alt="" />
+                                            <img src="assets/img/{{$images[5]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -172,10 +172,10 @@
                             <!-- end lightbox gallery item -->
                             <!-- start lightbox gallery item -->
                             <li class="grid-item wow animate__fadeIn" data-wow-delay="0.4s">
-                                <a href="assets/img/projects_all/{{$images[6]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                                <a href="assets/img/{{$images[6]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/projects_all/{{$images[6]->url}}" alt="" />
+                                            <img src="assets/img/{{$images[6]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -210,7 +210,7 @@
                                 <a href="/project?id={{$project->id}}">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image" >
-                                            <img src="assets/img/projects/{{$project->url}}" alt="" />
+                                            <img src="assets/img/{{$project->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-between d-flex flex-row align-items-end padding-3-rem-tb padding-4-rem-lr xl-padding-2-rem-all">
                                                 <div class="text-start">
                                                     <div class="alt-font text-small text-white text-uppercase margin-5px-bottom move-top-bottom-self"><span>{{$project->title}}</span></div>

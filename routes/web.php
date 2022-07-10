@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\RhizomeController;
+use App\Admin\Controllers\ProjectController;
+use App\Admin\Controllers\ProjectImageController;
+use App\Admin\Controllers\TeamController;
 
 Route::get('/', [RhizomeController::class, 'index'])->name('home');
 Route::get('/projects', [RhizomeController::class, 'projects'])->name('projects');
@@ -14,6 +17,10 @@ Route::get('/project', [RhizomeController::class, 'project'])->name('project');
 Route::get('/text-projects', [RhizomeController::class, 'textPro'])->name('text_projectst');
 Route::get('/social-posts', [RhizomeController::class, 'instaPosts'])->name('social_posts');
 Route::post('/send_mail', [RhizomeController::class, 'send_mail'])->name('send_mail');
+
+Route::resource('admin/projects', ProjectController::class);
+Route::resource('admin/project-images', ProjectImageController::class);
+Route::resource('admin/team', TeamController::class);
 /*
 |--------------------------------------------------------------------------
 | Web Routes

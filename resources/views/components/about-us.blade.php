@@ -55,7 +55,7 @@ things, interbeing, intermezzo.”</p>
                     <div class="col team-style-02 text-center">
                         <figure>
                             <div class="team-member-image border-radius-5px overflow-hidden modal-popup" style="cursor:pointer;" href="#team_popup{{$i}}">
-                                <img alt="" src="assets/img/team/{{$persons[$i]->img}}" style="height:350px;">
+                                <img alt="" src="assets/img/{{$persons[$i]->img}}" style="height:350px;">
                                 
                             </div>
                             <figcaption class="team-member-position text-center padding-35px-tb sm-padding-25px-tb">
@@ -82,7 +82,7 @@ things, interbeing, intermezzo.”</p>
                                                 <p class="margin-30px-bottom xs-margin-20px-bottom">{{$persons[$i]->text}}</p>
                                                 
                                             </div>
-                                            <div class="col-12 col-sm-5 cover-background order-1 order-sm-2 xs-h-150px" style="background-image:url('assets/img/team/{{$persons[$i]->img}}');">
+                                            <div class="col-12 col-sm-5 cover-background order-1 order-sm-2 xs-h-150px" style="background-image:url('assets/img/{{$persons[$i]->img}}');">
                                                 <button title="Close (Esc)" type="button" class="mfp-close">×</button>
                                             </div>
                                         </div>
