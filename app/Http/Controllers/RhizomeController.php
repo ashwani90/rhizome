@@ -39,6 +39,7 @@ class RhizomeController extends Controller
     {
         $projects = DB::table('projects')->where('priority', '>', 0)->where('id', '<>', 61)->orderBy('priority', 'desc')->limit(13)->get();
         $persons = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->get();
+        $blogs = DB::table('blogs')->orderBy('id')->limit(3)->get();
         // $data = $this->getInstagramPosts(3);
 
         $i=0;
@@ -54,7 +55,7 @@ class RhizomeController extends Controller
             $i++;
         }
         
-        return view('site.index', ['projects' => $projects, "persons" => $persons]);
+        return view('site.index', ['projects' => $projects, "persons" => $persons, "blogs" => $blogs]);
     }
 
     /**
@@ -115,8 +116,8 @@ class RhizomeController extends Controller
 
     public function instaPosts()
     {
-        $data = $this->getInstagramPosts(9);
-        return view('site.instaPosts', ['instaData' => $data]);
+        $blogs = DB::table('blogs')->orderBy('id')->get();
+        return view('site.instaPosts', ['blogs' => $blogs]);
     }
 
     /**

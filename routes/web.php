@@ -6,6 +6,7 @@ use App\Http\Controllers\RhizomeController;
 use App\Admin\Controllers\ProjectController;
 use App\Admin\Controllers\ProjectImageController;
 use App\Admin\Controllers\TeamController;
+use App\Admin\Controllers\BlogController;
 
 Route::get('/', [RhizomeController::class, 'index'])->name('home');
 Route::get('/projects', [RhizomeController::class, 'projects'])->name('projects');
@@ -21,6 +22,7 @@ Route::post('/send_mail', [RhizomeController::class, 'send_mail'])->name('send_m
 Route::resource('admin/projects', ProjectController::class);
 Route::resource('admin/project-images', ProjectImageController::class);
 Route::resource('admin/team', TeamController::class);
+Route::resource('admin/blog', BlogController::class);
 /*
 |--------------------------------------------------------------------------
 | Web Routes
