@@ -3169,7 +3169,7 @@ header .header-cart-icon .cart-count { position: absolute; top: -6px; right: -10
 .horizontal-portfolio-slider .swiper-slide { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .horizontal-portfolio-slider .swiper-slide .slider-title { position: relative; display: inline-block;}
 .horizontal-portfolio-slider .swiper-slide .slider-title .slider-title-hover { position: absolute; top: 52%; left: 0; width: 100%; height: 4px; z-index: 1; opacity: 0; transform: scaleX(0); -webkit-transform: scaleX(0); -moz-transform: scaleX(0); -ms-transform: scaleX(0); -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
-.horizontal-portfolio-slider .swiper-slide:hover .slider-title-hover { opacity: 1; transform: scaleX(1); -webkit-transform: scaleX(1); -moz-transform: scaleX(1); -ms-transform: scaleX(1); -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
+.horizontal-portfolio-slider .swiper-slide:portfolio-boxportfolio-boxportfolio-box .slider-title-hover { opacity: 1; transform: scaleX(1); -webkit-transform: scaleX(1); -moz-transform: scaleX(1); -ms-transform: scaleX(1); -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
 
 /* swiper horizontal 3d */
 .swiper-horizontal-3d.swiper-container { margin-left: auto; margin-right: auto; position: relative; overflow: hidden; z-index: 1; }
@@ -4929,4 +4929,13 @@ input[type="checkbox"].error { box-shadow: 0px 0px 0px 1px rgb(255 0 0), 1px 1px
 
 .navbar-brand > img {
     max-height: 60px;
+}
+
+.h-400 {
+    height: 400px;
+}
+
+.portfolio-box:hover {
+    background-color: black!important;
+    opacity: 0.9!important;
 }
