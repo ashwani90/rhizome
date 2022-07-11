@@ -98,7 +98,7 @@
                                         </div>
                                         <div class="col text-start sm-margin-30px-bottom">
                                             <input type="checkbox" name="terms_condition" id="terms_condition" value="1" class="terms-condition d-inline-block align-top w-auto mb-0 margin-5px-top margin-10px-right">
-                                            <label for="terms_condition" class="text-small d-inline-block align-top w-85">I accept the terms & conditions and I understand that my data will be hold securely in accordance with the <a href="privacy.html" target="_blank" class="text-decoration-underline text-extra-dark-gray">privacy policy</a>.</label>
+                                            <label for="terms_condition" class="text-small d-inline-block align-top w-85">I accept the terms & conditions and I understand that my data will be hold securely in accordance with the <a href="#" target="_blank" class="text-decoration-underline text-extra-dark-gray">privacy policy</a>.</label>
                                         </div>
                                         <div class="col text-center text-md-end">
                                             <input type="hidden" name="redirect" value="">

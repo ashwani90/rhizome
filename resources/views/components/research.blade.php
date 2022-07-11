@@ -52,7 +52,7 @@
                     </div>
                     <div class="col-12 col-lg-4 col-md-9 padding-30px-left md-padding-15px-left text-center text-lg-start wow animate__fadeIn" data-wow-delay="0.6s">
                         <p class="w-80 margin-15px-bottom lg-w-100">Lorem ipsum dolor sit amet consectetur eiusmod tempor incididunt labore magna ut enim ad minim veniam nostrud.</p>
-                        <a href="about-us.html" class="btn btn-link btn-extra-large text-extra-dark-gray font-weight-600">Agency info</a>
+                        <a href="{{ url('/about') }}" class="btn btn-link btn-extra-large text-extra-dark-gray font-weight-600">Agency info</a>
                     </div>
                 </div>
             </div>

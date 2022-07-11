@@ -33,6 +33,7 @@ class BlogController extends AdminController
         $grid->column('category', __('Category'));
         $grid->column('image', __('Image'));
         $grid->column('author', __('Author'));
+        $grid->column('tags', __('Tags'));
 
         return $grid;
     }
@@ -54,6 +55,7 @@ class BlogController extends AdminController
         $show->field('category', __('Category'));
         $show->field('image', __('Image'));
         $show->field('author', __('Author'));
+        $show->field('tags', __('Tags'));
 
         return $show;
     }
@@ -73,6 +75,7 @@ class BlogController extends AdminController
         $form->text('category', __('Category'));
         $form->image('image', __('Image'))->move("blogs");;
         $form->text('author', __('Author'));
+        $form->text('tags', __('Tags'));
 
         return $form;
     }

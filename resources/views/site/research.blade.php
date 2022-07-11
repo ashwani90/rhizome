@@ -20,7 +20,7 @@
                                     <div class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
                                         <div class="padding-4-rem-all last-paragraph-no-margin">
                                             <p class="interactive-banners-action-content w-85 md-w-95">Lorem ipsum is simply dummy text of the printing and typesetting.</p>
-                                            <a href="portfolio-boxed-metro.html" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            <a href="/projects?category=A" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
                                         </div>
                                     </div>
                                 </figcaption>
@@ -40,7 +40,7 @@
                                     <div class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
                                         <div class="padding-4-rem-all last-paragraph-no-margin">
                                             <p class="interactive-banners-action-content w-85 md-w-95">Lorem ipsum is simply dummy text of the printing and typesetting.</p>
-                                            <a href="portfolio-boxed-metro.html" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            <a href="/projects?category=A" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
                                         </div>
                                     </div>
                                 </figcaption>
@@ -60,7 +60,7 @@
                                     <div class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
                                         <div class="padding-4-rem-all last-paragraph-no-margin">
                                             <p class="interactive-banners-action-content w-85 md-w-95">Lorem ipsum is simply dummy text of the printing and typesetting.</p>
-                                            <a href="portfolio-boxed-metro.html" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            <a href="/projects?category=A" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
                                         </div>
                                     </div>
                                 </figcaption>
@@ -80,7 +80,7 @@
                                     <div class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
                                         <div class="padding-4-rem-all last-paragraph-no-margin">
                                             <p class="interactive-banners-action-content w-85 md-w-95">Lorem ipsum is simply dummy text of the printing and typesetting.</p>
-                                            <a href="portfolio-boxed-metro.html" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            <a href="/projects?category=A" class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">See Portfolio<i class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
                                         </div>
                                     </div>
                                 </figcaption>

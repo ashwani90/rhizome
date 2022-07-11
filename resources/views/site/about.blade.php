@@ -43,7 +43,7 @@ Connections,
 Heterogeneity,
 Multiplicity, Asignifying Rapture, Cartography and
 Decalcomania.</p>
-                            <a href="our-services.html" class="btn btn-large btn-link text-red text-red-hover align-self-start">Our Services</a>
+                            <a href="{{ url('/research') }}" class="btn btn-large btn-link text-red text-red-hover align-self-start">Our Services</a>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-6">

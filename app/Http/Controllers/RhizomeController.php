@@ -104,6 +104,30 @@ class RhizomeController extends Controller
         return view('site.text_projects', ['projects' => $projects]);
     }
 
+    public function blog(Request $request)
+    {
+        $allParameters = $request->all();
+        $id = $allParameters['id'];
+        $blog = DB::table('blogs')->find($id);
+        $desc = $blog->desc;
+        $firstChar = $desc[0];
+        $desc = substr($desc,1,-1);
+        $output = '<span class="alt-font first-letter first-letter-big text-fast-blue">' . $firstChar . '</span>' . $desc;
+        $tags = $blog->tags;
+        $tags = explode(",", $tags);
+        $tag = $tags[0];
+        $relatedPosts = DB::table('blogs')->where("tags", "like", "%" . $tag . "%")->limit(3)->get();
+        $categories  = DB::select("Select count(id) as dataCount,category from blogs group by category");
+        $allTags  = DB::select("Select group_concat(tags) as allTags from blogs group by category");
+        $tagStr = "Rhizome";
+        foreach ($allTags as $tag) {
+            $tagStr .= "," . $tag->allTags;
+        }
+        $allTags = array_unique(explode(",", $tagStr));
+
+        return view('site.blog-post', ['blog' => $blog, 'tags' => $tags, "relatedPosts" => $relatedPosts, 'output' => $output, 'categories' => $categories, 'allTags' => $allTags]);
+    }
+
     /**
      * Show the projects page of the website
      *
@@ -115,9 +139,18 @@ class RhizomeController extends Controller
         return view('site.research');
     }
 
-    public function instaPosts()
+    public function instaPosts(Request $request)
     {
         $blogs = DB::table('blogs')->orderBy('id')->get();
+        $allParameters = $request->all();
+        if (isset($allParameters['tag'])) {
+            $tag = $allParameters['tag'];
+            $blogs = DB::table('blogs')->where("tags", "like", "%" . $tag . "%")->get();
+        }
+        if (isset($allParameters['category']) && $allParameters['category'] != "Rhizome") {
+            $category = $allParameters['category'];
+            $blogs = DB::table('blogs')->where("category", $category)->get();
+        }
         return view('site.instaPosts', ['blogs' => $blogs]);
     }
 

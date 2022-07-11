@@ -21,7 +21,7 @@
                         <li class="grid-sizer"></li>
                             <!-- start portfolio item -->
                             <li class="grid-item {{$project->type}} grid-item-double wow animate__fadeIn">
-                                <a href="single-project-page-01.html">
+                                <a href="/project?id={{$project->id}}">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image">
                                             <img src="assets/img/{{$project->url}}" alt="" />
