@@ -1,9 +1,4 @@
-@extends('layout')
 
-@section('title', 'About Studio Rhizome Team - Architects')
-
-@section('content')
-    @parent
 <section class="bg-light-gray">
             <div class="container">
                 <div class="row align-items-center">
@@ -42,5 +37,3 @@
                 </div>
             </div>
         </section>
-        <!-- end section -->
-       @endsection
