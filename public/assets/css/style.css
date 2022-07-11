@@ -2860,7 +2860,7 @@ header .header-always-fixed-scroll .navbar-brand .mobile-logo { transition-durat
 header .header-cart-icon .cart-count { position: absolute; top: -6px; right: -10px; width: 16px; height: 16px; text-align: center; font-size: 9px; line-height: 16px; border-radius: 100%; }
 
 /* header push button */
-.navbar.navbar-dark .push-button > span, .sticky .navbar.header-dark .push-button > span { background: #000; }
+.navbar.navbar-dark .push-button > span, .sticky .navbar.header-dark .push-button > span { background: #fffswiper-slide; }
 .navbar.navbar-dark .push-button:hover, .sticky .navbar.header-dark .push-button:hover { opacity: 0.6; }
 .navbar.navbar-light .push-button > span, .sticky .navbar.header-light .push-button > span { background: #232323; }
 .navbar.navbar-light .push-button:hover, .sticky .navbar.header-light .push-button:hover { opacity: 0.6; }
@@ -4938,4 +4938,19 @@ input[type="checkbox"].error { box-shadow: 0px 0px 0px 1px rgb(255 0 0), 1px 1px
 .portfolio-box:hover {
     background-color: black!important;
     opacity: 0.9!important;
+}
+.swiper-slide:before {
+        content: "";
+        position: absolute;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background: rgba(0,0,0,.3);
+}
+
+.navbar:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0,0,0,.3);
 }

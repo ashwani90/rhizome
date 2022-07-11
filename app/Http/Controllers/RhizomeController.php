@@ -40,6 +40,7 @@ class RhizomeController extends Controller
         $projects = DB::table('projects')->where('priority', '>', 0)->where('id', '<>', 61)->orderBy('priority', 'desc')->limit(13)->get();
         $persons = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->get();
         $blogs = DB::table('blogs')->orderBy('id')->limit(3)->get();
+        $people = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->skip(4)->take(100)->get();
         // $data = $this->getInstagramPosts(3);
 
         $i=0;
@@ -55,7 +56,7 @@ class RhizomeController extends Controller
             $i++;
         }
         
-        return view('site.index', ['projects' => $projects, "persons" => $persons, "blogs" => $blogs]);
+        return view('site.index', ['projects' => $projects, "persons" => $persons, "blogs" => $blogs, 'people' => $people]);
     }
 
     /**
@@ -128,8 +129,9 @@ class RhizomeController extends Controller
      */
     public function about()
     {
-        $persons = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->get();
-        return view('site.about', ['persons' => $persons]);
+        $persons = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->limit(4)->get();
+        $people = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->skip(4)->take(100)->get();
+        return view('site.about', ['persons' => $persons, "people" => $people]);
     }
 
     /**

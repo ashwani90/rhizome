@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row align-items-stretch justify-content-center extra-small-screen">
                     <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">
-                        <h2 class="text-extra-dark-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Our Projects</h2>
+                        <h2 class="text-extra-dark-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Projects</h2>
                     </div>
                 </div>
             </div>
