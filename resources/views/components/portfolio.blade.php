@@ -20,7 +20,7 @@
                         @foreach ($projects as $project)      
                         <li class="grid-sizer"></li>
                             <!-- start portfolio item -->
-                            <li class="grid-item {{$project->type}} grid-item-double wow animate__fadeIn">
+                            <li class="animated animatedFadeInUp fadeInUp grid-item {{$project->type}} grid-item-double show-on-scroll">
                                 <a href="/project?id={{$project->id}}">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image">

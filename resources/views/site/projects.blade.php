@@ -43,9 +43,9 @@
                         <li class="grid-sizer"></li>
                             <!-- start portfolio item -->
                             @if ($project->is_half == 1)
-                            <li class="grid-item {{$project->type}} wow animate__fadeIn">
+                            <li class="animated animatedFadeInUp fadeInUp grid-item {{$project->type}} show-on-scroll">
                             @else
-                            <li class="grid-item {{$project->type}} grid-item-double wow animate__fadeIn">
+                            <li class="animated animatedFadeInUp fadeInUp grid-item {{$project->type}} grid-item-double  show-on-scroll">
                             @endif
                             
                                 <a href="/project?id={{$project->id}}">
