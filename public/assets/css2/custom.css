@@ -1,0 +1,123 @@
+.nav-menu ul li {
+    display: flex;
+    align-items: center;
+}
+.full-height {
+    height: 800px;
+}
+
+.half-height {
+    height: 400px;
+}
+
+.text-place {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 45px;
+    margin-bottom: 0;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    color: #646464;
+    font-family: "Roboto",sans-serif;
+}
+
+.text-place sup {
+    font-family: "Roboto",sans-serif;
+    border: 0;
+    background: transparent;
+    word-wrap: normal;
+    word-break: normal;
+    padding: 0;
+    display: inline;
+    line-height: inherit;
+    top: 0;
+    font-size: 100%;
+    color: #f04e23;
+    margin: 0;
+    border-radius: 0;
+    overflow: auto;
+    white-space: normal;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 0;
+}
+
+.col-md-12, 
+.col-sm-12,
+.col-lg-12 {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-menu {
+    background: white;
+    transform: translateX(100%);
+    transition: all 0.2s ease-in;
+    height: 0;
+}
+
+#header:hover .navigation-menu{
+    transform: translateX(0);
+    height: 100%;
+  }
+  
+.navigation-menu li {
+    padding: 10px 0px;
+    list-style-type: none;
+    font-size:28px;
+    font-weight:800;
+    font-family: neutra;
+    padding-right: 100px;
+    /* background: linear-gradient(to left, red 50%, white 50%) right;
+    background-size: 200%;*/
+    transition: .5s ease-out; 
+}
+
+.navigation-menu li:hover {
+     /* background-position: left; */
+     transform: scale(1.03);
+}
+hr {
+    background: white;
+    margin: 0;
+}
+li + hr {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+.top-moved {
+    padding: 0;
+}
+.breadcrumbs {
+    margin-top: 30px;
+}
+
+.fixed-circle {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    z-index: 20;
+    border-radius:50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: black;
+}
+.fixed-circle a {
+    color: black;
+}
+.fixed-circle:hover {
+    color:red;
+    cursor: pointer;
+}
+.fixed-circle:hover a {
+    color:red;
+}

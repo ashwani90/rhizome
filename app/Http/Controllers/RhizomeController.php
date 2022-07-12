@@ -12,6 +12,23 @@ use App\Mail\ContactMail;
 
 class RhizomeController extends Controller
 {
+
+    public $dynamic_classes = [
+        '1' => "col-lg-12 col-md-12 ",
+        '2' => "col-lg-8 col-md-8 col-sm-12",
+        '3' => "col-lg-4 col-md-4 col-sm-12",
+        '4' => "col-lg-8 col-md-8 col-sm-12",
+        '5' => "col-lg-4 col-md-4 col-sm-12"
+    ];
+
+    public $dynamic_heights = [
+        '1' => "full-height",
+        '2' => "full-height",
+        '3' => "full-height",
+        '4' => "half-height",
+        '5' => "half-height",
+    ];
+
     /**
      * Show the landing page of the website
      *
@@ -20,10 +37,26 @@ class RhizomeController extends Controller
      */
     public function index()
     {
-        $projects = DB::table('projects')->where('priority', '>', 0)->where('id', '<>', 61)->orderBy('priority', 'desc')->limit(12)->get();
-        $data = $this->getInstagramPosts(3);
+        $projects = DB::table('projects')->where('priority', '>', 0)->where('id', '<>', 61)->orderBy('priority', 'desc')->limit(13)->get();
+        $persons = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->get();
+        $blogs = DB::table('blogs')->orderBy('id')->limit(3)->get();
+        $people = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->skip(4)->take(100)->get();
+        // $data = $this->getInstagramPosts(3);
+
+        $i=0;
+        foreach ($projects as $project) {
+            $project->class = $this->dynamic_classes[$project->image_dim];
+            $project->height = $this->dynamic_heights[$project->image_dim];
+            if ($project->next_horizontal) {
+                $projects[$i]->nextPro = $projects[$i+1];
+                $projects[$i+1]->not_show = true;
+            }else {
+                $projects[$i]->nextPro = null;
+            }
+            $i++;
+        }
         
-        return view('site.index', ['projects' => $projects, 'instaData' => $data]);
+        return view('site.index', ['projects' => $projects, "persons" => $persons, "blogs" => $blogs, 'people' => $people]);
     }
 
     /**
@@ -35,6 +68,19 @@ class RhizomeController extends Controller
     public function projects()
     {
         $projects = DB::table('projects')->where('priority', '>', 0)->orderBy('priority', 'desc')->get();
+        $i=0;
+        foreach ($projects as $project) {
+            $project->class = $this->dynamic_classes[$project->image_dim];
+            $project->height = $this->dynamic_heights[$project->image_dim];
+            if ($project->next_horizontal) {
+                $projects[$i]->nextPro = $projects[$i+1];
+                $projects[$i+1]->not_show = true;
+            }else {
+                $projects[$i]->nextPro = null;
+            }
+            $i++;
+        }
+
         return view('site.projects', ['projects' => $projects]);
     }
 
@@ -58,6 +104,30 @@ class RhizomeController extends Controller
         return view('site.text_projects', ['projects' => $projects]);
     }
 
+    public function blog(Request $request)
+    {
+        $allParameters = $request->all();
+        $id = $allParameters['id'];
+        $blog = DB::table('blogs')->find($id);
+        $desc = $blog->desc;
+        $firstChar = $desc[0];
+        $desc = substr($desc,1,-1);
+        $output = '<span class="alt-font first-letter first-letter-big text-fast-blue">' . $firstChar . '</span>' . $desc;
+        $tags = $blog->tags;
+        $tags = explode(",", $tags);
+        $tag = $tags[0];
+        $relatedPosts = DB::table('blogs')->where("tags", "like", "%" . $tag . "%")->limit(3)->get();
+        $categories  = DB::select("Select count(id) as dataCount,category from blogs group by category");
+        $allTags  = DB::select("Select group_concat(tags) as allTags from blogs group by category");
+        $tagStr = "Rhizome";
+        foreach ($allTags as $tag) {
+            $tagStr .= "," . $tag->allTags;
+        }
+        $allTags = array_unique(explode(",", $tagStr));
+
+        return view('site.blog-post', ['blog' => $blog, 'tags' => $tags, "relatedPosts" => $relatedPosts, 'output' => $output, 'categories' => $categories, 'allTags' => $allTags]);
+    }
+
     /**
      * Show the projects page of the website
      *
@@ -69,10 +139,19 @@ class RhizomeController extends Controller
         return view('site.research');
     }
 
-    public function instaPosts()
+    public function instaPosts(Request $request)
     {
-        $data = $this->getInstagramPosts(9);
-        return view('site.instaPosts', ['instaData' => $data]);
+        $blogs = DB::table('blogs')->orderBy('id')->get();
+        $allParameters = $request->all();
+        if (isset($allParameters['tag'])) {
+            $tag = $allParameters['tag'];
+            $blogs = DB::table('blogs')->where("tags", "like", "%" . $tag . "%")->get();
+        }
+        if (isset($allParameters['category']) && $allParameters['category'] != "Rhizome") {
+            $category = $allParameters['category'];
+            $blogs = DB::table('blogs')->where("category", $category)->get();
+        }
+        return view('site.instaPosts', ['blogs' => $blogs]);
     }
 
     /**
@@ -83,7 +162,9 @@ class RhizomeController extends Controller
      */
     public function about()
     {
-        return view('site.about');
+        $persons = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->limit(4)->get();
+        $people = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->skip(4)->take(100)->get();
+        return view('site.about', ['persons' => $persons, "people" => $people]);
     }
 
     /**
@@ -117,6 +198,7 @@ class RhizomeController extends Controller
 
     public function project(Request $request)
     {
+        $projects = DB::table('projects')->where('priority', '>', 0)->where('id', '<>', 61)->orderBy('priority', 'desc')->limit(3)->get();
         $allProjectTypes = [
             'industrial'=> 'Industrial',
             'institutional' => 'Institutional',
@@ -133,7 +215,7 @@ class RhizomeController extends Controller
         $project = DB::table('projects')->find($id);
         $project->type = $allProjectTypes[$project->type];
         $projectImages = DB::table('project_images')->where(['project_id'=>$id, 'enabled'=>1])->orderBy('priority')->get();
-        return view('site.project', ['project' => $project, 'images' => $projectImages]);
+        return view('site.project', ['project' => $project, 'images' => $projectImages, 'projects' => $projects]);
     }
 
     private function getInstagramPosts($count) {

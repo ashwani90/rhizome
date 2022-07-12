@@ -1,0 +1,249 @@
+<div class="col-xs-12 col-sm-6 col-md-6" style="margin-top: 40px;" >
+                                 <h1>{{$project->title}}</h1>
+                                 @if(isset($project->location) && isset($project->date))
+                                 <h4>{{$project->location}} | 
+                                                            {!! date('d/M/y', strtotime($project->date)) !!}  </h4
+                                                            @elseif (isset($project->location))
+                                                            <h4>{{$project->location}}</h4>
+                                                            @elseif (isset($project->date))
+                                                            <h4>{!! date('d/M/y', strtotime($project->date)) !!} </h4>
+                                                            @else
+                                                            <h4>{{$project->name}}</h4>
+                                                            @endif
+                             </div>
+                             <div class="col-xs-12 col-sm-6  col-md-6 project-head">
+                                 <p>{{$project->subtitle}}</p>
+                             </div>
+                         </div>
+                     <div class="project-row-2">
+                  					<div class="container-fluid">
+                  						<div class="row clearfix" style="margin: 10px; margin-bottom: 0;">
+
+                                      <div class="col-xs-12 col-md-8 single-project-item" style="margin-top: 40px;">
+                                      <div class="row">
+                                          <div class="col-md-12 col-xs-12">
+                                            <img src="assets/img/projects_all/{{$images[0]->url}}"/>
+                                          </div>
+                                          <div class="col-md-6 col-xs-12" style="margin-top: 10px;">
+                                          <img src="assets/img/projects_all/{{$images[1]->url}}"/>
+                                          </div>
+                                          <div class="col-md-6 col-xs-12" style="margin-top: 10px;">
+                                                <img src="assets/img/portfolio/build2.jpg"/>
+                                           </div>
+                                       </div>
+                                       </div>
+                                      <div class="col-xs-12 col-md-4 single-project-item single-project-item-length" style="margin-top: 40px;">
+                                        <img src="assets/img/portfolio/build2.jpg"/>
+                                      </div>
+                  						</div>
+                  					</div>
+                              </div>
+
+
+                              Rhizome is a knowledge system of A-Centered
+multiplicities.
+A system of learning which challenges traditional
+model by interconnection and non- hierarchical
+approach. Explored initially as an application of
+post-structural thought, Rhizome is characterized by
+ceaselessly
+established
+connections
+between
+semiotic chains, organizations of power and
+circumstances relative to the arts, sciences and
+social struggles. Rhizome challenges the known
+truth and arrives at a new dimension by using
+principles
+of
+Connections,
+Heterogeneity,
+Multiplicity, Asignifying Rapture, Cartography and
+Decalcomania.
+“rhizome has no beginning or end; it is always in the middle, between
+things, interbeing, intermezzo.”
+Image Source - https://medium.com/@cryppix/rhizome-cf443e9e10b6
+At Rhizome, we explore this paradigm to develop a
+project which is fresh, innovative and relevant.
+
+<p>
+Gauri, heads the Interior design
+department,
+and is extensive
+involvement in idea development,
+material
+selection
+and
+details
+development of each project. She
+has a good
+eye for detail and
+unusual /exceptional solutions for
+problems.</p>
+Gauri Mishra
+Director
+B.Arch.
+
+
+
+Tushar Gaur
+Founder Director
+M.Arch. (Theory and Design) | CEPT University, India
+Erasmus Mundus Scholar – Politecnico Di Milano. Italy
+<p>Tushar is founder of Studio Rhizome and
+focuses
+primarily on Project idea formulations. Tushar’s approach
+is strongly rooted in theoretical research and his expertise
+lies in developing innovative design processes.</p>
+<p>Tushar received master’s degree in Theory and Design
+from CEPT University and was Erasmus Mundus scholar
+in India4EU Project to Politecnico di Milano (Italy). His
+core interests is in Architecture, Language, sociology and
+philosophy.</p>
+<p>Tushar loves writing and teaching architecture. He has
+lectured extensively and served as jury
+in various
+architecture schools including School of Planning and
+Architecture(SPA)
+,New
+Delhi
+and
+Faculty
+of
+Architecture, Jamia Millia Islamia, New Delhi and Ansal
+University, Gurugram</p>
+
+
+
+Director - Sydney
+<p>Abhishek heads Studio Rhizome in
+Sydney. He is an architect with
+double
+Masters
+in
+Property
+Development,
+Investment
+and
+Construction Project Management
+from The University of New South
+Wales (UNSW), Sydney. Abhishek‘s
+areas of expertise are property
+investment
+feasibility,
+design
+analysis,
+project
+design
+development
+and
+construction
+management for shaping well-
+coordinated property development
+from inception to occupancy. His
+design ideology is sensitive to
+context and specific project needs
+and is highly proficient in developing
+complex projects.</p>
+Abhishek Kashyap
+B.Arch. , Master in Project
+Management
+
+
+
+Associate Director
+B.Arch.
+
+
+Alok Singh
+Founder – Director
+<p>Alok
+Singh
+heads
+projects
+developments and is responsible for
+guiding comprehensive design intent
+into realization. With over more
+than 12 years of experience, he leads
+the team to coordinate between
+various domains like Design, Legal,
+Bylaws, Engineering Services and
+Cost management and deliver a
+superior project.<p>
+<p>Alok has delivered various projects
+like Airports, Institutions, Corporate
+Offices, Commercial Complexes, IT
+complexes, Retail and Entertainment
+Centers,
+and
+Township
+developments
+with
+different
+renowned developers like L&T,
+NBCC, Bestech Group, Ircon & Sam
+India Etc.<p>
+
+
+
+<header id="header" class="fixed-top ">
+    <div class="container d-flex justify-content-end">
+
+      <!-- <h1 class="logo"><a href="index.html">Rhizome</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a class="logo custom-logo"><img src="assets/img/logo3.png" alt="" class="img-fluid"></a>
+
+      <nav class="nav-menu d-none d-lg-block" style="display:none!important;">
+
+        <ul>
+         <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ url('/') }}">Home</a></li>
+         <li class="{{ Request::is('research') ? 'active' : '' }}"><a href="{{ url('/research') }}">Expertise</a></li>
+          <li class="{{ Request::is('projects') ? 'active' : '' }}"><a href="{{ url('/projects') }}">Projects</a></li>
+          
+          <li class="{{ Request::is('about') ? 'active' : '' }}"><a href="{{ url('/about') }}">About Us</a></li>
+          <li class="{{ Request::is('contact') ? 'active' : '' }}"><a href="{{ url('/contact') }}">Contact</a></li>
+          <!-- <li>
+              <span class="material-icons-outlined">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+              </span>
+          </li> -->
+          <li> <a href="{{ url('/') }}" class="logo"><img src="assets/img/logo3.png" alt="" class="img-fluid"></a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="team-section">
+     <div class="row">
+     		  <div class="col-xs-6 col-sm-4 p-2">
+                     <!-- Grid Box -->
+                     <a href="/team" class="grid-box team-grid-link about-orange-overlay">
+                         <span>Team</span>
+                     </a>
+                 </div>
+
+                 <div class="col-xs-6 col-sm-4 p-2">
+                     <!-- Grid Box -->
+                     <a href="/text-projects" class="team-grid-link grid-box about-orange-overlay">
+                        <span>Projects</span>
+                     </a>
+                 </div>
+
+     		  <div class="col-xs-6 col-sm-4 p-2">
+                     <!-- Grid Box -->
+                     <a href="/social-posts" class="team-grid-link grid-box about-orange-overlay">
+                        <span>Social Posts</span>
+                     </a>
+                 </div>
+             </div>
+     </section>
+
+
+     @if (count($images) > 1)
+                                    <div class="col-md-12 background-class" style="background-image: url(assets/img/projects_all/{{$images[1]->url}});">
+                                    </div>
+                                    @endif
+
+                                    <i class="icofont-listing-box"></i>
