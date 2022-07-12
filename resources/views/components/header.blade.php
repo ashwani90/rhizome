@@ -21,7 +21,7 @@
                         </div>
                     </div>
                 </nav>
-                <div class="hamburger-menu hamburger-menu-big-font bg-extra-medium-slate-blue xl-w-10 lg-w-20 md-w-30 sm-w-100">
+                <div class="hamburger-menu hamburger-menu-big-font bg-extra-medium-slate-blue xl-w-30 lg-w-20 md-w-30 sm-w-100">
                     <a href="javascript:void(0);" class="close-menu text-white"><i class="ti-close"></i></a>
                     <div class="row g-0 h-100">
                         <div class="col-lg-12">
