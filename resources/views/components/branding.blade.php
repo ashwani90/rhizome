@@ -1,4 +1,4 @@
-<section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;height:150px; margin-top: -120px;">
+<section  id="expertise-section" class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;height:150px; ">
             <div class="container">
                 <div class="row align-items-stretch justify-content-center extra-small-screen" style="height:100px;">
                     <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">
