@@ -73,8 +73,6 @@
         <script>
             function removeClasses() {
                 var elementsToShow = document.querySelectorAll('.grid-item');
-                console.log("Admin");
-                console.log(elementsToShow);
                 Array.prototype.forEach.call(elementsToShow, function(element){
                 element.classList.add('animate__fadeIn');
                 element.classList.remove('animated');

@@ -69,13 +69,30 @@ things, interbeing, intermezzo.”</p>
 
         <section id="about" class="bg-light-gray">
             <div class="container">
+
             @for ($i = 0; $i < count($persons); $i++)
-            @if ($i%2 == 1)
-            <div class="row" style="margin: 30px 0; height: 400px;">
-                    <div class="col-12 col-lg-4 pe-lg-0 d-flex md-margin-30px-bottom">
+            <div id="small-team-page" class="row" style="margin: 30px 0;">
+                    <div class="col-lg-4 col-xs-12 col-sm-12 pe-lg-0 d-flex md-margin-30px-bottom">
                         <div class="w-100 md-h-700px sm-h-550px xs-h-450px cover-background" style="background-image:url('assets/img/{{$persons[$i]->img}}');"></div>
                     </div>
-                    <div class="col-12 col-lg-8 col-md-8 ps-lg-0 d-flex sm-margin-30px-bottom">
+                    <div class="col-lg-8 col-xs-12 col-md-8 col-sm-12 ps-lg-0 d-flex sm-margin-30px-bottom">
+                        <div class="justify-content-center w-100 d-flex flex-column padding-5-half-rem-lr lg-padding-3-rem-lr md-padding-4-rem-all">
+                            <span class="text-extra-large alt-font font-weight-500 text-black margin-10px-bottom d-block">{{$persons[$i]->name}}</span>
+                            <span class="text-large alt-font font-weight-400 text-black margin-20px-bottom d-block">{{$persons[$i]->designation}} - {{$persons[$i]->qualification}}</span>
+                            <p class="text-black opacity-7">{{$persons[$i]->text}}</p>
+                        </div>
+                    </div>
+                </div>
+            
+                @endfor
+
+            @for ($i = 0; $i < count($persons); $i++)
+            @if ($i%2 == 1)
+            <div id="team-page" class="row" style="margin: 30px 0;">
+                    <div class="col-lg-4 col-xs-12 col-sm-12 pe-lg-0 d-flex md-margin-30px-bottom">
+                        <div class="w-100 md-h-700px sm-h-550px xs-h-450px cover-background" style="background-image:url('assets/img/{{$persons[$i]->img}}');"></div>
+                    </div>
+                    <div class="col-lg-8 col-xs-12 col-md-8 col-sm-12 ps-lg-0 d-flex sm-margin-30px-bottom">
                         <div class="justify-content-center w-100 d-flex flex-column padding-5-half-rem-lr lg-padding-3-rem-lr md-padding-4-rem-all">
                             <span class="text-extra-large alt-font font-weight-500 text-black margin-10px-bottom d-block">{{$persons[$i]->name}}</span>
                             <span class="text-large alt-font font-weight-400 text-black margin-20px-bottom d-block">{{$persons[$i]->designation}} - {{$persons[$i]->qualification}}</span>
@@ -84,15 +101,15 @@ things, interbeing, intermezzo.”</p>
                     </div>
                 </div>
             @else 
-            <div class="row" style="margin: 30px 0; height: 400px;">
-            <div class="col-12 col-lg-8 col-md-8 ps-lg-0 d-flex sm-margin-30px-bottom">
+            <div id="team-page" class="row" style="margin: 30px 0; ">
+            <div class="col-lg-8 col-xs-12 col-md-8 ps-lg-0 d-flex sm-margin-30px-bottom">
                         <div class="justify-content-center w-100 d-flex flex-column padding-5-half-rem-lr lg-padding-3-rem-lr md-padding-4-rem-all">
                             <span class="text-extra-large alt-font font-weight-500 text-black margin-10px-bottom d-block">{{$persons[$i]->name}}</span>
                             <span class="text-large alt-font font-weight-400 text-black margin-20px-bottom d-block">{{$persons[$i]->designation}} - {{$persons[$i]->qualification}}</span>
                             <p class="text-black opacity-7">{{$persons[$i]->text}}</p>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 pe-lg-0 d-flex md-margin-30px-bottom">
+                    <div class="col-lg-4 col-xs-12 pe-lg-0 col-sm-12 d-flex md-margin-30px-bottom">
                         <div class="w-100 md-h-700px sm-h-550px xs-h-450px cover-background" style="background-image:url('assets/img/{{$persons[$i]->img}}');"></div>
                     </div>
                     
