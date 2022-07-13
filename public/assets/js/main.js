@@ -2110,3 +2110,5 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
+document.addEventListener('contextmenu', event => event.preventDefault());
