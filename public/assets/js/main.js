@@ -2077,7 +2077,12 @@ function loop() {
 
     Array.prototype.forEach.call(elementsToShow, function(element){
       if (isElementInViewport(element)) {
-        element.classList.add('is-visible');
+        if (element.classList.contains('animate__fadeIn')) {
+            // dont do anything
+        } else {
+            element.classList.add('is-visible');
+        }
+        
       } 
     });
 

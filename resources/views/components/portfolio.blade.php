@@ -1,17 +1,5 @@
         <section class="pt-0">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <!-- start filter navigation -->
-                        <ul class="portfolio-filter grid-filter nav nav-tabs justify-content-center border-0 text-uppercase font-weight-500 alt-font padding-6-rem-bottom md-padding-4-half-rem-bottom sm-padding-2-rem-bottom">
-                        <li class="nav active"><a data-filter="*" href="#">All</a></li>
-                            <li class="nav"><a data-filter=".institutional" href="#">Institutional</a></li>
-                            <li class="nav"><a data-filter=".mixuse" href="#">Mixuse</a></li>
-                            <li class="nav"><a data-filter=".hotels" href="#">Hotels & Resorts</a></li>
-                        </ul>
-                        <!-- end filter navigation -->
-                    </div>
-                </div>
             </div>
             <div class="container-fluid">
                 <div class="row">
@@ -20,7 +8,12 @@
                         @foreach ($projects as $project)      
                         <li class="grid-sizer"></li>
                             <!-- start portfolio item -->
-                            <li class="animated animatedFadeInUp fadeInUp grid-item {{$project->type}} grid-item-double show-on-scroll">
+                            @if ($project->is_half == 1)
+                            <li class="animated animatedFadeInUp fadeInUp grid-item {{$project->type}} show-on-scroll wow">
+                            @else
+                            <li class="animated animatedFadeInUp fadeInUp grid-item {{$project->type}} grid-item-double  show-on-scroll wow">
+                            @endif
+                            <!-- <li class="grid-item {{$project->type}} grid-item-double wow animate__fadeIn"> -->
                                 <a href="/project?id={{$project->id}}">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image">
