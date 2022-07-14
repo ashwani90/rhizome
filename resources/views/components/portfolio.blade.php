@@ -1,4 +1,14 @@
-        <section class="pt-0">
+<section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;height:150px; padding-left: 3vw;">
+            <div class="container-fluid">
+                <div class="row align-items-stretch justify-content-left extra-small-screen" style="height:100px; padding-top: 80px;">
+                    <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-left d-flex justify-content-left flex-column">
+                        <h6 class="text-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Featured Projects</h6>
+                    </div>
+                </div>
+            </div>
+        </section>      
+      
+      <section class="pt-0">
             <div class="container">
             </div>
             <div class="container-fluid">
@@ -36,3 +46,13 @@
                 </div>
             </div>
         </section>
+
+        <section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;height:150px; padding-right: 3vw">
+            <div class="container-fluid">
+                <div class="row align-items-stretch justify-content-right extra-small-screen" style="height:100px; ">
+                    <div class="col-12 col-xl-12 col-lg-12 col-md-12 page-title-extra-small text-right d-flex justify-content-right flex-column" style="align-items: flex-end;">
+                        <h6 class="text-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom"><a href="{{ url('/projects') }}" class="my-custom-btn font-weight-600">More Projects</a></h6>
+                    </div>
+                </div>
+            </div>
+        </section> 

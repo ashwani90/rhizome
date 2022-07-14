@@ -1,47 +1,9 @@
-<section id="about" class="bg-light-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-8 col-md-12 ps-lg-0 d-flex sm-margin-30px-bottom">
-                        <div class="justify-content-center w-100 d-flex flex-column bg-white padding-5-half-rem-lr lg-padding-3-rem-lr md-padding-4-rem-all">
-                            <span class="text-extra-large alt-font font-weight-500 text-black margin-20px-bottom d-block">Rhizome is a knowledge system of A-Centered
-multiplicities.</span>
-                            <p class="text-black opacity-7">A system of learning which challenges traditional
-model by interconnection and non- hierarchical
-approach. Explored initially as an application of
-post-structural thought, Rhizome is characterized by
-ceaselessly
-established
-connections
-between
-semiotic chains, organizations of power and
-circumstances relative to the arts, sciences and
-social struggles. Rhizome challenges the known
-truth and arrives at a new dimension by using
-principles
-of
-Connections,
-Heterogeneity,
-Multiplicity, Asignifying Rapture, Cartography and
-Decalcomania.</p>
-                            <a href="{{url('/research')}}" class="btn btn-large btn-link text-red text-red-hover align-self-start">Our Services</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 col-md-6">
-                        <img src="assets/img/banner_rest/banner_12.jpg" alt="" />
-                        <div class="bg-white padding-3-half-rem-lr padding-3-rem-tb lg-padding-2-rem-all md-padding-2-half-rem-all sm-padding-4-rem-all last-paragraph-no-margin">
-                            <span class="alt-font text-extra-dark-gray font-weight-500 margin-10px-bottom d-block">About Rhizome</span>
-                            <p>“Rhizome has no beginning or end; it is always in the middle, between
-things, interbeing, intermezzo.”</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;height:150px;">
             <div class="container">
                 <div class="row align-items-stretch justify-content-center extra-small-screen" style="height:100px;">
                     <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">
-                        <h2 class="text-extra-dark-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Our Team</h2>
+                        <h2 class="text-extra-dark-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Team</h2>
                     </div>
                 </div>
             </div>
@@ -68,7 +30,6 @@ things, interbeing, intermezzo.”</p>
                 @endfor
 
             @for ($i = 0; $i < count($persons); $i++)
-            @if ($i%2 == 1)
             <div id="team-page" class="row" style="margin: 30px 0;">
                     <div class="col-lg-4 col-xs-12 col-sm-12 pe-lg-0 d-flex md-margin-30px-bottom">
                         <div class="w-100 md-h-700px sm-h-550px xs-h-450px cover-background" style="background-image:url('assets/img/{{$persons[$i]->img}}');"></div>
@@ -81,21 +42,6 @@ things, interbeing, intermezzo.”</p>
                         </div>
                     </div>
                 </div>
-            @else 
-            <div id="team-page" class="row" style="margin: 30px 0; ">
-            <div class="col-lg-8 col-xs-12 col-md-8 ps-lg-0 d-flex sm-margin-30px-bottom">
-                        <div class="justify-content-center w-100 d-flex flex-column padding-5-half-rem-lr lg-padding-3-rem-lr md-padding-4-rem-all">
-                            <span class="text-extra-large alt-font font-weight-500 text-black margin-10px-bottom d-block">{{$persons[$i]->name}}</span>
-                            <span class="text-large alt-font font-weight-400 text-black margin-20px-bottom d-block">{{$persons[$i]->designation}} - {{$persons[$i]->qualification}}</span>
-                            <p class="text-black opacity-7">{{$persons[$i]->text}}</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xs-12 pe-lg-0 col-sm-12 d-flex md-margin-30px-bottom">
-                        <div class="w-100 md-h-700px sm-h-550px xs-h-450px cover-background" style="background-image:url('assets/img/{{$persons[$i]->img}}');"></div>
-                    </div>
-                    
-                </div>
-            @endif
             
                 @endfor
                
@@ -150,4 +96,15 @@ things, interbeing, intermezzo.”</p>
                                     
                 </div>
             </div>
+            <div class="container">
+            <div class="bg-medium-light-gray margin-6-rem-bottom margin-3-rem-top w-100 h-1px"></div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-xl-7 col-md-8 col-sm-10 text-center text-md-start sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.1s">
+                        <h6 class="alt-font text-extra-dark-gray font-weight-500 mb-0 md-w-90 sm-w-100"><strong class="text-decoration-underline">Creative thinkers,</strong> seasoned architects and young talent apply for work with us.</h6>
+                    </div>
+                    <div class="col-12 col-xl-5 col-md-4 text-center text-md-end wow animate__fadeIn" data-wow-delay="0.2s">
+                        <a href="contact-us-classic.html" class="btn btn-large btn-round-edge btn-transparent-fast-blue btn-slide-right-bg">Join the team<span class="bg-fast-blue"></span></a>
+                    </div>
+                </div>
+</div>
         </section> 
