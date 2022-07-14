@@ -1,9 +1,3 @@
-@extends('layout')
-
-@section('title', 'Studio Rhizome - Research')
-
-@section('content')
-
 <section class="position-relative padding-thirteen-top lg-padding-nine-top">
             <div class="container">
                 <div class="row justify-content-lg-center">
@@ -111,5 +105,3 @@
                 </div>
             </div>
         </section>
-
-@endsection

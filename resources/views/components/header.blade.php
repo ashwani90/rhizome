@@ -1,6 +1,6 @@
 
         <header class="home-architecture">
-        @if(Request::is('/') || Request::is('about') )
+        @if(Request::is('/') || Request::is('about') || Request::is('project') )
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top sticky navbar-boxed navbar-static-overlay header-reverse-scroll navbar-cover" style="position:fixed;padding-top: 20px;">
         @else
         <nav id="navbar-with-background" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top sticky navbar-boxed navbar-static-overlay header-reverse-scroll navbar-cover" style="position:fixed; padding-top: 20px;">

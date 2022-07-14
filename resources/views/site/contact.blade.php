@@ -25,10 +25,10 @@
                                 </div>
                                 <div class="feature-box-content last-paragraph-no-margin">
                                     <span class="text-extra-dark-gray text-extra-medium d-block alt-font font-weight-500">How can we help you?</span>
-                                    <a href="mailto:info@yourdomain.com" class="alt-font text-decoration-underline">Send us an email</a>
+                                    <a href="mailto:info@rhizomespace.com" class="alt-font text-decoration-underline">Send us an email</a>
                                 </div>
                                 <div class="move-bottom-top margin-10px-top last-paragraph-no-margin">
-                                    <p>Lorem ipsum is simply dummy text of the printing industry</p>
+                                    <p>info@rhizomespace.com</p>
                                 </div>
                             </div>
                             <div class="feature-box-overlay"></div>
@@ -47,7 +47,8 @@
                                     <a href="#" class="alt-font text-decoration-underline">Give us a call toady</a>
                                 </div>
                                 <div class="move-bottom-top margin-10px-top last-paragraph-no-margin">
-                                    <p>Lorem ipsum is simply dummy text of the printing industry</p>
+                                    <span>India - +91 9873808707 </apan>
+                                        <span>Sydney - +61 434390721</span>
                                 </div>
                             </div>
                             <div class="feature-box-overlay"></div>
@@ -62,11 +63,11 @@
                                     <i class="line-icon-Approved-Window d-block icon-medium text-fast-blue margin-25px-bottom"></i>
                                 </div>
                                 <div class="feature-box-content last-paragraph-no-margin">
-                                    <span class="text-extra-dark-gray text-extra-medium d-block alt-font font-weight-500">Ready to request a quote?</span>
-                                    <a href="#project" class="alt-font text-decoration-underline section-link">Describe your project</a>
+                                    <span class="text-extra-dark-gray text-extra-medium d-block alt-font font-weight-500">Want to work with us?</span>
+                                    <a href="mailto:info@rhizomespace.com" class="alt-font text-decoration-underline">Mail your resume</a>
                                 </div>
                                 <div class="move-bottom-top margin-10px-top last-paragraph-no-margin">
-                                    <p>Lorem ipsum is simply dummy text of the printing industry</p>
+                                    <p>info@rhizomespace.com</p>
                                 </div>
                             </div>
                             <div class="feature-box-overlay"></div>
@@ -115,12 +116,12 @@
             </div>
         </section>
 
-        <section class="bg-extra-dark-gray fancy-box-background big-section cover-background" style="background-image: url('https://via.placeholder.com/1929x807');padding:50px 0 30px 0;" >
+        <section class="bg-extra-dark-gray fancy-box-background big-section cover-background" style="background-image: url('assets/img/slide/Housing_Sydney.jpg');padding:50px 0 30px 0;" >
             <div class="opacity-very-light opacity-0-half z-index-minus-1 bg-gradient-sky-blue-pink"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-7 col-md-9 text-center margin-3-rem-bottom sm-margin-3-half-rem-bottom">
-                        <h4 class="alt-font text-white font-weight-600">Rhizome offices round the world</h4>
+                        <h4 class="alt-font text-white font-weight-600">Rhizome Offices</h4>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-center">
@@ -135,9 +136,9 @@
                                 <span class="alt-font d-block font-weight-500 text-extra-dark-gray">India - Gurugram</span>
                             </div>
                             <div class="bg-medium-gray margin-20px-tb w-100 h-1px"></div>
-                            <p class="margin-10px-bottom w-85 lg-w-100 sm-w-75 xs-w-85">P 2/21, DLF Phase 2, Gurugram, Haryana 122001</p>
-                            <span class="d-block font-weight-500 margin-10px-top text-extra-dark-gray line-height-20px w-100">Phone: +91 01244351477</span>
-                            <a href="mailto:info@yourdomain.com" class="text-fast-blue text-decoration-underline">info@studiorhizome.com</a>
+                            <p class="margin-10px-bottom w-85 lg-w-100 sm-w-75 xs-w-85">129 First Floor Sector 39, Gurugram, Haryana 122003</p>
+                            <span class="d-block font-weight-500 margin-10px-top text-extra-dark-gray line-height-20px w-100">Phone: +91 01244269247, 01242978281, 01242581819</span>
+                            <a href="mailto:info@yourdomain.com" class="text-fast-blue text-decoration-underline">info@rhizomespace.com</a>
                             <div class="feature-box-overlay bg-extra-dark-gray"></div>
                         </div>
                     </div>
@@ -153,9 +154,9 @@
                                 <span class="alt-font d-block font-weight-500 text-extra-dark-gray">Australia - Sydney</span>
                             </div>
                             <div class="bg-medium-gray margin-20px-tb w-100 h-1px"></div>
-                            <p class="margin-10px-bottom w-85 lg-w-100 sm-w-75 xs-w-85">P 2/21, DLF Phase 2, Gurugram, Haryana 122001</p>
-                            <span class="d-block font-weight-500 margin-10px-top text-extra-dark-gray line-height-20px w-100">Phone: +91 01244351477</span>
-                            <a href="mailto:info@yourdomain.com" class="text-fast-blue text-decoration-underline">info@studiorhizome.com</a>
+                            <p class="margin-10px-bottom w-85 lg-w-100 sm-w-75 xs-w-85">315/10-20 McEvoy Street, Waterloo NSW 2017</p>
+                            <span class="d-block font-weight-500 margin-10px-top text-extra-dark-gray line-height-20px w-100">Phone: +61 434390721</span>
+                            <a href="mailto:info@yourdomain.com" class="text-fast-blue text-decoration-underline">info@rhizomespace.com</a>
                             <div class="feature-box-overlay bg-extra-dark-gray"></div>
                         </div>
                     </div>

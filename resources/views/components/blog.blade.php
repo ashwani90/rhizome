@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-sm-6 text-center text-sm-start wow animate__fadeIn">
-                        <h4 class="alt-font font-weight-600 text-extra-dark-gray mb-0 letter-spacing-minus-1px">Interesting articles</h4>
+                        <h4 class="alt-font font-weight-600 text-extra-dark-gray mb-0 letter-spacing-minus-1px">Articles</h4>
                     </div>
                     <div class="col-12 col-sm-6 text-center text-sm-end wow animate__fadeIn">
                         <a href="{{url('/social-posts')}}" class="btn btn-link btn-extra-large text-extra-dark-gray">all articles</a>

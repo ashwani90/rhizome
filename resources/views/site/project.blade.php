@@ -7,26 +7,44 @@
     <section class="cover-background h-700px sm-h-400px" style="background-image: url(assets/img/{{$images[0]->url}});background-position: center;
     background-repeat: no-repeat;
     background-size: cover;"></section>
+    <section class="overlap-height" style="padding: 100px; padding-bottom: 50px;">
+            <div class="container">
+                <div class="row overlap-gap-section">
+                    <div class="col-12 col-lg-6 col-sm-12 text-center text-md-start md-margin-20px-bottom">
+                        <h4 class="alt-font font-weight-500 text-extra-dark-gray mb-0">{{$project->name}}</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- end banner section -->
         <!-- start section -->
-        <section class="wow animate__fadeIn padding-sixteen-lr xl-padding-ten-lr lg-padding-six-lr xs-no-padding-lr">
+        <section class="wow animate__fadeIn padding-six-lr xl-padding-three-lr lg-padding-two-lr xs-no-padding-lr" style="padding-top: 50px;">
             <div class="container-fluid">
                 <div class="row text-center text-sm-start">
                     <div class="col-12 col-lg-2 col-sm-4 xs-margin-15px-bottom">
-                        <span class="alt-font text-small text-uppercase d-block">Year</span>
-                        <span class="alt-font font-weight-500 text-extra-dark-gray">January 2020</span>
-                    </div>
-                    <div class="col-12 col-lg-2 col-sm-4 xs-margin-15px-bottom">
-                        <span class="alt-font text-small text-uppercase d-block">Our role</span>
-                        <span class="alt-font font-weight-500 text-extra-dark-gray">Product design</span>
+                        <span class="alt-font text-small text-uppercase d-block">Location</span>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->location}}</span>
                     </div>
                     <div class="col-12 col-lg-2 col-sm-4">
-                        <span class="alt-font text-small text-uppercase d-block">Industry</span>
-                        <span class="alt-font font-weight-500 text-extra-dark-gray">Food and drink</span>
+                        <span class="alt-font text-small text-uppercase d-block">Stage</span>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->stage}}</span>
                     </div>
-                    <div class="col-12 col-xl-5 offset-xl-1 col-lg-6 md-margin-30px-top last-paragraph-no-margin">
-                        <p>Simply oj is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. when an unknown printer took a galley.</p>
-                    </div>                    
+                    <div class="col-12 col-lg-2 col-sm-4">
+                        <span class="alt-font text-small text-uppercase d-block">Type</span>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->type}}</span>
+                    </div>
+                    <div class="col-12 col-lg-2 col-sm-4">
+                        <span class="alt-font text-small text-uppercase d-block">Scale</span>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->scale}}</span>
+                    </div>
+                    <div class="col-12 col-lg-2 col-sm-4">
+                        <span class="alt-font text-small text-uppercase d-block">Scope</span>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->scope}}</span>
+                    </div>
+                    <div class="col-12 col-lg-2 col-sm-4">
+                        <span class="alt-font text-small text-uppercase d-block">Team</span>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->team}}</span>
+                    </div>                
                 </div>
             </div>
         </section>
@@ -52,11 +70,10 @@
             <div class="container">
                 <div class="row overlap-gap-section">
                     <div class="col-12 col-lg-6 col-sm-12 text-center text-md-start md-margin-20px-bottom">
-                        <div class="d-flex alt-font margin-15px-bottom"><span class="align-self-center w-30px h-1px bg-orange margin-10px-right d-none d-md-inline-block"></span><div class="flex-grow-1 text-orange font-weight-500">Fresh fruit juice</div></div>
-                        <h4 class="alt-font font-weight-500 text-extra-dark-gray mb-0">A wonderful mix of food style and music</h4>
+                        <h4 class="alt-font font-weight-500 text-extra-dark-gray mb-0">{{$project->title}}</h4>
                     </div>
                     <div class="col-12 col-lg-6 text-center text-md-start last-paragraph-no-margin">
-                        <p class="w-95 lg-w-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae lorem ligula. Fusce at mauris sit amet ligula tristique fringilla. Suspendisse sagittis nunc ante, sit amet aliquet turpis tristique. Nullam ultrices felis sit amet consectetur sodales. Phasellus nunc elit, porta quis iaculis.</p>
+                        <p class="w-95 lg-w-100">{{$project->subtitle}}</p>
                     </div>
                 </div>
             </div>
@@ -195,7 +212,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-5 col-lg-6 col-sm-8 text-center margin-5-rem-bottom lg-margin-4-rem-bottom">
-                        <h5 class="alt-font text-extra-dark-gray font-weight-500">Similar Works</h5>
+                        <h5 class="alt-font text-extra-dark-gray font-weight-500">More {{$project->type}}</h5>
                     </div>
                 </div>
             </div>

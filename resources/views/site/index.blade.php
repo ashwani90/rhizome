@@ -10,7 +10,8 @@
     @include('components.research')
     @include('components.portfolio')
     @include('components.foures')
-    @include('components.about-us')
+    <!-- @include('components.about-us') -->
+    @include('components.services')
     @include('components.clients')
     @include('components.blog')
     @include('components.branding')

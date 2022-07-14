@@ -4,7 +4,7 @@
 
 @section('content')
     @parent
-    <section class="parallax" style="background-image:url('assets/img/about-rhizome-architecture.jpg');background-position: right;">
+    <section class="parallax" style="background-image:url('assets/img/slide/Housing_Sydney.jpg');background-position: cover;">
             <div class="opacity-extra-medium bg-extra-dark-gray"></div>
             <div class="container">
                 <div class="row align-items-stretch justify-content-center small-screen">
@@ -87,7 +87,6 @@ things, interbeing, intermezzo.”</p>
                 @endfor
 
             @for ($i = 0; $i < count($persons); $i++)
-            @if ($i%2 == 1)
             <div id="team-page" class="row" style="margin: 30px 0;">
                     <div class="col-lg-4 col-xs-12 col-sm-12 pe-lg-0 d-flex md-margin-30px-bottom">
                         <div class="w-100 md-h-700px sm-h-550px xs-h-450px cover-background" style="background-image:url('assets/img/{{$persons[$i]->img}}');"></div>
@@ -100,21 +99,6 @@ things, interbeing, intermezzo.”</p>
                         </div>
                     </div>
                 </div>
-            @else 
-            <div id="team-page" class="row" style="margin: 30px 0; ">
-            <div class="col-lg-8 col-xs-12 col-md-8 ps-lg-0 d-flex sm-margin-30px-bottom">
-                        <div class="justify-content-center w-100 d-flex flex-column padding-5-half-rem-lr lg-padding-3-rem-lr md-padding-4-rem-all">
-                            <span class="text-extra-large alt-font font-weight-500 text-black margin-10px-bottom d-block">{{$persons[$i]->name}}</span>
-                            <span class="text-large alt-font font-weight-400 text-black margin-20px-bottom d-block">{{$persons[$i]->designation}} - {{$persons[$i]->qualification}}</span>
-                            <p class="text-black opacity-7">{{$persons[$i]->text}}</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xs-12 pe-lg-0 col-sm-12 d-flex md-margin-30px-bottom">
-                        <div class="w-100 md-h-700px sm-h-550px xs-h-450px cover-background" style="background-image:url('assets/img/{{$persons[$i]->img}}');"></div>
-                    </div>
-                    
-                </div>
-            @endif
             
                 @endfor
                
@@ -169,6 +153,17 @@ things, interbeing, intermezzo.”</p>
                                     
                 </div>
             </div>
+            <div class="container">
+            <div class="bg-medium-light-gray margin-6-rem-bottom margin-3-rem-top w-100 h-1px"></div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-xl-7 col-md-8 col-sm-10 text-center text-md-start sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.1s">
+                        <h6 class="alt-font text-extra-dark-gray font-weight-500 mb-0 md-w-90 sm-w-100"><strong class="text-decoration-underline">Creative thinkers,</strong> seasoned architects and young talent apply for work with us.</h6>
+                    </div>
+                    <div class="col-12 col-xl-5 col-md-4 text-center text-md-end wow animate__fadeIn" data-wow-delay="0.2s">
+                        <a href="contact-us-classic.html" class="btn btn-large btn-round-edge btn-transparent-fast-blue btn-slide-right-bg">Join the team<span class="bg-fast-blue"></span></a>
+                    </div>
+                </div>
+</div>
         </section> 
 @endsection
 
