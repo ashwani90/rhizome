@@ -69,6 +69,23 @@
                         </div>
                     </div>
                     <!-- end swiper slide -->
+
+                    <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/Township_Rudrapur_India.jpg'); ">
+                        <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
+                            <div class="row h-100">
+                                <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
+                                    <a href="# class="w-30 xl-w-40 md-w-50 xs-w-80"><h5 class="alt-font font-weight-300 text-white mb-0"><span class="font-weight-600 d-block" style="font-size: 5rem; margin-bottom: 20px;">Township</span> Rudrapur, India</h5></a>
+                                    <div class="swiper-right-content position-absolute right-15px bottom-50px w-45 padding-5-half-rem-bottom md-w-60 xs-w-70 md-no-padding-bottom sm-bottom-30px">
+                                        <div class="d-flex align-items-center align-self-end justify-content-end w-100">
+                                            <span class="col bg-white h-1px opacity-2 d-none d-sm-inline-block"></span>
+                                            <span class="alt-font text-large text-white padding-3-rem-left xs-padding-2-rem-left">Avan Rudrapur</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- start swiper slide -->
                     <div class="swiper-slide cover-background" style="background-image: url('assets/img/slide/bcc_blue_mountain.jpg'); ">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100">
@@ -200,7 +217,7 @@
                                     <div class="swiper-right-content position-absolute right-15px bottom-50px w-45 padding-5-half-rem-bottom md-w-60 xs-w-70 md-no-padding-bottom sm-bottom-30px">
                                         <div class="d-flex align-items-center align-self-end justify-content-end w-100">
                                             <span class="col bg-white h-1px opacity-2 d-none d-sm-inline-block"></span>
-                                            <span class="alt-font text-large text-white padding-3-rem-left xs-padding-2-rem-left">205 Marco Avenue Panania NSW</span>
+                                            <span class="alt-font text-large text-white padding-3-rem-left xs-padding-2-rem-left">5 Oakwood St. Sutherland NSW</span>
                                         </div>
                                     </div>
                                 </div>

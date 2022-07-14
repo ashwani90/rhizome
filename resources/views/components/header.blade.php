@@ -1,9 +1,9 @@
 
         <header class="home-architecture">
         @if(Request::is('/') || Request::is('about'))
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top sticky navbar-boxed navbar-static-overlay header-reverse-scroll navbar-cover" style="position:fixed;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top sticky navbar-boxed navbar-static-overlay header-reverse-scroll navbar-cover" style="position:fixed;padding-top: 20px;">
         @else
-        <nav id="navbar-with-background" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top sticky navbar-boxed navbar-static-overlay header-reverse-scroll navbar-cover" style="position:fixed;">
+        <nav id="navbar-with-background" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top sticky navbar-boxed navbar-static-overlay header-reverse-scroll navbar-cover" style="position:fixed; padding-top: 20px;">
         @endif
                     <div class="container-fluid h-100px md-h-70px">
                         <div class="col-6 col-lg-2 me-auto ps-lg-0">
