@@ -21,15 +21,9 @@
                         <ul class="portfolio-filter grid-filter nav nav-tabs justify-content-center border-0 text-uppercase font-weight-500 alt-font padding-6-rem-bottom md-padding-4-half-rem-bottom sm-padding-2-rem-bottom">
                         <li class="nav active"><a data-filter="*" href="#" onclick="removeClasses()">All</a></li>
                             
-                        <li class="nav"><a data-filter=".house" href="#" onclick="removeClasses()">House</a></li>
-                            <li class="nav"><a data-filter=".masterplanning" href="#" onclick="removeClasses()">Master Planning</a></li>
+                        <li class="nav"><a data-filter=".house" href="#" onclick="removeClasses()">Architecture</a></li>
                             <li class="nav"><a data-filter=".interior" href="#" onclick="removeClasses()">Interior</a></li>
-                            <li class="nav"><a data-filter=".institutional" href="#" onclick="removeClasses()">Institutional</a></li>
-                            <li class="nav"><a data-filter=".residential" href="#" onclick="removeClasses()">Residential</a></li>
-                            <li class="nav"><a data-filter=".mixuse" href="#" onclick="removeClasses()">Mixuse</a></li>
-                            <li class="nav"><a data-filter=".industrial" href="#" onclick="removeClasses()">Industrial</a></li>
-                            <li class="nav"><a data-filter=".hotels" href="#" onclick="removeClasses()">Hotels & Resorts</a></li>
-                            <li class="nav"><a data-filter=".others" href="#" onclick="removeClasses()">Others</a></li>
+                            <li class="nav"><a data-filter=".others" href="#" onclick="removeClasses()">Urban Design</a></li>
                         </ul>
                         <!-- end filter navigation -->
                     </div>

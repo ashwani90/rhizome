@@ -41,7 +41,7 @@ class RhizomeController extends Controller
         $persons = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->get();
         $blogs = DB::table('blogs')->orderBy('id')->limit(3)->get();
         $people = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->skip(4)->take(100)->get();
-        // $data = $this->getInstagramPosts(3);
+        
 
         $i=0;
         foreach ($projects as $project) {
@@ -151,7 +151,8 @@ class RhizomeController extends Controller
             $category = $allParameters['category'];
             $blogs = DB::table('blogs')->where("category", $category)->get();
         }
-        return view('site.instaPosts', ['blogs' => $blogs]);
+        $data = $this->getInstagramPosts(3);
+        return view('site.instaPosts', ['blogs' => $blogs, "instaData" => $data]);
     }
 
     /**
@@ -221,7 +222,7 @@ class RhizomeController extends Controller
     private function getInstagramPosts($count) {
         try {
             $results = [];
-            $profile = DB::table('dymantic_instagram_feed_tokens')->where(['id'=>'1'])->first();
+            $profile = DB::table('dymantic_instagram_feed_tokens')->where(['id'=>'2'])->first();
             $userId = $profile->user_id;
             $accessToken = $profile->access_code;
             $mediaUrl = "https://graph.instagram.com/". $userId. "/media?access_token=".$accessToken."";

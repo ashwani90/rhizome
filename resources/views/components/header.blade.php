@@ -8,14 +8,26 @@
                     <div class="container-fluid h-100px md-h-70px">
                         <div class="col-6 col-lg-2 me-auto ps-lg-0">
                             <a class="navbar-brand" href="{{url('/')}}">
-                            <img src="assets/img/logo9.png" data-at2x="assets/img/logo9.png" class="default-logo" alt="" style="max-height: 60px;">
-                            <img src="assets/img/logo9.png" data-at2x="assets/img/logo9.png" class="alt-logo" alt="" style="max-height: 60px;">
+                            <img id="navbar-logo-white" src="assets/img/logo9.png" data-at2x="assets/img/logo9.png" class="default-logo" alt="" style="max-height: 60px;">
+                            <img id="navbar-logo-black" src="assets/img/logo10.png" data-at2x="assets/img/logo10.png" class="default-logo" alt="" style="max-height: 60px;display: none;">
+                             <img src="assets/img/logo10.png" data-at2x="assets/img/logo10.png" class="alt-logo" alt="" style="max-height: 60px;">
                             <img src="assets/img/logo9.png" data-at2x="assets/img/logo9.png" class="mobile-logo" alt="" style="max-height: 60px;">
+                            <img src="assets/img/logo10.png" data-at2x="assets/img/logo10.png" class="mobile-logo" alt="" style="max-height: 60px;">
                             </a>
                         </div>
-                        <div class="col-auto text-white text-end" style="transform: scale(1.5); margin-right: 15px;">
+                        <div id="white-menu-container" class="col-auto text-white text-end" style="transform: scale(1.5); margin-right: 15px; color: black!important;">
                             <div class="header-push-button">
-                                <a href="javascript:void(0);" class="push-button ">
+                                <a href="javascript:void(0);" class="push-button" id="white-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="black-menu-container" class="col-auto text-black text-end" style="transform: scale(1.5); margin-right: 15px; display: none;">
+                            <div class="header-push-button">
+                                <a href="javascript:void(0);" class="push-button" id="black-menu">
                                     <span></span>
                                     <span></span>
                                     <span></span>
