@@ -151,7 +151,7 @@ class RhizomeController extends Controller
             $category = $allParameters['category'];
             $blogs = DB::table('blogs')->where("category", $category)->get();
         }
-        $data = $this->getInstagramPosts(3);
+        $data = $this->getInstagramPosts(10);
         return view('site.instaPosts', ['blogs' => $blogs, "instaData" => $data]);
     }
 
@@ -257,11 +257,9 @@ class RhizomeController extends Controller
                 array_push($results, $result);
                 $i++;
             }
-            array_push($results, $result);
             
             return $results;
         } catch (\Exception $e) {
-            var_dump($e->getMessage());
             return false;
         }
         
