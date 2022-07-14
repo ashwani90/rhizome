@@ -9,10 +9,11 @@
         <div class="page-loader"></div>
     @include('components.research')
     @include('components.portfolio')
-    @include('components.branding')
+    @include('components.foures')
     @include('components.about-us')
     @include('components.clients')
     @include('components.blog')
+    @include('components.branding')
 
 </div>
         @endsection

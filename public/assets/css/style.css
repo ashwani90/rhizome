@@ -4431,7 +4431,7 @@ aside .instafeed-grid.gutter-double-extra-large { margin-left: -20px; margin-rig
 .fancy-text-box-style-01 .fancy-text-box .fancy-text-content { font-size: 80px; line-height: 72px; margin-bottom: 0; margin-right: 15px; }
 
 /* fancy text box style 02 */
-.fancy-text-box-style-02 { border-bottom: 1px solid; border-right: 1px solid; overflow: hidden; }
+.fancy-text-box-style-02 { border-bottom: 1px solid; border-right: 1px solid; border-top: 1px solid; overflow: hidden; }
 .fancy-text-box-style-02:last-child { border-right: 0}
 .fancy-text-box-style-02 .text-box-wrapper .text-box, .fancy-text-box-style-02 .text-box-wrapper .text-box-hover { padding: 52px 20px 43px; display: block; width: 100%; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
 .fancy-text-box-style-02 .text-box-wrapper:hover .text-box { color: #ff6437; opacity: 0; visibility: hidden; transform: translateY(-100%); -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }

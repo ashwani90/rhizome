@@ -1,15 +1,22 @@
-<section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;height:150px; padding-left: 3vw;">
-            <div class="container-fluid">
-                <div class="row align-items-stretch justify-content-left extra-small-screen" style="height:100px; padding-top: 80px;">
-                    <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-left d-flex justify-content-left flex-column">
-                        <h6 class="text-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Featured Projects</h6>
-                    </div>
-                </div>
-            </div>
-        </section>      
+    
       
       <section class="pt-0">
-            <div class="container">
+      <div class="container">
+                <div class="row align-items-center margin-10-rem-top md-margin-5-rem-top sm-margin-4-rem-top margin-5-rem-bottom md-margin-3-rem-bottom sm-margin-2-rem-bottom">
+                    <div class="col-12 col-lg-4 text-center text-lg-start md-margin-30px-bottom wow animate__fadeIn">
+                        <h4 class="alt-font font-weight-600 text-extra-dark-gray mb-0 letter-spacing-minus-1px">Featured Projects</h4>
+                    </div>
+                    <div class="col-12 col-lg-8 text-center wow animate__fadeIn">
+                        <!-- start filter navigation -->
+                        <ul class="portfolio-filter grid-filter nav nav-tabs justify-content-center justify-content-lg-end border-0 text-uppercase font-weight-500 alt-font">
+                            <li class="nav active"><a data-filter="*" href="#">All</a></li>
+                            <li class="nav"><a data-filter=".branding" href="#">Architecture</a></li>
+                            <li class="nav"><a data-filter=".graphics" href="#">Interior</a></li>
+                            <li class="nav"><a data-filter=".logos" href="#">Urban Design</a></li>
+                        </ul>
+                        <!-- end filter navigation -->
+                    </div>
+                </div>
             </div>
             <div class="container-fluid">
                 <div class="row">
@@ -47,11 +54,11 @@
             </div>
         </section>
 
-        <section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;height:150px; padding-right: 3vw">
+        <section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;height:80px; padding-right: 3vw">
             <div class="container-fluid">
                 <div class="row align-items-stretch justify-content-right extra-small-screen" style="height:100px; ">
                     <div class="col-12 col-xl-12 col-lg-12 col-md-12 page-title-extra-small text-right d-flex justify-content-right flex-column" style="align-items: flex-end;">
-                        <h6 class="text-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom"><a href="{{ url('/projects') }}" class="my-custom-btn font-weight-600">More Projects</a></h6>
+                        <h6 class="text-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom"><a href="{{ url('/projects') }}" class="my-custom-btn font-weight-600">All Projects</a></h6>
                     </div>
                 </div>
             </div>

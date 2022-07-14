@@ -1,6 +1,6 @@
 
         <header class="home-architecture">
-        @if(Request::is('/') || Request::is('about'))
+        @if(Request::is('/') || Request::is('about') )
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top sticky navbar-boxed navbar-static-overlay header-reverse-scroll navbar-cover" style="position:fixed;padding-top: 20px;">
         @else
         <nav id="navbar-with-background" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top sticky navbar-boxed navbar-static-overlay header-reverse-scroll navbar-cover" style="position:fixed; padding-top: 20px;">
@@ -49,17 +49,18 @@
                                         <li class="menu-list-item"><a href="{{ url('/') }}">home</a>
                                     </li>
                                     <!-- end menu item -->
+                                    <li class="menu-list-item"><a href="{{ url('/projects') }}">projects</a></li>
                                     <!-- start menu item -->
-                                    <li class="menu-list-item"><a href="{{ url('/research') }}">expertise</a></li>
+                                    <li class="menu-list-item"><a href="{{ url('/research') }}">services</a></li>
                                     <!-- end menu item -->
                                     <!-- start menu item -->
-                                    <li class="menu-list-item"><a href="{{ url('/projects') }}">projects</a></li>
+                                    
                                     <!-- end menu item -->
                                     <!-- start menu item -->
                                     <li class="menu-list-item"><a href="{{ url('/about') }}">about us</a></li>
                                     <!-- end menu item -->
                                     <!-- start menu item -->
-                                    <li class="menu-list-item"><a href="{{ url('/social-posts') }}">social posts</a></li>
+                                    <li class="menu-list-item"><a href="{{ url('/social-posts') }}">articles</a></li>
                                     <!-- end menu item -->
                                     <!-- start menu item -->
                                     <li class="menu-list-item"><a href="{{ url('/contact') }}">contact</a></li>

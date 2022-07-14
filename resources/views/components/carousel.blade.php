@@ -123,7 +123,7 @@
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" >
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
-                                    <a href="#" class="w-30 xl-w-40 md-w-50 xs-w-80"><h5 class="alt-font font-weight-300 text-white mb-0"><span class="font-weight-600 d-block" style="font-size: 5rem; margin-bottom: 20px;">Retail</span> Ghaziabad, India</h5></a>
+                                    <a href="#" class="w-30 xl-w-40 md-w-50 xs-w-80"><h5 class="alt-font font-weight-300 text-white mb-0"><span class="font-weight-600 d-block" style="font-size: 5rem; margin-bottom: 20px;">Commercial</span> Ghaziabad, India</h5></a>
                                     <div class="swiper-right-content position-absolute right-15px bottom-50px w-45 padding-5-half-rem-bottom md-w-60 xs-w-70 md-no-padding-bottom sm-bottom-30px">
                                         <div class="d-flex align-items-center align-self-end justify-content-end w-100">
                                             <span class="col bg-white h-1px opacity-2 d-none d-sm-inline-block"></span>
@@ -243,7 +243,7 @@
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" >
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
-                                    <a href="#" class="w-30 xl-w-40 md-w-50 xs-w-80"><h5 class="alt-font font-weight-300 text-white mb-0"><span class="font-weight-600 d-block" style="font-size: 5rem; margin-bottom: 20px;">Retail</span> Gurugram, India</h5></a>
+                                    <a href="#" class="w-30 xl-w-40 md-w-50 xs-w-80"><h5 class="alt-font font-weight-300 text-white mb-0"><span class="font-weight-600 d-block" style="font-size: 5rem; margin-bottom: 20px;">Commercial</span> Gurugram, India</h5></a>
                                     <div class="swiper-right-content position-absolute right-15px bottom-50px w-45 padding-5-half-rem-bottom md-w-60 xs-w-70 md-no-padding-bottom sm-bottom-30px">
                                         <div class="d-flex align-items-center align-self-end justify-content-end w-100">
                                             <span class="col bg-white h-1px opacity-2 d-none d-sm-inline-block"></span>

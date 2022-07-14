@@ -1,13 +1,12 @@
-<section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;height:150px; margin-top: 40px;">
-            <div class="container">
-                <div class="row align-items-stretch justify-content-center extra-small-screen" style="height:100px;">
-                    <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">
-                        <h2 class="text-extra-dark-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Our Clients</h2>
+
+<section class="big-section border-top border-color-medium-gray">
+<div class="container">
+                <div class="row align-items-center  margin-5-rem-bottom md-margin-3-rem-bottom sm-margin-2-rem-bottom">
+                    <div class="col-12 col-lg-4 text-center text-lg-start md-margin-30px-bottom wow animate__fadeIn">
+                        <h4 class="alt-font font-weight-600 text-extra-dark-gray mb-0 letter-spacing-minus-1px">Our Clients</h4>
                     </div>
                 </div>
             </div>
-        </section>
-<section class="big-section" style="padding:0;">
             <div class="container">
                 <div class="row client-logo-style-06 justify-content-center">
                     <!-- start client logo item -->

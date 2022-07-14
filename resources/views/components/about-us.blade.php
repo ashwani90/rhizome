@@ -1,16 +1,16 @@
 
-        <section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg.jpg'); padding:0;height:150px;">
-            <div class="container">
-                <div class="row align-items-stretch justify-content-center extra-small-screen" style="height:100px;">
-                    <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">
-                        <h2 class="text-extra-dark-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Team</h2>
+
+        <section id="about" class="bg-light-gray">
+        <div class="container">
+                <div class="row align-items-center  margin-5-rem-bottom md-margin-3-rem-bottom sm-margin-2-rem-bottom">
+                    <div class="col-12 col-lg-4 text-center text-lg-start md-margin-30px-bottom wow animate__fadeIn">
+                        <h4 class="alt-font font-weight-600 text-extra-dark-gray mb-0 letter-spacing-minus-1px">Team</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 text-center text-sm-end wow animate__fadeIn">
+                        <a href="{{url('/about')}}" class="btn btn-link btn-extra-large text-extra-dark-gray">More About Us</a>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-        <section id="about" class="bg-light-gray">
             <div class="container">
 
             @for ($i = 0; $i < count($persons); $i++)
@@ -21,8 +21,9 @@
                     <div class="col-lg-8 col-xs-12 col-md-8 col-sm-12 ps-lg-0 d-flex sm-margin-30px-bottom">
                         <div class="justify-content-center w-100 d-flex flex-column padding-5-half-rem-lr lg-padding-3-rem-lr md-padding-4-rem-all">
                             <span class="text-extra-large alt-font font-weight-500 text-black margin-10px-bottom d-block">{{$persons[$i]->name}}</span>
-                            <span class="text-large alt-font font-weight-400 text-black margin-20px-bottom d-block">{{$persons[$i]->designation}} - {{$persons[$i]->qualification}}</span>
-                            <p class="text-black opacity-7">{{$persons[$i]->text}}</p>
+                            <span class="text-large alt-font font-weight-400 text-black margin-20px-bottom d-block"> {!! $persons[$i]->qualification !!}</span>
+                            <span class="text-large alt-font font-weight-400 text-black margin-20px-bottom d-block">{{$persons[$i]->designation}}</span>
+                            <p class="text-black opacity-7"  style="line-height: 20px;">{{$persons[$i]->text}}</p>
                         </div>
                     </div>
                 </div>
@@ -37,8 +38,9 @@
                     <div class="col-lg-8 col-xs-12 col-md-8 col-sm-12 ps-lg-0 d-flex sm-margin-30px-bottom">
                         <div class="justify-content-center w-100 d-flex flex-column padding-5-half-rem-lr lg-padding-3-rem-lr md-padding-4-rem-all">
                             <span class="text-extra-large alt-font font-weight-500 text-black margin-10px-bottom d-block">{{$persons[$i]->name}}</span>
-                            <span class="text-large alt-font font-weight-400 text-black margin-20px-bottom d-block">{{$persons[$i]->designation}} - {{$persons[$i]->qualification}}</span>
-                            <p class="text-black opacity-7">{{$persons[$i]->text}}</p>
+                            <span class="text-large alt-font font-weight-400 text-black margin-20px-bottom d-block"> {!! $persons[$i]->qualification !!}</span>
+                            <span class="text-large alt-font font-weight-400 text-black margin-20px-bottom d-block">{{$persons[$i]->designation}}</span>
+                            <p class="text-black opacity-7" style="line-height: 20px;">{{$persons[$i]->text}}</p>
                         </div>
                     </div>
                 </div>
