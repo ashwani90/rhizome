@@ -40,11 +40,6 @@ class ProjectController extends AdminController
         $grid->column('scope', __('Scope'));
         $grid->column('team', __('Team'));
         $grid->column('image_dim', __('Image dim'));
-        $grid->column('next_horizontal', __('Next horizontal'));
-        $grid->column('next_empty', __('Next empty'));
-        $grid->column('not_show', __('Not show'));
-        $grid->column('add_below', __('Add below'));
-        $grid->column('is_half', __('Is half'));
         $grid->column('stage', __('Stage'));
 
         return $grid;
@@ -74,11 +69,6 @@ class ProjectController extends AdminController
         $show->field('scope', __('Scope'));
         $show->field('team', __('Team'));
         $show->field('image_dim', __('Image dim'));
-        $show->field('next_horizontal', __('Next horizontal'));
-        $show->field('next_empty', __('Next empty'));
-        $show->field('not_show', __('Not show'));
-        $show->field('add_below', __('Add below'));
-        $show->field('is_half', __('Is half'));
         $show->field('stage', __('Stage'));
 
         return $show;
@@ -106,11 +96,6 @@ class ProjectController extends AdminController
         $form->text('scope', __('Scope'));
         $form->text('team', __('Team'));
         $form->number('image_dim', __('Image dim'));
-        $form->switch('next_horizontal', __('Next horizontal'));
-        $form->number('next_empty', __('Next empty'));
-        $form->switch('not_show', __('Not show'));
-        $form->switch('add_below', __('Add below'));
-        $form->number('is_half', __('Is half'));
         $form->text('stage', __('Stage'));
 
         return $form;
