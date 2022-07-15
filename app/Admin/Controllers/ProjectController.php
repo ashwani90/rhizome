@@ -41,6 +41,8 @@ class ProjectController extends AdminController
         $grid->column('team', __('Team'));
         $grid->column('image_dim', __('Image dim'));
         $grid->column('stage', __('Stage'));
+        $grid->column('not_show', __('Show As Featured'));
+        $grid->column('is_banner', __('Is Banner'));
 
         return $grid;
     }
@@ -70,6 +72,8 @@ class ProjectController extends AdminController
         $show->field('team', __('Team'));
         $show->field('image_dim', __('Image dim'));
         $show->field('stage', __('Stage'));
+        $show->field('not_show', __('Show as Featured'));
+        $show->field('is_banner', __('Is Banner'));
 
         return $show;
     }
@@ -97,6 +101,8 @@ class ProjectController extends AdminController
         $form->text('team', __('Team'));
         $form->number('image_dim', __('Image dim'));
         $form->text('stage', __('Stage'));
+        $form->number('not_show', __('Show as Featured'));
+        $form->number('is_banner', __('Is Banner'));
 
         return $form;
     }
