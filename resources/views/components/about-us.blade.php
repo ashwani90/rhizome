@@ -98,15 +98,5 @@
                                     
                 </div>
             </div>
-            <div class="container">
-            <div class="bg-medium-light-gray margin-6-rem-bottom margin-3-rem-top w-100 h-1px"></div>
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-12 col-xl-7 col-md-8 col-sm-10 text-center text-md-start sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.1s">
-                        <h6 class="alt-font text-extra-dark-gray font-weight-500 mb-0 md-w-90 sm-w-100"><strong class="text-decoration-underline">Creative thinkers,</strong> seasoned architects and young talent apply for work with us.</h6>
-                    </div>
-                    <div class="col-12 col-xl-5 col-md-4 text-center text-md-end wow animate__fadeIn" data-wow-delay="0.2s">
-                        <a href="contact-us-classic.html" class="btn btn-large btn-round-edge btn-transparent-fast-blue btn-slide-right-bg">Join the team<span class="bg-fast-blue"></span></a>
-                    </div>
-                </div>
-</div>
+            
         </section> 

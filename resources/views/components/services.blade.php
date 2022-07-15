@@ -1,4 +1,4 @@
-<section class="position-relative padding-thirteen-top lg-padding-nine-top">
+<section class="position-relative padding-five-top lg-padding-three-top">
             <div class="container">
                 <div class="row justify-content-lg-center">
                     <div class="col-12 overflow-hidden alt-font font-weight-600 text-white text-overlap-style-02 d-none d-xl-block wow animate__fadeInDown" data-wow-delay="0.2s">achievements</div>
@@ -19,10 +19,10 @@
                             <div class="swiper-container black-move" data-slider-options='{ "loop": true, "slidesPerView": 1, "spaceBetween": 0, "observer": true, "observeParents": true, "autoplay": { "delay": 3000, "disableOnInteraction": false },  "navigation": { "nextEl": ".swiper-button-next-nav-2", "prevEl": ".swiper-button-previous-nav-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "effect": "slide" }'>
                                 <div class="swiper-wrapper">
                                     <!-- start fancy text box slider item -->
-                                    <div class="swiper-slide text-center padding-15px-all">
-                                        <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-all border-color-black-transparent overflow-hidden">
+                                    <div class="swiper-slide my-swiper text-center padding-15px-all">
+                                        <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-right border-color-black-transparent overflow-hidden">
                                             <div class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
-                                                <h4 class="feature-box-icon alt-font font-weight-500 text-yellow-ochre-light margin-20px-bottom letter-spacing-minus-2px">01</h4>
+                                                <h4 class="feature-box-icon alt-font font-weight-500 text-gray margin-20px-bottom letter-spacing-minus-2px">01</h4>
                                                 <div class="feature-box-content last-paragraph-no-margin">
                                                     <span class="text-extra-dark-gray text-extra-medium font-weight-600  d-block margin-10px-bottom alt-font">Design</span>
                                                     <ul style="list-style-type:none; font-size: 20px; margin-top: 25px;" class="text-black">
@@ -30,7 +30,7 @@
                                     <li>Urban Design</li>
                                     <li>Architecture</li>
                                     <li>Interior</li>
-                                    <li></li>
+                                    <li style="opacity: 0;">A</li>
 </ul>
                                                 </div>
                                                 
@@ -39,10 +39,10 @@
                                     </div>
                                     <!-- end fancy text box slider item -->
                                     <!-- start fancy text box slider item -->
-                                    <div class="swiper-slide text-center padding-15px-all">
-                                        <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-all border-all border-color-black-transparent overflow-hidden last-paragraph-no-margin">
+                                    <div class="swiper-slide my-swiper text-center padding-15px-all">
+                                        <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-right  border-color-black-transparent overflow-hidden last-paragraph-no-margin">
                                             <div class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
-                                                <h4 class="feature-box-icon alt-font font-weight-500 text-yellow-ochre-light margin-20px-bottom letter-spacing-minus-2px">02</h4>
+                                                <h4 class="feature-box-icon alt-font font-weight-500 text-gray margin-20px-bottom letter-spacing-minus-2px">02</h4>
                                                 <div class="feature-box-content last-paragraph-no-margin">
                                                     <span class="text-extra-dark-gray text-extra-medium font-weight-600  d-block margin-10px-bottom alt-font">Sustainability</span>
                                                     <ul style="list-style-type:none;font-size: 20px;margin-top: 25px;" class="text-black">
@@ -50,7 +50,7 @@
                                     <li>Energy Audits</li>
                                     <li>Green Certification</li>
                                     <li>Net Zero Design</li>
-                                    <li></li>
+                                    <li style="opacity: 0;">A</li>
 </ul>
                                                 </div>
                                                 
@@ -59,10 +59,10 @@
                                     </div>
                                     <!-- end fancy text box slider item -->
                                     <!-- start fancy text box slider item -->
-                                    <div class="swiper-slide text-center padding-15px-all">
-                                        <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-all border-all border-color-black-transparent overflow-hidden last-paragraph-no-margin">
+                                    <div class="swiper-slide my-swiper text-center padding-15px-all">
+                                        <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-right  border-color-black-transparent overflow-hidden last-paragraph-no-margin">
                                             <div class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
-                                                <h4 class="feature-box-icon alt-font font-weight-500 text-yellow-ochre-light margin-20px-bottom letter-spacing-minus-2px">03</h4>
+                                                <h4 class="feature-box-icon alt-font font-weight-500 text-gray margin-20px-bottom letter-spacing-minus-2px">03</h4>
                                                 <div class="feature-box-content last-paragraph-no-margin">
                                                     <span class="text-extra-dark-gray text-extra-medium font-weight-600  d-block margin-10px-bottom alt-font">Engineering</span>
                                                     <ul style="list-style-type:none;font-size: 20px;margin-top: 25px;" class="text-black">
@@ -79,18 +79,18 @@
                                     </div>
                                     <!-- end fancy text box slider item -->
                                     <!-- start fancy text box slider item -->
-                                    <div class="swiper-slide text-center padding-15px-all">
-                                        <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-all border-all border-color-black-transparent overflow-hidden last-paragraph-no-margin">
+                                    <div class="swiper-slide my-swiper text-center padding-15px-all">
+                                        <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-right  border-color-black-transparent overflow-hidden last-paragraph-no-margin">
                                             <div class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
-                                                <h4 class="feature-box-icon alt-font font-weight-500 text-yellow-ochre-light margin-20px-bottom letter-spacing-minus-2px">04</h4>
+                                                <h4 class="feature-box-icon alt-font font-weight-500 text-gray margin-20px-bottom letter-spacing-minus-2px">04</h4>
                                                 <div class="feature-box-content last-paragraph-no-margin">
                                                     <span class="text-extra-dark-gray text-extra-medium font-weight-600  d-block margin-10px-bottom alt-font">Management</span>
                                                     <ul style="list-style-type:none;font-size: 20px;margin-top: 25px;" class="text-black">
                                     <li>Value Engineering</li>
                                     <li>Quantity Estimation</li>
                                     <li>Quality Control</li>
-                                    <li></li>
-                                    <li></li>
+                                    <li style="opacity: 0;">A</li>
+                                    <li style="opacity: 0;">A</li>
 </ul>
                                                 </div>
                                                 
