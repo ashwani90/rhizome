@@ -25,7 +25,7 @@
                             <div class="swiper-container black-move" data-slider-options='{ "loop": true, "slidesPerView": 1, "spaceBetween": 0, "observer": true, "observeParents": true, "autoplay": { "delay": 3000, "disableOnInteraction": false },  "navigation": { "nextEl": ".swiper-button-next-nav-2", "prevEl": ".swiper-button-previous-nav-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "effect": "slide" }'>
                                 <div class="swiper-wrapper">
                                     <!-- start fancy text box slider item -->
-                                    <div class="swiper-slide text-center padding-15px-all">
+                                    <div class="swiper-slide my-swiper text-center padding-15px-all">
                                         <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-right border-color-black-transparent overflow-hidden">
                                             <div class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
                                                 <h4 class="feature-box-icon alt-font font-weight-500 text-gray margin-20px-bottom letter-spacing-minus-2px">01</h4>
@@ -45,7 +45,7 @@
                                     </div>
                                     <!-- end fancy text box slider item -->
                                     <!-- start fancy text box slider item -->
-                                    <div class="swiper-slide text-center padding-15px-all">
+                                    <div class="swiper-slide my-swiper text-center padding-15px-all">
                                         <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-right  border-color-black-transparent overflow-hidden last-paragraph-no-margin">
                                             <div class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
                                                 <h4 class="feature-box-icon alt-font font-weight-500 text-gray margin-20px-bottom letter-spacing-minus-2px">02</h4>
@@ -65,7 +65,7 @@
                                     </div>
                                     <!-- end fancy text box slider item -->
                                     <!-- start fancy text box slider item -->
-                                    <div class="swiper-slide text-center padding-15px-all">
+                                    <div class="swiper-slide my-swiper text-center padding-15px-all">
                                         <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-right  border-color-black-transparent overflow-hidden last-paragraph-no-margin">
                                             <div class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
                                                 <h4 class="feature-box-icon alt-font font-weight-500 text-gray margin-20px-bottom letter-spacing-minus-2px">03</h4>
@@ -85,7 +85,7 @@
                                     </div>
                                     <!-- end fancy text box slider item -->
                                     <!-- start fancy text box slider item -->
-                                    <div class="swiper-slide text-center padding-15px-all">
+                                    <div class="swiper-slide my-swiper text-center padding-15px-all">
                                         <div class="feature-box text-start feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-right  border-color-black-transparent overflow-hidden last-paragraph-no-margin">
                                             <div class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
                                                 <h4 class="feature-box-icon alt-font font-weight-500 text-gray margin-20px-bottom letter-spacing-minus-2px">04</h4>

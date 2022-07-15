@@ -4944,7 +4944,15 @@ input[type="checkbox"].error { box-shadow: 0px 0px 0px 1px rgb(255 0 0), 1px 1px
         position: absolute;
         left: 0; right: 0;
         top: 0; bottom: 0;
-        background: rgba(255,255,255,.3);
+        background: rgba(0,0,0,.3);
+}
+
+.my-swiper:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(255,255,255,.3);
 }
 
 .sticky .header-appear {
