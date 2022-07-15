@@ -2762,7 +2762,8 @@
     /* architecture */
     .box-layout .navbar.navbar-boxed { padding-left: 0px; padding-right: 0px; }
     .home-architecture .navbar.bg-transparent, .home-architecture.sticky .header-dark.header-always-fixed-scroll { background-color: transparent !important; }
-    .home-architecture .navbar-dark.bg-transparent .push-button > span, .home-architecture.sticky .navbar-dark.bg-transparent .push-button > span { background-color: #FFFFFF !important; }
+    .home-architecture .navbar-dark.bg-transparent #white-menu-container .push-button > span, .home-architecture.sticky .navbar-dark.bg-transparent .push-button > span { background-color: #FFFFFF !important; }
+    .home-architecture .navbar-dark.bg-transparent #black-menu-container .push-button > span, .home-architecture.sticky .navbar-dark.bg-transparent .push-button > span { background-color: #000 !important; }
     .home-architecture .tparrows.tp-rightarrow { transform: matrix(1, 0, 0, 1, -67, -240) !important; }
     .home-architecture .tparrows.tp-leftarrow { transform: matrix(1, 0, 0, 1, -67, -307) !important; }
 
