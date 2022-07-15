@@ -7,7 +7,6 @@
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2">
-                    <!-- start feature box item -->
                     <div class="col wow animate__fadeIn">
                         <div class="feature-box padding-1-half-rem-all sm-padding-2-rem-tb xs-padding-4-rem-lr md-margin-15px-bottom">
                             <div class="feature-box-icon">
@@ -23,8 +22,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end feature box item -->
-                    <!-- start feature box item -->
                     <div class="col wow animate__fadeIn" data-wow-delay="0.2s">
                         <div class="feature-box padding-1-half-rem-all sm-padding-2-rem-tb xs-padding-4-rem-lr md-margin-15px-bottom">
                             <div class="feature-box-icon">
@@ -41,8 +38,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end feature box item -->
-                    <!-- start feature box item -->
                     <div class="col wow animate__fadeIn" data-wow-delay="0.4s">
                         <div class="feature-box padding-1-half-rem-all sm-padding-2-rem-tb xs-padding-4-rem-lr sm-margin-15px-bottom">
                             <div class="feature-box-icon">
@@ -58,8 +53,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end feature box item -->
-                    <!-- start feature box item -->
                     <div class="col wow animate__fadeIn" data-wow-delay="0.6s">
                         <div class="feature-box padding-1-half-rem-all sm-padding-2-rem-tb xs-padding-4-rem-lr">
                             <div class="feature-box-icon">
@@ -75,7 +68,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end feature box item -->
                 </div>
             </div>
         </section>
