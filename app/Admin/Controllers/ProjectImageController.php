@@ -30,7 +30,7 @@ class ProjectImageController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('url', __('Url'));
-        $grid->column('project_id', __('Project id'));
+        $grid->column('project_id', __('Project id'))->filter();
         $grid->column('priority', __('Priority'));
         $grid->column('enabled', __('Enabled'));
 
