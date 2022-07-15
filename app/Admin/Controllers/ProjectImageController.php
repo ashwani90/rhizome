@@ -9,6 +9,7 @@ use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use DB;
 
 class ProjectImageController extends AdminController
 {
@@ -29,8 +30,10 @@ class ProjectImageController extends AdminController
         $grid = new Grid(new ProjectImage());
 
         $grid->column('id', __('Id'));
-        $grid->column('url', __('Url'));
-        $grid->column('project_id', __('Project id'))->filter();
+        $grid->column('url', __('Url'))->image();
+        $grid->column('project_id', __('Project Name'))->filter()->display(function($id) {
+            return DB::table('projects')->where('id', $id)->get()[0]->name;
+        });
         $grid->column('priority', __('Priority'));
         $grid->column('enabled', __('Enabled'));
 

@@ -32,8 +32,7 @@ class TeamController extends AdminController
         $grid->column('text', __('Text'));
         $grid->column('priority', __('Priority'));
         $grid->column('designation', __('Designation'));
-        $grid->column('img', __('Img'));
-        $grid->column('small_text', __('Small text'));
+        $grid->column('img', __('Img'))->image();
 
         return $grid;
     }
@@ -55,7 +54,6 @@ class TeamController extends AdminController
         $show->field('priority', __('Priority'));
         $show->field('designation', __('Designation'));
         $show->field('img', __('Img'));
-        $show->field('small_text', __('Small text'));
 
         return $show;
     }
@@ -75,7 +73,6 @@ class TeamController extends AdminController
         $form->number('priority', __('Priority'));
         $form->text('designation', __('Designation'));
         $form->image('img', __('Img'))->move("team");
-        $form->number('small_text', __('Small text'));
 
         return $form;
     }

@@ -30,7 +30,7 @@ class ProjectController extends AdminController
         $grid->column('title', __('Title'));
         $grid->column('name', __('Name'))->filter('like');
         $grid->column('subtitle', __('Subtitle'));
-        $grid->column('url', __('Url'));
+        $grid->column('url', __('Url'))->image();
         $grid->column('type', __('Type'));
         $grid->column('location', __('Location'));
         $grid->column('date', __('Date'));

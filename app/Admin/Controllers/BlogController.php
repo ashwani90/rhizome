@@ -31,7 +31,7 @@ class BlogController extends AdminController
         $grid->column('desc', __('Desc'));
         $grid->column('date', __('Date'));
         $grid->column('category', __('Category'));
-        $grid->column('image', __('Image'));
+        $grid->column('image', __('Image'))->image();
         $grid->column('author', __('Author'));
         $grid->column('tags', __('Tags'));
 
