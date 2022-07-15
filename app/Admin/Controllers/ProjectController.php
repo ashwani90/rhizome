@@ -80,17 +80,6 @@ class ProjectController extends AdminController
         $show->field('add_below', __('Add below'));
         $show->field('is_half', __('Is half'));
         $show->field('stage', __('Stage'));
-        $show->projectImages('ProjectImage', function ($images) {
-
-            $images->resource('/admin/project-images');
-        
-            $images->id();
-            $images->project_id();
-        
-            $images->filter(function ($filter) {
-                $filter->like('project_id');
-            });
-        });
 
         return $show;
     }
