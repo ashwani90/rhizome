@@ -21,30 +21,42 @@
         <section class="wow animate__fadeIn padding-six-lr xl-padding-three-lr lg-padding-two-lr xs-no-padding-lr" style="padding-top: 50px;">
             <div class="container-fluid">
                 <div class="row text-center text-sm-start">
+                @if($project->location)
                     <div class="col-12 col-lg-2 col-sm-4 xs-margin-15px-bottom">
                         <span class="alt-font text-small text-uppercase d-block">Location</span>
                         <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->location}}</span>
                     </div>
+                    @endif
+                    @if($project->stage)
                     <div class="col-12 col-lg-2 col-sm-4">
                         <span class="alt-font text-small text-uppercase d-block">Stage</span>
                         <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->stage}}</span>
                     </div>
+                    @endif
+                    @if($project->type)
                     <div class="col-12 col-lg-2 col-sm-4">
                         <span class="alt-font text-small text-uppercase d-block">Type</span>
                         <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->type}}</span>
                     </div>
+                    @endif
+                    @if($project->scale)
                     <div class="col-12 col-lg-2 col-sm-4">
                         <span class="alt-font text-small text-uppercase d-block">Scale</span>
                         <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->scale}}</span>
                     </div>
+                    @endif
+                    @if($project->scope)
                     <div class="col-12 col-lg-2 col-sm-4">
                         <span class="alt-font text-small text-uppercase d-block">Scope</span>
                         <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->scope}}</span>
                     </div>
+                    @endif
+                    @if($project->team)
                     <div class="col-12 col-lg-2 col-sm-4">
                         <span class="alt-font text-small text-uppercase d-block">Team</span>
                         <span class="alt-font font-weight-500 text-extra-dark-gray">{{$project->team}}</span>
-                    </div>                
+                    </div>   
+                    @endif             
                 </div>
             </div>
         </section>
