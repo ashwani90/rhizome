@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a09423ee36ddbf81eb31778515b7ac4",
+    "content-hash": "ed4c2b4939296b7b814a465d8bc3561c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1017,6 +1017,10 @@
                 "grid",
                 "laravel"
             ],
+            "support": {
+                "issues": "https://github.com/z-song/laravel-admin/issues",
+                "source": "https://github.com/z-song/laravel-admin/tree/v1.8.19"
+            },
             "time": "2022-05-24T03:49:38+00:00"
         },
         {
@@ -8444,5 +8448,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.3.0"
 }
