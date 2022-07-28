@@ -10,13 +10,13 @@
                     <div class="col-12 overflow-hidden alt-font font-weight-600 text-white text-overlap-style-02 d-none d-xl-block wow animate__fadeInDown" data-wow-delay="0.2s">achievements</div>
                     <div class="col-12 col-lg-6 col-sm-8 text-lg-center margin-6-rem-bottom lg-margin-4-rem-bottom md-margin-3-rem-bottom xs-margin-5-rem-bottom wow animate__fadeIn">
                         <span class="alt-font font-weight-500 text-gray d-block margin-20px-bottom">For hassle free design experience</span>
-                        <h5 class="alt-font font-weight-700  text-extra-dark-gray letter-spacing-minus-1px m-0">we offer a full range of architecture and design management services</h5>
+                        <h5 class="alt-font font-weight-700  text-extra-dark-gray letter-spacing-minus-1px m-0">Offering complete Architecture and Design Management Services</h5>
                     </div>
                 </div>
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 col-xl-3 col-lg-4 position-relative padding-2-rem-top md-no-padding-top md-margin-5-rem-bottom wow animate__fadeIn" data-wow-delay="0.2s">
                         <span class="alt-font margin-20px-bottom d-block  font-weight-500">Expert services</span>
-                        <h6 class="alt-font  text-extra-dark-gray font-weight-700 margin-40px-bottom md-margin-20px-bottom">We like to make you feel more on your home</h6>
+                        <h6 class="alt-font  text-extra-dark-gray font-weight-700 margin-40px-bottom md-margin-20px-bottom">Services in domain of Design, Sustainability Engineering and management  </h6>
                         <div class="swiper-button-next-nav-2 swiper-button-next slider-navigation-style-06"><i class="line-icon-Arrow-OutRight"></i></div>
                         <div class="swiper-button-previous-nav-2 swiper-button-prev slider-navigation-style-06"><i class="line-icon-Arrow-OutLeft"></i></div>
                     </div>
