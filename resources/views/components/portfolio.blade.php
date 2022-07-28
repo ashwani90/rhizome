@@ -4,18 +4,31 @@
       <div class="container">
                 <div class="row align-items-center margin-10-rem-top md-margin-5-rem-top sm-margin-4-rem-top margin-5-rem-bottom md-margin-3-rem-bottom sm-margin-2-rem-bottom">
                     <div class="col-12 col-lg-4 text-center text-lg-start md-margin-30px-bottom wow animate__fadeIn">
-                        <h4 class="alt-font font-weight-600 text-extra-dark-gray mb-0 letter-spacing-minus-1px">Featured Projects</h4>
+                        <h4 class="alt-font font-weight-800 text-extra-dark-gray mb-0 letter-spacing-minus-1px bold">Featured Projects</h4>
                     </div>
-                    <div class="col-12 col-lg-8 text-center wow animate__fadeIn">
-                        <!-- start filter navigation -->
-                        <ul class="portfolio-filter grid-filter nav nav-tabs justify-content-center justify-content-lg-end border-0 text-uppercase font-weight-500 alt-font">
-                            <li class="nav active"><a data-filter="*" href="#">All</a></li>
-                            <li class="nav"><a data-filter=".branding" href="#">Architecture</a></li>
-                            <li class="nav"><a data-filter=".graphics" href="#">Interior</a></li>
-                            <li class="nav"><a data-filter=".logos" href="#">Urban Design</a></li>
-                        </ul>
-                        <!-- end filter navigation -->
-                    </div>
+                    <div class="col-lg-4">
+</div>
+                    <div class="col-12 col-lg-4 nav-item dropdown simple-dropdown">
+                                    <a href="#" class="nav-link typology-link" style="font-size: 1.5rem; font-weight: 600;">TYPOLOGIES</a>
+                                    <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="dropdown">
+                                            <a data-bs-toggle="dropdown" href="javascript:void(0);">Categories<i class="fas fa-angle-right dropdown-toggle"></i></a>
+                                            <ul class="dropdown-menu portfolio-filter grid-filter justify-content-center">
+                                                <li class="nav justify-content-center" style="padding-left:35px!important;"><a data-filter=".hotels" href="#">Architecture</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".interior" href="#">Interior</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".others" href="#">Urban Design</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a data-bs-toggle="dropdown" href="javascript:void(0);">Offices<i class="fas fa-angle-right dropdown-toggle"></i></a>
+                                            <ul class="dropdown-menu portfolio-filter grid-filter ">
+                                                <li class="nav" style="padding-left:35px!important;"><a data-filter=".hotels" href="#" >Gurugram</a></li>
+                                                <li class="nav"><a data-filter=".others" href="#">Sydney</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+</div>
                 </div>
             </div>
             <div class="container-fluid">
