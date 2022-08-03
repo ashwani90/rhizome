@@ -8,22 +8,23 @@
                     </div>
                     <div class="col-lg-4">
 </div>
-                    <div class="col-12 col-lg-4 nav-item dropdown simple-dropdown">
-                                    <a href="#" class="nav-link typology-link" style="font-size: 1.5rem; font-weight: 600;">TYPOLOGIES</a>
+                    <div class="col-12 col-lg-4 nav-item dropdown simple-dropdown dropdown-big-size" style="background-color: white;">
+                                    <a class="nav-link typology-link" style="font-size: 17px; font-weight: 500; margin-right: 0px; border: 0;color: inherit;color: #828282;">TYPOLOGIES</a>
                                     <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
-                                    <ul class="dropdown-menu" role="menu">
+                                    <ul class="dropdown-menu menu-background" role="menu" style="background-color: white;">
                                         <li class="dropdown">
-                                            <a data-bs-toggle="dropdown" href="javascript:void(0);">Categories<i class="fas fa-angle-right dropdown-toggle"></i></a>
+                                            <a data-bs-toggle="dropdown" href="javascript:void(0);">Type<i class="fas fa-angle-right dropdown-toggle"></i></a>
                                             <ul class="dropdown-menu portfolio-filter grid-filter justify-content-center">
-                                                <li class="nav justify-content-center" style="padding-left:35px!important;"><a data-filter=".hotels" href="#">Architecture</a></li>
-                                                <li class="nav justify-content-center"><a data-filter=".interior" href="#">Interior</a></li>
-                                                <li class="nav justify-content-center"><a data-filter=".others" href="#">Urban Design</a></li>
+                                                <li class="nav justify-content-center nav-first-item" ><a data-filter=".hotels" href="#">Houses</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".interior" href="#">Institutional</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".others" href="#">Residential</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".others" href="#">Interior Design</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown">
-                                            <a data-bs-toggle="dropdown" href="javascript:void(0);">Offices<i class="fas fa-angle-right dropdown-toggle"></i></a>
+                                            <a data-bs-toggle="dropdown" href="javascript:void(0);">Office Location<i class="fas fa-angle-right dropdown-toggle"></i></a>
                                             <ul class="dropdown-menu portfolio-filter grid-filter ">
-                                                <li class="nav" style="padding-left:35px!important;"><a data-filter=".hotels" href="#" >Gurugram</a></li>
+                                                <li class="nav  nav-first-item" ><a data-filter=".hotels" href="#" >Gurugram</a></li>
                                                 <li class="nav"><a data-filter=".others" href="#">Sydney</a></li>
                                             </ul>
                                         </li>
