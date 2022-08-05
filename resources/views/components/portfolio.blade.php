@@ -1,17 +1,24 @@
     
       
       <section class="pt-0">
-      <div class="container">
+      <div class="container-fluid">
                 <div class="row align-items-center margin-10-rem-top md-margin-5-rem-top sm-margin-4-rem-top margin-5-rem-bottom md-margin-3-rem-bottom sm-margin-2-rem-bottom">
-                    <div class="col-12 col-lg-4 text-center text-lg-start md-margin-30px-bottom wow animate__fadeIn">
-                        <h4 class="alt-font font-weight-800 text-extra-dark-gray mb-0 letter-spacing-minus-1px bold">Featured Projects</h4>
+                    <div class="col-12 col-lg-4 text-center text-lg-start md-margin-30px-bottom  wow animate__fadeIn">
+                        <h4 class="alt-font font-weight-800 text-extra-dark-gray mb-0 letter-spacing-minus-1px bold" style="margin-left: 50px;">Featured Projects</h4>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-12 col-lg-4">
+                    <ul class="portfolio-filter grid-filter nav nav-tabs justify-content-center border-0 text-uppercase font-weight-500 alt-font md-padding-4-half-rem-bottom sm-padding-2-rem-bottom">
+                        <li class="nav active"><a data-filter="*" href="#" onclick="removeClasses()">All</a></li>
+                            
+                        <li class="nav"><a data-filter=".house" href="#" onclick="removeClasses()">Architecture</a></li>
+                            <li class="nav"><a data-filter=".interior" href="#" onclick="removeClasses()">Interior</a></li>
+                            <li class="nav"><a data-filter=".others" href="#" onclick="removeClasses()">Urban Design</a></li>
+                        </ul>
 </div>
-                    <div class="col-12 col-lg-4 nav-item dropdown simple-dropdown dropdown-big-size" style="background-color: white;">
-                                    <a class="nav-link typology-link" style="font-size: 17px; font-weight: 500; margin-right: 0px; border: 0;color: inherit;color: #828282;">TYPOLOGIES</a>
+                    <div class="col-12 col-lg-4 nav-item dropdown simple-dropdown dropdown-big-size" style="background-color: white; padding-right: 50px;">
+                                    <a class="nav-link typology-link" style="font-size: 15px; font-weight: 500; margin-left: 0px; border: 0;color: inherit;color: #828282;text-align:center;">FILTER</a>
                                     <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
-                                    <ul class="dropdown-menu menu-background" role="menu" style="background-color: white;">
+                                    <ul class="dropdown-menu menu-background" role="menu" style="background-color: white; left: 50px;">
                                         <li class="dropdown">
                                             <a data-bs-toggle="dropdown" href="javascript:void(0);">Type<i class="fas fa-angle-right dropdown-toggle"></i></a>
                                             <ul class="dropdown-menu portfolio-filter grid-filter justify-content-center">

@@ -16,7 +16,7 @@
         <section class="pt-0" style="margin-top:-70px;">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 text-center">
+                    <div class="col-12 col-lg-8 text-center">
                         <!-- start filter navigation -->
                         <ul class="portfolio-filter grid-filter nav nav-tabs justify-content-center border-0 text-uppercase font-weight-500 alt-font padding-6-rem-bottom md-padding-4-half-rem-bottom sm-padding-2-rem-bottom">
                         <li class="nav active"><a data-filter="*" href="#" onclick="removeClasses()">All</a></li>
@@ -27,6 +27,28 @@
                         </ul>
                         <!-- end filter navigation -->
                     </div>
+                    <div class="col-12 col-lg-4 nav-item dropdown simple-dropdown dropdown-big-size" style="background-color: white; padding-right: 50px;">
+                                    <a class="nav-link typology-link" style="font-size: 15px; font-weight: 500; margin-left: 0px; border: 0;color: inherit;color: #828282;text-align:center;">FILTER</a>
+                                    <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <ul class="dropdown-menu menu-background" role="menu" style="background-color: white; left: 50px;">
+                                        <li class="dropdown">
+                                            <a data-bs-toggle="dropdown" href="javascript:void(0);">Type<i class="fas fa-angle-right dropdown-toggle"></i></a>
+                                            <ul class="dropdown-menu portfolio-filter grid-filter justify-content-center">
+                                                <li class="nav justify-content-center nav-first-item" ><a data-filter=".hotels" href="#">Houses</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".interior" href="#">Institutional</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".others" href="#">Residential</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".others" href="#">Interior Design</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a data-bs-toggle="dropdown" href="javascript:void(0);">Office Location<i class="fas fa-angle-right dropdown-toggle"></i></a>
+                                            <ul class="dropdown-menu portfolio-filter grid-filter ">
+                                                <li class="nav  nav-first-item" ><a data-filter=".hotels" href="#" >Gurugram</a></li>
+                                                <li class="nav"><a data-filter=".others" href="#">Sydney</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+</div>
                 </div>
             </div>
             <div class="container-fluid">
