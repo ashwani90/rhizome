@@ -16,7 +16,7 @@
                         </ul>
 </div>
                     <div class="col-12 col-lg-4 nav-item dropdown simple-dropdown dropdown-big-size" style="background-color: white; padding-right: 50px;">
-                                    <a class="nav-link typology-link" style="font-size: 15px; font-weight: 500; margin-left: 0px; border: 0;color: inherit;color: #828282;text-align:center;">FILTER</a>
+                                    <a class="nav-link typology-link" style="font-size: 15px; font-weight: 500; margin-left: 0px; border: 0;color: inherit;color: #828282;text-align:center;">FILTERS</a>
                                     <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
                                     <ul class="dropdown-menu menu-background" role="menu" style="background-color: white; left: 50px;">
                                         <li class="dropdown">

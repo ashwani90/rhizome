@@ -27,9 +27,9 @@ class ProjectController extends AdminController
         $grid = new Grid(new Projects());
 
         $grid->column('id', __('Id'));
-        $grid->column('title', __('Title'));
+        $grid->column('title', __('Project One line Title'));
         $grid->column('name', __('Name'))->filter('like');
-        $grid->column('subtitle', __('Subtitle'));
+        $grid->column('subtitle', __('Description'));
         $grid->column('url', __('Url'))->image();
         $grid->column('type', __('Type'));
         $grid->column('location', __('Location'));
@@ -58,9 +58,9 @@ class ProjectController extends AdminController
         $show = new Show(Projects::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('title', __('Title'));
+        $show->field('title', __('Project One Line Title'));
         $show->field('name', __('Name'));
-        $show->field('subtitle', __('Subtitle'));
+        $show->field('subtitle', __('Description'));
         $show->field('url', __('Url'));
         $show->field('type', __('Type'));
         $show->field('location', __('Location'));
@@ -87,9 +87,9 @@ class ProjectController extends AdminController
     {
         $form = new Form(new Projects());
 
-        $form->text('title', __('Title'));
+        $form->text('title', __('Project one line Title'));
         $form->text('name', __('Name'));
-        $form->text('subtitle', __('Subtitle'));
+        $form->text('subtitle', __('Description'));
         $form->image('url', __('Url'))->move("projects");
         $form->text('type', __('Type'));
         $form->text('location', __('Location'));
