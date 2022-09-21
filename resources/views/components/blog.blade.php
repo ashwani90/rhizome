@@ -1,4 +1,5 @@
 
+@if (count($blogs) >0)
 <section class="bg-light-gray">
             <div class="container">
                 <div class="row align-items-center">
@@ -37,7 +38,8 @@
                 </div>
             </div>
         </section>
-
+@endif
+@if (count($blogs) > 0)
         <section >
             <div class="container">
                 <div class="row align-items-center">
@@ -76,3 +78,4 @@
                 </div>
             </div>
         </section>
+        @endif
