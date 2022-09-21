@@ -72,12 +72,7 @@ class RhizomeController extends Controller
         foreach ($projects as $project) {
             $project->class = $this->dynamic_classes[$project->image_dim];
             $project->height = $this->dynamic_heights[$project->image_dim];
-            if ($project->next_horizontal) {
-                $projects[$i]->nextPro = $projects[$i+1];
-                $projects[$i+1]->not_show = true;
-            }else {
-                $projects[$i]->nextPro = null;
-            }
+            
             $i++;
         }
 
@@ -209,14 +204,15 @@ class RhizomeController extends Controller
             'mixuse' => 'Mixuse',
             'interior' => 'Interior',
             'others' => 'Others',
-            'masterplanning'=>'Master Planning'
+            'masterplanning'=>'Master Planning',
+            'architecture' => 'Architecture',
+            "urban" => 'Urban Design'
         ];
         
         $allParameters = $request->all();
         $id = $allParameters['id'];
         $project = DB::table('projects')->find($id);
-        $projectType = $project->type;
-        $project->type = $allProjectTypes[$project->type];
+        $projectType = explode(" ", $project->type)[0];
         $projectImages = DB::table('project_images')->where(['project_id'=>$id, 'enabled'=>1])->orderBy('priority')->get();
         $similar_projects = DB::table('projects')->where('priority', '>', 0)->where('type', '=', $projectType)->where('id', '<>', $id)->orderBy('priority', 'desc')->limit(3)->get();
         return view('site.project', ['project' => $project, 'images' => $projectImages, 'projects' => $similar_projects]);
