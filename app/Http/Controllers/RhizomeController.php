@@ -184,12 +184,12 @@ class RhizomeController extends Controller
     {
         $allParameters = $request->all();
         $name = $allParameters['name'];
-        $subject = $allParameters['subject'];
+        $subject = "User Contact";
         $content = $allParameters['message'];
-        $email = $allParameters['email'];
+        $content = $allParameters['email'] . " " . $allParameters['phone'] . " " . $content;
+        $email = "ar.tushar@gmail.com";
         Mail::to('iashwanigaur@outlook.com')->send(new ContactMail($name, $subject, $email, $content));
-        
-         echo "Check your mail";
+        return response()->json(['status' => true]);
     }
 
     public function project(Request $request)

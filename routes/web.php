@@ -20,6 +20,7 @@ Route::get('/social-posts', [RhizomeController::class, 'instaPosts'])->name('soc
 Route::post('/send_mail', [RhizomeController::class, 'send_mail'])->name('send_mail');
 Route::get('/blog', [RhizomeController::class, 'blog'])->name('blog');
 
+
 Route::resource('admin/projects', ProjectController::class);
 Route::resource('admin/project-images', ProjectImageController::class);
 Route::resource('admin/team', TeamController::class);
