@@ -21,9 +21,9 @@
                         <ul class="portfolio-filter grid-filter nav nav-tabs justify-content-center border-0 text-uppercase font-weight-500 alt-font padding-6-rem-bottom md-padding-4-half-rem-bottom sm-padding-2-rem-bottom">
                         <li class="nav active"><a data-filter="*" href="#" onclick="removeClasses()">All</a></li>
                             
-                        <li class="nav"><a data-filter=".house" href="#" onclick="removeClasses()">Architecture</a></li>
+                        <li class="nav"><a data-filter=".architecture" href="#" onclick="removeClasses()">Architecture</a></li>
                             <li class="nav"><a data-filter=".interior" href="#" onclick="removeClasses()">Interior</a></li>
-                            <li class="nav"><a data-filter=".others" href="#" onclick="removeClasses()">Urban Design</a></li>
+                            <li class="nav"><a data-filter=".urban" href="#" onclick="removeClasses()">Urban Design</a></li>
                         </ul>
                         <!-- end filter navigation -->
                     </div>
@@ -34,17 +34,18 @@
                                         <li class="dropdown">
                                             <a data-bs-toggle="dropdown" href="javascript:void(0);">Type<i class="fas fa-angle-right dropdown-toggle"></i></a>
                                             <ul class="dropdown-menu portfolio-filter grid-filter justify-content-center">
-                                                <li class="nav justify-content-center nav-first-item" ><a data-filter=".hotels" href="#">Houses</a></li>
-                                                <li class="nav justify-content-center"><a data-filter=".interior" href="#">Institutional</a></li>
-                                                <li class="nav justify-content-center"><a data-filter=".others" href="#">Residential</a></li>
-                                                <li class="nav justify-content-center"><a data-filter=".others" href="#">Interior Design</a></li>
+                                                <li class="nav justify-content-center nav-first-item" ><a data-filter=".house" href="#">Houses</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".institutional" href="#">Institutional</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".residence" href="#">Residential</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".hotels" href="#">Hotels</a></li>
+                                                <li class="nav justify-content-center"><a data-filter=".mixuse" href="#">Mixuse</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown">
                                             <a data-bs-toggle="dropdown" href="javascript:void(0);">Office Location<i class="fas fa-angle-right dropdown-toggle"></i></a>
                                             <ul class="dropdown-menu portfolio-filter grid-filter ">
-                                                <li class="nav  nav-first-item" ><a data-filter=".hotels" href="#" >Gurugram</a></li>
-                                                <li class="nav"><a data-filter=".others" href="#">Sydney</a></li>
+                                                <li class="nav  nav-first-item" ><a data-filter=".gurugram" href="#" >Gurugram</a></li>
+                                                <li class="nav"><a data-filter=".sydney" href="#">Sydney</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -59,9 +60,9 @@
                         <li class="grid-sizer"></li>
                             <!-- start portfolio item -->
                             @if ($project->is_half == 1)
-                            <li class=" grid-item {{$project->type}} animate__fadeInUp wow">
+                            <li class=" grid-item {{$project->type}} {{$project->office_location}} animate__fadeInUp wow">
                             @else
-                            <li class=" grid-item {{$project->type}} grid-item-double animate__fadeInUp wow">
+                            <li class=" grid-item {{$project->type}} {{$project->office_location}} grid-item-double animate__fadeInUp wow">
                             @endif
                             
                                 <a href="/project?id={{$project->id}}">
@@ -71,7 +72,7 @@
                                             <div class="portfolio-hover bg-transparent-white justify-content-between d-flex flex-row align-items-end padding-3-rem-tb padding-4-rem-lr xl-padding-2-rem-all">
                                                 <div class="text-start">
                                                     <div class="alt-font text-small text-white text-uppercase margin-5px-bottom opacity-7 move-top-bottom-self"><span>{{$project->title}}</span></div>
-                                                    <h6 class="font-weight-600 alt-font text-white text-uppercase no-margin-bottom move-bottom-top-self"><span>{{$project->subtitle}}</span></h6>
+                                                    <h6 class="font-weight-600 alt-font text-white text-uppercase no-margin-bottom move-bottom-top-self"><span>{{$project->name}}</span></h6>
                                                 </div>
                                                 <span class="position-absolute top-50px right-50px move-right-left lg-top-30px lg-right-30px sm-top-20px sm-right-20px"><i class="ti-arrow-top-right icon-small text-white"></i></span>
                                             </div>

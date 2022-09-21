@@ -37,7 +37,7 @@ class RhizomeController extends Controller
      */
     public function index()
     {
-        $projects = DB::table('projects')->where('priority', '>', 0)->where('id', '<>', 61)->orderBy('priority', 'desc')->limit(13)->get();
+        $projects = DB::table('projects')->whereIn('id', array(1, 2, 3,4,5,6,7,8,10,11,12,14,28,29))->where('id', '<>', 61)->orderBy('priority', 'desc')->get();
         $persons = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->get();
         $blogs = DB::table('blogs')->orderBy('id')->limit(3)->get();
         $people = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->skip(4)->take(100)->get();
@@ -72,7 +72,6 @@ class RhizomeController extends Controller
         foreach ($projects as $project) {
             $project->class = $this->dynamic_classes[$project->image_dim];
             $project->height = $this->dynamic_heights[$project->image_dim];
-            
             $i++;
         }
 
@@ -212,9 +211,9 @@ class RhizomeController extends Controller
         $allParameters = $request->all();
         $id = $allParameters['id'];
         $project = DB::table('projects')->find($id);
-        $projectType = explode(" ", $project->type)[0];
+        $projectType = explode(" ", $project->type);
         $projectImages = DB::table('project_images')->where(['project_id'=>$id, 'enabled'=>1])->orderBy('priority')->get();
-        $similar_projects = DB::table('projects')->where('priority', '>', 0)->where('type', '=', $projectType)->where('id', '<>', $id)->orderBy('priority', 'desc')->limit(3)->get();
+        $similar_projects = DB::table('projects')->where('priority', '>', 0)->where('id', '<>', $id)->where('type', 'like', '%' . $projectType[0] . '%')->orderBy('priority', 'desc')->limit(3)->get();
         return view('site.project', ['project' => $project, 'images' => $projectImages, 'projects' => $similar_projects]);
     }
 

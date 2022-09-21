@@ -78,15 +78,20 @@
         
         <!-- end section -->
         <!-- start section -->
+       
         <section class="overlap-height">
             <div class="container">
                 <div class="row overlap-gap-section">
+                @if ($project->title)
                     <div class="col-12 col-lg-6 col-sm-12 text-center text-md-start md-margin-20px-bottom">
                         <h4 class="alt-font font-weight-500 text-extra-dark-gray mb-0">{{$project->title}}</h4>
                     </div>
+                @endif
+                @if ($project->subtitle)
                     <div class="col-12 col-lg-6 text-center text-md-start last-paragraph-no-margin">
                         <p class="w-95 lg-w-100">{{$project->subtitle}}</p>
                     </div>
+                    @endif
                 </div>
             </div>
         </section>
@@ -213,6 +218,66 @@
                                 </a>
                             </li>
                             @endif
+                            @if (count($images) > 8)
+                            <!-- end lightbox gallery item -->
+                            <!-- start lightbox gallery item -->
+                            <li class="grid-item wow animate__fadeIn" data-wow-delay="0.2s">
+                                <a href="assets/img/{{$images[5]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image bg-extra-dark-gray">
+                                            <img src="assets/img/{{$images[7]->url}}" alt="" />
+                                            <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                                                <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- end lightbox gallery item -->
+                            <!-- start lightbox gallery item -->
+                            <li class="grid-item wow animate__fadeIn" data-wow-delay="0.4s">
+                                <a href="assets/img/{{$images[6]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image bg-extra-dark-gray">
+                                            <img src="assets/img/{{$images[8]->url}}" alt="" />
+                                            <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                                                <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            @endif
+                            @if (count($images) > 10)
+                            <!-- end lightbox gallery item -->
+                            <!-- start lightbox gallery item -->
+                            <li class="grid-item wow animate__fadeIn" data-wow-delay="0.2s">
+                                <a href="assets/img/{{$images[5]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image bg-extra-dark-gray">
+                                            <img src="assets/img/{{$images[9]->url}}" alt="" />
+                                            <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                                                <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- end lightbox gallery item -->
+                            <!-- start lightbox gallery item -->
+                            <li class="grid-item wow animate__fadeIn" data-wow-delay="0.4s">
+                                <a href="assets/img/{{$images[6]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image bg-extra-dark-gray">
+                                            <img src="assets/img/{{$images[10]->url}}" alt="" />
+                                            <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                                                <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            @endif
                             <!-- end lightbox gallery item -->
                         </ul>
                     </div>
@@ -224,7 +289,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-5 col-lg-6 col-sm-8 text-center margin-5-rem-bottom lg-margin-4-rem-bottom">
-                        <h5 class="alt-font text-extra-dark-gray font-weight-500">More {{$project->type}}</h5>
+                        <h5 class="alt-font text-extra-dark-gray font-weight-500">More {{$project->type}} projects</h5>
                     </div>
                 </div>
             </div>

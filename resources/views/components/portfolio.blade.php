@@ -6,38 +6,7 @@
                     <div class="col-12 col-lg-4 text-center text-lg-start md-margin-30px-bottom  wow animate__fadeIn">
                         <h4 class="alt-font font-weight-800 text-extra-dark-gray mb-0 letter-spacing-minus-1px bold" style="margin-left: 50px;">Featured Projects</h4>
                     </div>
-                    <div class="col-12 col-lg-4">
-                    <ul class="portfolio-filter grid-filter nav nav-tabs justify-content-center border-0 text-uppercase font-weight-500 alt-font md-padding-4-half-rem-bottom sm-padding-2-rem-bottom">
-                        <li class="nav active"><a data-filter="*" href="#" onclick="removeClasses()">All</a></li>
-                            
-                        <li class="nav"><a data-filter=".house" href="#" onclick="removeClasses()">Architecture</a></li>
-                            <li class="nav"><a data-filter=".interior" href="#" onclick="removeClasses()">Interior</a></li>
-                            <li class="nav"><a data-filter=".others" href="#" onclick="removeClasses()">Urban Design</a></li>
-                        </ul>
-</div>
-                    <div class="col-12 col-lg-4 nav-item dropdown simple-dropdown dropdown-big-size" style="background-color: white; padding-right: 50px;">
-                                    <a class="nav-link typology-link" style="font-size: 15px; font-weight: 500; margin-left: 0px; border: 0;color: inherit;color: #828282;text-align:center;">FILTERS</a>
-                                    <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
-                                    <ul class="dropdown-menu menu-background" role="menu" style="background-color: white; left: 50px;">
-                                        <li class="dropdown">
-                                            <a data-bs-toggle="dropdown" href="javascript:void(0);">Type<i class="fas fa-angle-right dropdown-toggle"></i></a>
-                                            <ul class="dropdown-menu portfolio-filter grid-filter justify-content-center">
-                                                <li class="nav justify-content-center nav-first-item" ><a data-filter=".hotels" href="#">Houses</a></li>
-                                                <li class="nav justify-content-center"><a data-filter=".interior" href="#">Institutional</a></li>
-                                                <li class="nav justify-content-center"><a data-filter=".others" href="#">Residential</a></li>
-                                                <li class="nav justify-content-center"><a data-filter=".others" href="#">Interior Design</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a data-bs-toggle="dropdown" href="javascript:void(0);">Office Location<i class="fas fa-angle-right dropdown-toggle"></i></a>
-                                            <ul class="dropdown-menu portfolio-filter grid-filter ">
-                                                <li class="nav  nav-first-item" ><a data-filter=".hotels" href="#" >Gurugram</a></li>
-                                                <li class="nav"><a data-filter=".others" href="#">Sydney</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-</div>
-                </div>
+                    
             </div>
             <div class="container-fluid">
                 <div class="row">
@@ -59,7 +28,7 @@
                                             <div class="portfolio-hover bg-transparent-white justify-content-between d-flex flex-row align-items-end padding-3-rem-tb padding-4-rem-lr xl-padding-2-rem-all">
                                                 <div class="text-start">
                                                     <div class="alt-font text-small text-white text-uppercase margin-5px-bottom opacity-7 move-top-bottom-self"><span>{{$project->title}}</span></div>
-                                                    <h6 class="font-weight-600 alt-font text-white text-uppercase no-margin-bottom move-bottom-top-self"><span>{{$project->subtitle}}</span></h6>
+                                                    <h6 class="font-weight-600 alt-font text-white text-uppercase no-margin-bottom move-bottom-top-self"><span>{{$project->name}}</span></h6>
                                                 </div>
                                                 <span class="position-absolute top-50px right-50px move-right-left lg-top-30px lg-right-30px sm-top-20px sm-right-20px"><i class="ti-arrow-top-right icon-small text-white"></i></span>
                                             </div>
