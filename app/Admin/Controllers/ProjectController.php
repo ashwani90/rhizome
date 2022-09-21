@@ -43,6 +43,7 @@ class ProjectController extends AdminController
         $grid->column('stage', __('Stage'));
         $grid->column('not_show', __('Show As Featured'));
         $grid->column('is_banner', __('Is Banner'));
+        $grid->column('office_location', __('Office Location'));
 
         return $grid;
     }
@@ -74,6 +75,7 @@ class ProjectController extends AdminController
         $show->field('stage', __('Stage'));
         $show->field('not_show', __('Show as Featured'));
         $show->field('is_banner', __('Is Banner'));
+        $show->field('office_location', __('Office Location'));
 
         return $show;
     }
@@ -90,7 +92,7 @@ class ProjectController extends AdminController
         $form->text('title', __('Project one line Title'));
         $form->text('name', __('Name'));
         $form->text('subtitle', __('Description'));
-        $form->image('url', __('Url'))->move("projects");
+        $form->image('url', __('Url'))->move("projects_all");
         $form->text('type', __('Type'));
         $form->text('location', __('Location'));
         $form->date('date', __('Date'))->default(date('Y-m-d'));
@@ -103,6 +105,7 @@ class ProjectController extends AdminController
         $form->text('stage', __('Stage'));
         $form->number('not_show', __('Show as Featured'));
         $form->number('is_banner', __('Is Banner'));
+        $form->text('office_location', __('Office Location'));
 
         return $form;
     }
