@@ -9,6 +9,8 @@ use DB;
 use \Dymantic\InstagramFeed\Profile;
 use Mail;
 use App\Mail\ContactMail;
+use InstagramScraper\Instagram;
+use Phpfastcache\Helper\Psr16Adapter;
 
 class RhizomeController extends Controller
 {
@@ -41,8 +43,12 @@ class RhizomeController extends Controller
         $persons = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->get();
         $blogs = DB::table('blogs')->orderBy('id')->limit(3)->get();
         $people = DB::table('team')->where('priority', '>', 0)->orderBy('priority', 'desc')->skip(4)->take(100)->get();
-        
 
+        $data = DB::table("insta_posts")->limit(4)->get();
+        $da=[];
+        foreach ($data as $d) {
+          $da[] = array("media_url" => $d->media_url, "caption" => $d->caption, "permalink" => $d->permalink, "timestamp" => $d->timestamp);
+        }
         $i=0;
         foreach ($projects as $project) {
             $project->class = $this->dynamic_classes[$project->image_dim];
@@ -56,7 +62,7 @@ class RhizomeController extends Controller
             $i++;
         }
         
-        return view('site.index', ['projects' => $projects, "persons" => $persons, "blogs" => $blogs, 'people' => $people]);
+        return view('site.index', ['projects' => $projects, "persons" => $persons, "blogs" => $blogs, 'people' => $people, "instaData" => $da]);
     }
 
     /**
@@ -145,8 +151,26 @@ class RhizomeController extends Controller
             $category = $allParameters['category'];
             $blogs = DB::table('blogs')->where("category", $category)->get();
         }
+        $data = DB::table("insta_posts")->get();
+        $da=[];
+        foreach ($data as $d) {
+          $da[] = array("media_url" => $d->media_url, "caption" => $d->caption, "permalink" => $d->permalink, "timestamp" => $d->timestamp);
+        }
+        return view('site.instaPosts', ['blogs' => $blogs, "instaData" => $da]);
+    }
+
+    public function save_insta()
+    {
         $data = $this->getInstagramPosts(10);
-        return view('site.instaPosts', ['blogs' => $blogs, "instaData" => $data]);
+        foreach ($data as $d) {
+            $media_url = $d['media_url'];
+        $caption = $d['caption'];
+        $permalink = $d['permalink'];
+        $timestamp = $d['timestamp'];
+        $data=array('media_url'=>$media_url,"caption"=>$caption, "permalink" => $permalink, "timestamp"=>strtotime($timestamp));
+        DB::table('insta_posts')->insert($data);
+        }
+
     }
 
     /**

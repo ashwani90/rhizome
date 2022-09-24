@@ -44,51 +44,38 @@
                 </div>
             </div>
         </section>
-        <section id="blog" class="blog">
-          <div class="custom-container">
-          
-            <div class="row">
-              @if ($instaData)
+        <section class="bg-light-gray pt-0 padding-eleven-lr xl-padding-two-lr xs-no-padding-lr" style="margin-top: -70px">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 blog-content">
+                        <ul class="blog-grid blog-wrapper grid grid-loading grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
+                            <li class="grid-sizer"></li>
+                            <!-- start blog item -->
+                            @if ($instaData)
             @foreach ($instaData as $data)
-              <div class="col-lg-4  col-md-6 d-flex align-items-stretch  blog-box" data-aos="fade-up">
-                <article class="entry">
-
-                  <div class="entry-img">
-                    @if (@isset($data['caption'])) 
-                      <img src="{{$data['media_url']}}" alt="{{$data['caption']}}" class="img-fluid">
-                    @else
-                    <img src="{{$data['media_url']}}"  class="img-fluid">
-                    @endif
-                    
-                  </div>
-
-                  <h2 class="entry-title">
-                  @if (@isset($data['caption'])) 
-                  <a href="{{$data['permalink']}}">{{$data['caption']}}</a>
-                    @else
-                    <a href="{{$data['permalink']}}">Instagram Post</a>
-                    @endif
-                    
-                  </h2>
-
-                  <div class="entry-meta">
-                    <ul>
-                      <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <time datetime="{{date('Y-m-d', strtotime($data['timestamp']))}}">{{date('Y-m-d', strtotime($data['timestamp']))}}</time></li>
-                    </ul>
-                  </div>
-
-                </article><!-- End blog entry -->
-              </div>
-              @endforeach
+                            <li class="grid-item wow animate__fadeIn">
+                                <div class="blog-post border-radius-5px bg-white">
+                                    <div class="d-flex justify-content-center align-items-center font-weight-500 padding-30px-lr padding-15px-tb">
+                                        <a href="{{$data['permalink']}}" class="text-small me-auto text-slate-blue text-extra-dark-gray-hover">{{date('Y-m-d', ($data['timestamp']))}}</a>
+                                    </div>
+                                    <div class="blog-post-image" style="height: 180px">
+                                        <a href="{{$data['permalink']}}" title=""><img src="{{$data['media_url']}}" alt=""></a>
+                                        
+                                    </div>
+                                    <div class="post-details padding-3-rem-lr padding-2-half-rem-tb lg-padding-2-rem-all md-padding-2-half-rem-tb md-padding-3-rem-lr">
+                                        <a href="{{$data['permalink']}}" class="alt-font font-weight-500 text-extra-medium text-extra-dark-gray text-extra-dark-gray-hover d-block margin-15px-bottom">Insta</a>
+                                        <p>{{ \Illuminate\Support\Str::limit($data['caption'], 150, $end='...') }}</p>
+                                    </div>
+                                </div>
+                            </li>
+                            @endforeach
               @endif
-
-                </article><!-- End blog entry -->
-              </div>
-
+                            
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-          </div>
-        </section><!-- End Blog Section -->
+        </section>
 @endsection
 
 
