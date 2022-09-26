@@ -91,6 +91,7 @@
                                     @csrf
                                     <div class="row row-cols-1 row-cols-md-2">
                                         <div class="col margin-4-rem-bottom sm-margin-25px-bottom">
+                                            <input type="hidden" name="redirect" value="/contact">
                                             <input class="medium-input bg-white margin-25px-bottom required" type="text" name="name" placeholder="Your name">
                                             <input class="medium-input bg-white margin-25px-bottom required" type="email" name="email" placeholder="Your email address">
                                             <input class="medium-input bg-white mb-0" type="tel" name="phone" placeholder="Your mobile">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 use DB;
 use \Dymantic\InstagramFeed\Profile;
@@ -206,13 +207,22 @@ class RhizomeController extends Controller
     public function send_mail(Request $request)
     {
         $allParameters = $request->all();
-        $name = $allParameters['name'];
-        $subject = "User Contact";
-        $content = $allParameters['message'];
-        $content = $allParameters['email'] . " " . $allParameters['phone'] . " " . $content;
-        $email = "ar.tushar@gmail.com";
-        Mail::to('iashwanigaur@outlook.com')->send(new ContactMail($name, $subject, $email, $content));
-        return response()->json(['status' => true]);
+        $contact = new Contact();
+        $contact->name = $allParameters['name'];
+        $contact->message = $allParameters['message'];
+        $contact->email = $allParameters['email'];
+        $contact->phone = $allParameters['phone'];
+        $contact->save();
+        
+
+        // $allParameters = $request->all();
+        // $name = $allParameters['name'];
+        // $subject = "User Contact";
+        // $content = $allParameters['message'];
+        // $content = $allParameters['email'] . " " . $allParameters['phone'] . " " . $content;
+        // $email = "ar.tushar@gmail.com";
+        // Mail::to('iashwanigaur@outlook.com')->send(new ContactMail($name, $subject, $email, $content));
+        //return response()->json(['status' => true]);
     }
 
     public function project(Request $request)
