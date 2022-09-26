@@ -4,9 +4,10 @@
         <title>@yield('title', 'Studio Rhizome')</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="author" content="ThemeZaa">
+        <meta name="author" content="Ashwani">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-        <meta name="description" content="Litho is a clean and modern design, BootStrap 5 responsive, business and portfolio multipurpose HTML5 template with 37+ ready homepage demos.">
+        <meta name="description" content="Rhizomespace Offering complete Architecture and Design Management Services">
+        <meta name="keywords" content="Rhizome,Studio Rhizome,Rhizome Space,Architecture,Urban Design,Interiors,Interior Design,New Delhi,NCR,Gurugram,Sydney,Tushar Gaur,Gauri Mishra" />
         <!-- favicon icon -->
         <link rel="shortcut icon" href="assets/img/rhizome.png">
         <link rel="apple-touch-icon" href="assets/img/rhizome.png">
