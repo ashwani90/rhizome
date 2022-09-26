@@ -213,7 +213,6 @@ class RhizomeController extends Controller
         $contact->email = $allParameters['email'];
         $contact->phone = $allParameters['phone'];
         $contact->save();
-        
 
         // $allParameters = $request->all();
         // $name = $allParameters['name'];

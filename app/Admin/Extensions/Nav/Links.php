@@ -34,6 +34,11 @@ class Links
     </a>
 </li>
 <li>
+    <a href="/admin/contact">
+      <button class="my-button label label-warning">See Contacts</button>
+    </a>
+</li>
+<li>
     <a href="admin/auth/users">
       <button class="my-button label label-success">See Users</button>
     </a>
