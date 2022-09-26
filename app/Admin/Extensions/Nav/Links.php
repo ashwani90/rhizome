@@ -34,7 +34,7 @@ class Links
     </a>
 </li>
 <li>
-    <a href="/admin/contact">
+    <a href="/admin/contacts">
       <button class="my-button label label-warning">See Contacts</button>
     </a>
 </li>
