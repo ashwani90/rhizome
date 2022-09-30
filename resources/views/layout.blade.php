@@ -18,7 +18,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/theme-vendors.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
-        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+       
         
     </head>
     <body class="h-100">
