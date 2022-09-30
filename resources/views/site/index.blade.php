@@ -11,7 +11,7 @@
     @include('components.portfolio')
     @include('components.foures')
     @include('components.services')
-    @include('components.clients')
+   
     @include('components.blog')
     @include('components.branding')
 
