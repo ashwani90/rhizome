@@ -160,17 +160,32 @@ class RhizomeController extends Controller
         return view('site.instaPosts', ['blogs' => $blogs, "instaData" => $da]);
     }
 
-    public function save_insta()
+    public function save_insta(Request $request)
     {
-        $data = $this->getInstagramPosts(10);
-        foreach ($data as $d) {
-            $media_url = $d['media_url'];
-        $caption = $d['caption'];
-        $permalink = $d['permalink'];
-        $timestamp = $d['timestamp'];
-        $data=array('media_url'=>$media_url,"caption"=>$caption, "permalink" => $permalink, "timestamp"=>strtotime($timestamp));
-        DB::table('insta_posts')->insert($data);
+        $name = $request->query('urbanization');
+        if ($name=="gabriel") {
+            $data = $this->getInstagramPosts(10);
+            if (count($data) > 0) {
+                DB::table('insta_posts')->truncate();
+                foreach ($data as $d) {
+                    $media_url = $d['media_url'];
+                $caption = $d['caption'];
+                $permalink = $d['permalink'];
+                $timestamp = $d['timestamp'];
+                $data=array('media_url'=>$media_url,"caption"=>$caption, "permalink" => $permalink, "timestamp"=>strtotime($timestamp));
+                DB::table('insta_posts')->insert($data);
+                return response()->json([
+                    'status'=>true
+                ]);
+                }
+            }
+        
+        } else {
+            return response()->json([
+                'status'=>false
+            ]);
         }
+        
 
     }
 
