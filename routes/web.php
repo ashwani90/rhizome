@@ -21,6 +21,7 @@ Route::get('/social-posts', [RhizomeController::class, 'instaPosts'])->name('soc
 Route::post('/send_mail', [RhizomeController::class, 'send_mail'])->name('send_mail');
 Route::get('/blog', [RhizomeController::class, 'blog'])->name('blog');
 Route::get('/save_insta', [RhizomeController::class, 'save_insta'])->name('save_insta');
+Route::get('instagram-get-auth', 'RhizomeController@show');
 
 
 Route::resource('admin/projects', ProjectController::class);

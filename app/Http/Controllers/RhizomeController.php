@@ -160,6 +160,12 @@ class RhizomeController extends Controller
         return view('site.instaPosts', ['blogs' => $blogs, "instaData" => $da]);
     }
 
+    public function show() {
+        $profile = \Dymantic\InstagramFeed\Profile::where('username', 'rhizomespace')->first();
+    
+        return view('instagram-auth-page', ['instagram_auth_url' => $profile->getInstagramAuthUrl()]);
+    }
+
     public function save_insta(Request $request)
     {
         $name = $request->query('urbanization');
@@ -168,7 +174,7 @@ class RhizomeController extends Controller
             if (count($data) > 0) {
                 DB::table('insta_posts')->truncate();
                 foreach ($data as $d) {
-                    $media_url = $d['media_url'];
+                $media_url = $d['media_url'];
                 $caption = $d['caption'];
                 $permalink = $d['permalink'];
                 $timestamp = $d['timestamp'];
