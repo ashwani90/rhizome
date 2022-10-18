@@ -180,11 +180,11 @@ class RhizomeController extends Controller
                 $timestamp = $d['timestamp'];
                 $data=array('media_url'=>$media_url,"caption"=>$caption, "permalink" => $permalink, "timestamp"=>strtotime($timestamp));
                 DB::table('insta_posts')->insert($data);
-                return response()->json([
-                    'status'=>true
-                ]);
                 }
             }
+            return response()->json([
+                'status'=>true
+            ]);
         
         } else {
             return response()->json([
