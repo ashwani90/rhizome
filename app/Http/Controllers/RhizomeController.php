@@ -274,7 +274,7 @@ class RhizomeController extends Controller
     private function getInstagramPosts($count) {
         try {
             $results = [];
-            $profile = DB::table('dymantic_instagram_feed_tokens')->where(['id'=>'2'])->first();
+            $profile = DB::table('dymantic_instagram_feed_tokens')->where(['username'=>'rhizomespace'])->first();
             $userId = $profile->user_id;
             $accessToken = $profile->access_code;
             $mediaUrl = "https://graph.instagram.com/". $userId. "/media?access_token=".$accessToken."";
