@@ -47,7 +47,7 @@ Decalcomania.</p>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-6">
-                        <img src="assets/img/about-rhizome-architecture.jpg" alt="" />
+                        <img loading="lazy" src="assets/img/about-rhizome-architecture.jpg" alt="" />
                         <div class="bg-white padding-3-half-rem-lr padding-3-rem-tb lg-padding-2-rem-all md-padding-2-half-rem-all sm-padding-4-rem-all last-paragraph-no-margin">
                             <span class="alt-font text-extra-dark-gray font-weight-500 margin-10px-bottom d-block">About Rhizome</span>
                             <p>“Rhizome has no beginning or end; it is always in the middle, between
@@ -113,7 +113,7 @@ things, interbeing, intermezzo.”</p>
                     <div class="col team-style-02 text-center">
                         <figure>
                             <div class="team-member-image border-radius-5px overflow-hidden modal-popup" style="cursor:pointer;" href="#team_popup{{$i}}">
-                                <img alt="" src="assets/img/{{$people[$i]->img}}" style="height:350px;">
+                                <img loading="lazy" alt="" src="assets/img/{{$people[$i]->img}}" style="height:350px;">
                                 
                             </div>
                             <figcaption class="team-member-position text-center padding-35px-tb sm-padding-25px-tb">

@@ -24,7 +24,7 @@
                                 <a href="/project?id={{$project->id}}">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image">
-                                            <img src="assets/img/{{$project->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$project->url}}" alt="" />
                                             <div class="portfolio-hover bg-transparent-white justify-content-between d-flex flex-row align-items-end padding-3-rem-tb padding-4-rem-lr xl-padding-2-rem-all">
                                                 <div class="text-start">
                                                     <div class="alt-font text-small text-white text-uppercase margin-5px-bottom opacity-7 move-top-bottom-self"><span>{{$project->title}}</span></div>

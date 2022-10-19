@@ -38,8 +38,8 @@
         <!-- end scroll to top -->
         <!-- javascript -->
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/js/theme-vendors.min.js"></script>
-        <script type="text/javascript" src="assets/js/main.js"></script>
+        <script type="text/javascript" defer src="assets/js/theme-vendors.min.js"></script>
+        <script type="text/javascript" defer src="assets/js/main.js"></script>
         <script>
 
             // TODO: need background color of pixel point

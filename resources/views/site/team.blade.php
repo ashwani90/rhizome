@@ -15,7 +15,7 @@
        @for ($i = 0; $i < count($persons); $i++)
          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6 team_member " onclick="handleExpander({{$i+1}},{{count($persons)}});">
            <div class="tag-og background-class" id="expander-pa-{{$i+1}}" style="background-position:center;cursor:pointer;background-image: url(/assets/img/team/{{$persons[$i]->img}});">
-          <a><img />
+          <a>
           </a> 
           </div>
            <textarea style="display:none;" id="text-{{$i+1}}">{{$persons[$i]->text}}</textarea>

@@ -58,7 +58,7 @@
                     <div class="col team-style-02 text-center">
                         <figure>
                             <div class="team-member-image border-radius-5px overflow-hidden modal-popup" style="cursor:pointer;" href="#team_popup{{$i}}">
-                                <img alt="" src="assets/img/{{$people[$i]->img}}" style="height:350px;">
+                                <img loading="lazy" alt="" src="assets/img/{{$people[$i]->img}}" style="height:350px;">
                                 
                             </div>
                             <figcaption class="team-member-position text-center padding-35px-tb sm-padding-25px-tb">

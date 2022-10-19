@@ -94,7 +94,7 @@
                                 <a href="assets/img/{{$images[1]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[1]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[1]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -123,7 +123,7 @@
                                 <a href="assets/img/{{$images[1]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[1]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[1]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -137,7 +137,7 @@
                                 <a href="assets/img/{{$images[2]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[2]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[2]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -164,7 +164,7 @@
                                 <a href="assets/img/{{$images[1]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[1]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[1]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -180,7 +180,7 @@
                                 <a href="assets/img/{{$images[2]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[2]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[2]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -194,7 +194,7 @@
                                 <a href="assets/img/{{$images[3]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[3]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[3]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -209,7 +209,7 @@
                                 <a href="assets/img/{{$images[4]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[4]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[4]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -225,7 +225,7 @@
                                 <a href="assets/img/{{$images[5]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[5]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[5]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -239,7 +239,7 @@
                                 <a href="assets/img/{{$images[6]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[6]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[6]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -255,7 +255,7 @@
                                 <a href="assets/img/{{$images[5]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[7]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[7]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -269,7 +269,7 @@
                                 <a href="assets/img/{{$images[6]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[8]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[8]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -285,7 +285,7 @@
                                 <a href="assets/img/{{$images[5]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[9]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[9]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -299,7 +299,7 @@
                                 <a href="assets/img/{{$images[6]->url}}" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image bg-extra-dark-gray">
-                                            <img src="assets/img/{{$images[10]->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$images[10]->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                                                 <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
                                             </div>
@@ -334,7 +334,7 @@
                                 <a href="/project?id={{$project->id}}">
                                     <div class="portfolio-box">
                                         <div class="portfolio-image" >
-                                            <img src="assets/img/{{$project->url}}" alt="" />
+                                            <img loading="lazy" src="assets/img/{{$project->url}}" alt="" />
                                             <div class="portfolio-hover justify-content-between d-flex flex-row align-items-end padding-3-rem-tb padding-4-rem-lr xl-padding-2-rem-all">
                                                 <div class="text-start">
                                                     <div class="alt-font text-small text-white text-uppercase margin-5px-bottom move-top-bottom-self"><span>{{$project->title}}</span></div>

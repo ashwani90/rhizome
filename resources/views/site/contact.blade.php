@@ -127,7 +127,7 @@
                         <div class="bg-banner-image cover-background" style="background-image: url(assets/img/india.png)"><div class="opacity-medium bg-gradient-sky-blue-pink"></div></div>
                         <div class="feature-box feature-box-left-icon-middle feature-box-dark-hover padding-4-rem-lr padding-3-rem-tb bg-white border-radius-5px overflow-hidden lg-padding-3-rem-lr">
                             <div class="feature-box-icon margin-15px-right">
-                                <img src="assets/img/india.png" class="w-35px d-block" alt="contact us img flag-01" />
+                                <img loading="lazy" src="assets/img/india.png" class="w-35px d-block" alt="contact us img flag-01" />
                             </div>
                             <div class="feature-box-content">
                                 <span class="alt-font d-block font-weight-500 text-extra-dark-gray">India - Gurugram</span>
@@ -145,7 +145,7 @@
                         <div class="bg-banner-image cover-background" style="background-image: url(assets/img/australia.png)"><div class="opacity-medium bg-gradient-sky-blue-pink"></div></div>
                         <div class="feature-box feature-box-left-icon-middle feature-box-dark-hover padding-4-rem-lr padding-3-rem-tb bg-white border-radius-5px overflow-hidden lg-padding-3-rem-lr">
                             <div class="feature-box-icon margin-15px-right">
-                                <img src="assets/img/australia.png" class="w-35px d-block" alt="contact us img flag-02" />
+                                <img loading="lazy" src="assets/img/australia.png" class="w-35px d-block" alt="contact us img flag-02" />
                             </div>
                             <div class="feature-box-content">
                                 <span class="alt-font d-block font-weight-500 text-extra-dark-gray">Australia - Sydney</span>

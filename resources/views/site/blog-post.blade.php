@@ -16,7 +16,7 @@
                                     <li class="d-inline-block align-middle"><i class="feather icon-feather-user text-fast-blue margin-10px-right"></i>By <a href="#">{{$blog->author}}</a></li>
                                 </ul>
                                 <h5 class="alt-font font-weight-500 text-extra-dark-gray margin-4-half-rem-bottom">{{$blog->title}}</h5>
-                                <img src="assets/img/{{$blog->image}}" alt="" class="w-100 border-radius-6px margin-4-half-rem-bottom">
+                                <img loading="lazy" src="assets/img/{{$blog->image}}" alt="" class="w-100 border-radius-6px margin-4-half-rem-bottom">
                                 <p>{!! $output !!}</p>
                                 
                                 </div>
@@ -84,7 +84,7 @@
                                         <a href="/blog?id={{$post->id}}" class="text-small me-auto text-slate-blue text-extra-dark-gray-hover">{{date('j F, Y', strtotime($post->date));}}</a>
                                     </div>
                                     <div class="blog-post-image" style="height: 180px">
-                                        <a href="/social-posts?category={{$post->category}}" title=""><img src="assets/img/{{$post->image}}" alt=""></a>
+                                        <a href="/social-posts?category={{$post->category}}" title=""><img loading="lazy" src="assets/img/{{$post->image}}" alt=""></a>
                                         <div class="alt-font blog-category"><a href="/social-posts?category={{$post->category}}" class="text-uppercase text-extra-dark-gray-hover">{{$post->category}}</a></div>
                                     </div>
                                     <div class="post-details padding-3-rem-lr padding-2-half-rem-tb lg-padding-2-rem-all md-padding-2-half-rem-tb md-padding-3-rem-lr">

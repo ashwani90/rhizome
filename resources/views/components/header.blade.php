@@ -8,11 +8,11 @@
                     <div class="container-fluid h-100px md-h-70px">
                         <div class="col-6 col-lg-2 me-auto ps-lg-0">
                             <a class="navbar-brand" href="{{url('/')}}">
-                            <img id="navbar-logo-white" src="assets/img/logo9.png" data-at2x="assets/img/logo9.png" class="default-logo" alt="" style="max-height: 60px;">
-                            <img id="navbar-logo-black" src="assets/img/logo10.png" data-at2x="assets/img/logo10.png" class="default-logo" alt="" style="max-height: 60px;display: none;">
-                             <img src="assets/img/logo10.png" data-at2x="assets/img/logo10.png" class="alt-logo" alt="" style="max-height: 60px;">
-                            <img id="navbar-logo-white-mob" src="assets/img/logo9.png" data-at2x="assets/img/logo9.png" class="mobile-logo" alt="" style="max-height: 60px;">
-                            <img id="navbar-logo-black-mob" src="assets/img/logo10.png" data-at2x="assets/img/logo10.png" class="mobile-logo" alt="" style="max-height: 60px; display: none;">
+                            <img loading="lazy" id="navbar-logo-white" src="assets/img/logo9.png" data-at2x="assets/img/logo9.png" class="default-logo" alt="" style="max-height: 60px;">
+                            <img loading="lazy" id="navbar-logo-black" src="assets/img/logo10.png" data-at2x="assets/img/logo10.png" class="default-logo" alt="" style="max-height: 60px;display: none;">
+                             <img loading="lazy" src="assets/img/logo10.png" data-at2x="assets/img/logo10.png" class="alt-logo" alt="" style="max-height: 60px;">
+                            <img loading="lazy" id="navbar-logo-white-mob" src="assets/img/logo9.png" data-at2x="assets/img/logo9.png" class="mobile-logo" alt="" style="max-height: 60px;">
+                            <img loading="lazy" id="navbar-logo-black-mob" src="assets/img/logo10.png" data-at2x="assets/img/logo10.png" class="mobile-logo" alt="" style="max-height: 60px; display: none;">
                             </a>
                         </div>
                         <div id="white-menu-container" class="col-auto text-white text-end" style="transform: scale(1.5); margin-right: 15px;">
