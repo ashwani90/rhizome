@@ -15,7 +15,7 @@
                                         <a href="{{$data['permalink']}}" class="text-small me-auto text-slate-blue text-extra-dark-gray-hover">{{date('Y-m-d', ($data['timestamp']))}}</a>
                                     </div>
                                     <div class="blog-post-image" style="height: 180px">
-                                        <a href="{{$data['permalink']}}" title=""><img src="{{$data['media_url']}}" alt=""></a>
+                                        <a href="{{$data['permalink']}}" title=""><img loading="lazy" src="{{$data['media_url']}}" alt=""></a>
                                         
                                     </div>
                                     <div class="post-details padding-3-rem-lr padding-2-half-rem-tb lg-padding-2-rem-all md-padding-2-half-rem-tb md-padding-3-rem-lr">
@@ -56,7 +56,7 @@
                                         <a href="/blog?id={{$blog->id}}" class="text-small me-auto text-slate-blue text-extra-dark-gray-hover">{{date('j F, Y', strtotime($blog->date));}}</a>
                                     </div>
                                     <div class="blog-post-image" style="height: 180px">
-                                        <a href="/blog?id={{$blog->id}}" title=""><img src="assets/img/{{$blog->image}}" alt=""></a>
+                                        <a href="/blog?id={{$blog->id}}" title=""><img loading="lazy" src="assets/img/{{$blog->image}}" alt=""></a>
                                         <div class="alt-font blog-category"><a href="/blog?category={{$blog->category}}" class="text-uppercase text-extra-dark-gray-hover">{{$blog->category}}</a></div>
                                     </div>
                                     <div class="post-details padding-3-rem-lr padding-2-half-rem-tb lg-padding-2-rem-all md-padding-2-half-rem-tb md-padding-3-rem-lr">
