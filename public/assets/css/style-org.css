@@ -4729,8 +4729,6 @@ footer .instafeed-grid.gutter-double-extra-large { margin-left: -20px; margin-ri
 .home-furniture-shop .hermes .tp-bullet:hover {background-color:rgba(35,35,35,1)}
 .home-furniture-shop .hermes .tp-bullet:after{ content:' '; position:absolute; bottom:0; height:0; left:0; width:100%; background-color:rgb(35,35,35); box-shadow:0 0 1px rgba(204,204,204,0); -webkit-transition:height 0.3s ease; transition:height 0.3s ease}
 .home-furniture-shop .hermes .tp-bullet.selected:after{height:100%}
-.home-furniture-shop .tparrows.tp-leftarrow:before { content: "\e657"; font-family: 'icomoon'; color: #232323; opacity: 0.5; font-size: 45px; }
-.home-furniture-shop .tparrows.tp-rightarrow:before { content: "\e658"; font-family: 'icomoon'; color: #232323; opacity: 0.5; font-size: 45px; }
 .footer-furniture-shop.footer-dark .footer-top, .footer-furniture-shop.footer-dark .footer-top a, .footer-furniture-shop.footer-dark .footer-bottom, .footer-furniture-shop.footer-dark .footer-bottom a  { color: #828282;}
 .footer-furniture-shop.footer-dark a:hover { color: #fff;}
 

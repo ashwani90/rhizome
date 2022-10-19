@@ -14,7 +14,7 @@
         <link rel="apple-touch-icon" sizes="72x72" href="assets/img/rhizome.png">
         <link rel="apple-touch-icon" sizes="114x114" href="assets/img/rhizome.png">
         <!-- style sheets and font icons  -->
-        <link rel="stylesheet" type="text/css" href="assets/css/font-icons.min.css">
+         <link rel="preload" rel="stylesheet" type="text/css" href="assets/css/font-icons.min.css"> 
         <link rel="stylesheet" type="text/css" href="assets/css/theme-vendors.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
