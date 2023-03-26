@@ -23,12 +23,15 @@ Route::get('/blog', [RhizomeController::class, 'blog'])->name('blog');
 Route::get('/save_insta', [RhizomeController::class, 'save_insta'])->name('save_insta');
 Route::get('/instagram-get-auth', [RhizomeController::class, 'show'])->name('show');
 
+Route::group(['middleware' => ['web']], function () {
+    Route::resource('/admin/projects', ProjectController::class);
+    Route::resource('/admin/project-images', ProjectImageController::class);
+    Route::resource('/admin/team', TeamController::class);
+    Route::resource('/admin/blog', BlogController::class);
+    Route::resource('/admin/contacts', ContactController::class);
+});
 
-Route::resource('admin/projects', ProjectController::class);
-Route::resource('admin/project-images', ProjectImageController::class);
-Route::resource('admin/team', TeamController::class);
-Route::resource('admin/blog', BlogController::class);
-Route::resource('admin/contacts', ContactController::class);
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
