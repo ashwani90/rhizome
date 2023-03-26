@@ -59,7 +59,17 @@
                                         <a href="{{$data['permalink']}}" class="text-small me-auto text-slate-blue text-extra-dark-gray-hover">{{date('Y-m-d', ($data['timestamp']))}}</a>
                                     </div>
                                     <div class="blog-post-image" style="height: 180px">
-                                        <a href="{{$data['permalink']}}" title=""><img src="{{$data['media_url']}}" alt=""></a>
+                                    @if (str_contains($data['media_url'], 'video'))
+                                    <a href="{{$data['permalink']}}" title="">
+                                        <video width="320" height="190" controls>
+                                            <source src="{{$data['media_url']}}" type="video/mp4">
+                                            Your browser does not support video
+                                        </video>    
+                                    </a>
+                                    @else
+                                    <a href="{{$data['permalink']}}" title=""><img src="{{$data['media_url']}}" alt=""></a>
+                                    @endif
+                                        
                                         
                                     </div>
                                     <div class="post-details padding-3-rem-lr padding-2-half-rem-tb lg-padding-2-rem-all md-padding-2-half-rem-tb md-padding-3-rem-lr">
