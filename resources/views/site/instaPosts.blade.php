@@ -59,7 +59,7 @@
                                         <a href="{{$data['permalink']}}" class="text-small me-auto text-slate-blue text-extra-dark-gray-hover">{{date('Y-m-d', ($data['timestamp']))}}</a>
                                     </div>
                                     <div class="blog-post-image" style="height: 180px">
-                                    @if (str_contains($data['media_url'], 'video'))
+                                    @if (str_contains($data['media_url'], 'video') or str_contains($data['media_url'], '.mp4'))
                                     <a href="{{$data['permalink']}}" title="">
                                         <video width="320" height="190" controls>
                                             <source src="{{$data['media_url']}}" type="video/mp4">
