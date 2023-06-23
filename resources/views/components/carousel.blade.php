@@ -3,7 +3,7 @@
                 <div class="swiper-wrapper">
                     <!-- start swiper slide -->
                     <div class="swiper-slide cover-background mb-0">
-                    <img loading="lazy" src="{{url('assets/img/slide/Hotel_Katra_India.webp')}}" height="100%" width="100%" style="z-index:-100;" alt="Welcom Hotel By ITC Hotels, Katra">
+                    <img src="{{url('assets/img/slide/Hotel_Katra_India.webp')}}" height="100%" width="100%" style="z-index:-100;" alt="Welcom Hotel By ITC Hotels, Katra">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -21,7 +21,7 @@
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
                     <div class="swiper-slide cover-background mb-0">
-                    <img loading="lazy" src="{{url('assets/img/slide/Mixuse_Kathmandu.webp')}}" height="100%" width="100%" style="z-index:0;" alt="The Icon">
+                    <img src="{{url('assets/img/slide/Mixuse_Kathmandu.webp')}}" height="100%" width="100%" style="z-index:0;" alt="The Icon">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
