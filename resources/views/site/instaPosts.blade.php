@@ -67,7 +67,7 @@
                                         </video>    
                                     </a>
                                     @else
-                                    <a href="{{$data['permalink']}}" title=""><img src="{{$data['media_url']}}" alt=""></a>
+                                    <a href="{{$data['permalink']}}" title=""><img  loading="lazy" src="{{$data['media_url']}}" alt=""></a>
                                     @endif
                                         
                                         
