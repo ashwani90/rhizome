@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Studio Rhizome - Research')
+@section('title', 'Rhizomespace - Research')
 
 @section('content')
 

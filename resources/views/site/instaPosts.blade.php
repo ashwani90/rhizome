@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Studio Team - Architect')
+@section('title', 'Rhizomespace - Architect')
 
 @section('content')
 <section class="half-section bg-light-gray parallax" data-parallax-background-ratio="0.5" style="background-image:url('images/portfolio-bg2.jpg');">

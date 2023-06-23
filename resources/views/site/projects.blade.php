@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Projects Architectural Design')
+@section('title', 'Rhizomespace Projects Architectural Design')
 
 @section('content')
     @parent
