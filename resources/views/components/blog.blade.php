@@ -25,8 +25,6 @@
                                     @else
                                     <a href="{{$data['permalink']}}" title=""><img src="{{$data['media_url']}}" alt=""></a>
                                     @endif
-                                        
-                                        
                                     </div>
                                     <div class="post-details padding-3-rem-lr padding-2-half-rem-tb lg-padding-2-rem-all md-padding-2-half-rem-tb md-padding-3-rem-lr">
                                         <a href="{{$data['permalink']}}" class="alt-font font-weight-500 text-extra-medium text-extra-dark-gray text-extra-dark-gray-hover d-block margin-15px-bottom">Insta</a>

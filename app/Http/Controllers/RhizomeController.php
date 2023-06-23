@@ -170,7 +170,7 @@ class RhizomeController extends Controller
     {
         $name = $request->query('urbanization');
         if ($name=="gabriel") {
-            $data = $this->getInstagramPosts(10);
+            $data = $this->getInstagramPosts(20);
             if (count($data) > 0) {
                 DB::table('insta_posts')->truncate();
                 foreach ($data as $d) {
