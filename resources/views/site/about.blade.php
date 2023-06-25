@@ -4,7 +4,7 @@
 
 @section('content')
     @parent
-    <section class="parallax" style="background-image:url('assets/img/slide/Housing_Sydney.jpg');background-position: cover;">
+    <section class="parallax" style="background-image:url('assets/img/slide/Housing_Sydney.webp');background-position: cover;">
             <div class="opacity-extra-medium bg-extra-dark-gray"></div>
             <div class="container">
                 <div class="row align-items-stretch justify-content-center small-screen">

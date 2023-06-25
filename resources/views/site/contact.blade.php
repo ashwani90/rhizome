@@ -113,7 +113,7 @@
             </div>
         </section>
 
-        <section class="bg-extra-dark-gray fancy-box-background big-section cover-background" style="background-image: url('assets/img/slide/Housing_Sydney.jpg');padding:50px 0 30px 0;" >
+        <section class="bg-extra-dark-gray fancy-box-background big-section cover-background" style="background-image: url('assets/img/slide/Housing_Sydney.webp');padding:50px 0 30px 0;" >
             <div class="opacity-very-light opacity-0-half z-index-minus-1 bg-gradient-sky-blue-pink"></div>
             <div class="container">
                 <div class="row justify-content-center">
