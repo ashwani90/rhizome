@@ -3,7 +3,7 @@
                 <div class="swiper-wrapper">
                     <!-- start swiper slide -->
                     <div class="swiper-slide cover-background mb-0">
-                    <img src="{{url('assets/img/slide/Hotel_Katra_India.webp')}}" height="100%" width="100%" style="z-index:-100;" alt="Welcom Hotel By ITC Hotels, Katra">
+                    <img src="{{url('assets/img/slide/Hotel_Katra_India.webp')}}" class="carousel-image" width="100%" style="z-index:-100;" alt="Welcom Hotel By ITC Hotels, Katra">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -21,7 +21,7 @@
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
                     <div class="swiper-slide cover-background mb-0">
-                    <img src="{{url('assets/img/slide/Mixuse_Kathmandu.webp')}}" height="100%" width="100%" style="z-index:0;" alt="The Icon">
+                    <img src="{{url('assets/img/slide/Mixuse_Kathmandu.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="The Icon">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -39,7 +39,7 @@
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
                     <div class="swiper-slide cover-background mb-0">
-                    <img loading="lazy" src="{{url('assets/img/slide/Resort_Jim_Corbett.webp')}}" height="100%" width="100%" style="z-index:0;" alt="Marriott Jim Corbett">
+                    <img loading="lazy" src="{{url('assets/img/slide/Resort_Jim_Corbett.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="Marriott Jim Corbett">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100"  style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -57,7 +57,7 @@
                     <!-- end swiper slide -->
                     <!-- start swiper slide -->
                     <div class="swiper-slide cover-background mb-0">
-                    <img loading="lazy" src="{{url('assets/img/slide/Housing_sydney_1.webp')}}" height="100%" width="100%" style="z-index:0;" alt="61-65 Lucas Avenue Mooreband NSW">
+                    <img loading="lazy" src="{{url('assets/img/slide/Housing_sydney_1.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="61-65 Lucas Avenue Mooreband NSW">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -75,7 +75,7 @@
                     <!-- end swiper slide -->
 
                     <div class="swiper-slide cover-background">
-                    <img loading="lazy" src="{{url('assets/img/slide/Township_Rudrapur_India.webp')}}" height="100%" width="100%" style="z-index:0;" alt="Avan Rudrapur">
+                    <img loading="lazy" src="{{url('assets/img/slide/Township_Rudrapur_India.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="Avan Rudrapur">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -93,7 +93,7 @@
 
                     <!-- start swiper slide -->
                     <div class="swiper-slide cover-background">
-                    <img loading="lazy" src="{{url('assets/img/slide/bcc_blue_mountain.webp')}}" height="100%" width="100%" style="z-index:0;" alt="BCC Blue Mountain">
+                    <img loading="lazy" src="{{url('assets/img/slide/bcc_blue_mountain.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="BCC Blue Mountain">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -110,7 +110,7 @@
                     </div>
 
                     <div class="swiper-slide cover-background">
-                    <img loading="lazy" src="{{url('assets/img/slide/Industrial_Sitapur_India.webp')}}" height="100%" width="100%" style="z-index:0;" alt="Radico Khaitan Ltd.">
+                    <img loading="lazy" src="{{url('assets/img/slide/Industrial_Sitapur_India.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="Radico Khaitan Ltd.">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100"  style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -127,7 +127,7 @@
                     </div>
 
                     <div class="swiper-slide cover-background">
-                    <img loading="lazy" src="{{url('assets/img/slide/Mixuse_Retail_Gaziabad.webp')}}" height="100%" width="100%" style="z-index:0;" alt="Opus">
+                    <img loading="lazy" src="{{url('assets/img/slide/Mixuse_Retail_Gaziabad.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="Opus">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100"  style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide cover-background">
-                    <img loading="lazy" src="{{url('assets/img/slide/Residence_Kathmandu _Nepal.webp')}}" height="100%" width="100%" style="z-index:0;" alt="Tahachal Residence">
+                    <img loading="lazy" src="{{url('assets/img/slide/Residence_Kathmandu _Nepal.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="Tahachal Residence">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100"  style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide cover-background">
-                    <img loading="lazy" src="{{url('assets/img/slide/Resort_Chickmanglur_India.webp')}}" height="100%" width="100%" style="z-index:0;" alt="Chickmanglur, India">
+                    <img loading="lazy" src="{{url('assets/img/slide/Resort_Chickmanglur_India.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="Chickmanglur, India">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100" style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -175,7 +175,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide cover-background">
-                    <img loading="lazy" src="{{url('assets/img/slide/Institutional_Ahmedabad.webp')}}" height="100%" width="100%" style="z-index:0;" alt="BAOU, Ahemdabad">
+                    <img loading="lazy" src="{{url('assets/img/slide/Institutional_Ahmedabad.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="BAOU, Ahemdabad">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100"  style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -191,7 +191,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide cover-background">
-                    <img loading="lazy" src="{{url('assets/img/slide/Luxury_Interiors-Noida_India.webp')}}" height="100%" width="100%" style="z-index:0;" alt="Sector-105, Noida">
+                    <img loading="lazy" src="{{url('assets/img/slide/Luxury_Interiors-Noida_India.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="Sector-105, Noida">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100"  style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -207,7 +207,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide cover-background">
-                    <img loading="lazy" src="{{url('assets/img/slide/Hotel_Kashipur_India.webp')}}" height="100%" width="100%" style="z-index:0;" alt="ParkINN By Radisson">
+                    <img loading="lazy" src="{{url('assets/img/slide/Hotel_Kashipur_India.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="ParkINN By Radisson">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100"  style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -223,7 +223,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide cover-background" >
-                    <img loading="lazy" src="{{url('assets/img/slide/Residence_Sydney_2.webp')}}" height="100%" width="100%" style="z-index:0;" alt="5 Oakwood St. Sutherland NSW">
+                    <img loading="lazy" src="{{url('assets/img/slide/Residence_Sydney_2.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="5 Oakwood St. Sutherland NSW">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100"  style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
@@ -254,7 +254,7 @@
                         </div>
                     </div> -->
                     <div class="swiper-slide cover-background">
-                    <img loading="lazy" src="{{url('assets/img/slide/Mixuse_and_Retail-Grugram.webp')}}" height="100%" width="100%" style="z-index:0;" alt="Commercial, Gurugram">
+                    <img loading="lazy" src="{{url('assets/img/slide/Mixuse_and_Retail-Grugram.webp')}}" class="carousel-image" width="100%" style="z-index:0;" alt="Commercial, Gurugram">
                         <div class="container-fluid padding-7-half-rem-lr lg-padding-5-half-rem-lr xs-padding-15px-lr h-100"  style="z-index:1;position:absolute; bottom: 0px;left:0px;">
                             <div class="row h-100">
                                 <div class="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-start padding-9-rem-tb md-padding-5-rem-tb position-relative">
