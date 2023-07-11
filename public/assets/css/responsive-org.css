@@ -8007,3 +8007,7 @@
     .full-screen-auto { height: auto !important; }
 
 }
+.carousel-image {
+    height:100%;
+    object-fit:cover;
+}
