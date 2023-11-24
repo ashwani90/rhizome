@@ -48,7 +48,7 @@ class RhizomeController extends Controller
         $data = DB::table("insta_posts")->limit(4)->get();
         $da=[];
         foreach ($data as $d) {
-          $da[] = array("media_url" => $d->media_url, "caption" => $d->caption, "permalink" => $d->permalink, "timestamp" => $d->timestamp);
+          $da[] = array("media_url" => $d->media_url, "caption" => $d->caption, "permalink" => $d->permalink, "timestamp" => $d->timestamp, 'type' => $d->type);
         }
         $i=0;
         foreach ($projects as $project) {
@@ -155,7 +155,7 @@ class RhizomeController extends Controller
         $data = DB::table("insta_posts")->get();
         $da=[];
         foreach ($data as $d) {
-          $da[] = array("media_url" => $d->media_url, "caption" => $d->caption, "permalink" => $d->permalink, "timestamp" => $d->timestamp);
+          $da[] = array("media_url" => $d->media_url, "caption" => $d->caption, "permalink" => $d->permalink, "timestamp" => $d->timestamp, "type" => $d->type);
         }
         return view('site.instaPosts', ['blogs' => $blogs, "instaData" => $da]);
     }
@@ -178,7 +178,8 @@ class RhizomeController extends Controller
                 $caption = $d['caption'];
                 $permalink = $d['permalink'];
                 $timestamp = $d['timestamp'];
-                $data=array('media_url'=>$media_url,"caption"=>$caption, "permalink" => $permalink, "timestamp"=>strtotime($timestamp));
+                $type = $d['type'] == 'VIDEO' ? 1 : 0;
+                $data=array('media_url'=>$media_url,"caption"=>$caption, "permalink" => $permalink, "timestamp"=>strtotime($timestamp), 'type' => $type);
                 DB::table('insta_posts')->insert($data);
                 }
             }
@@ -291,7 +292,7 @@ class RhizomeController extends Controller
                 if ($i==$count) {
                     break;
                 }
-                $customUrl = "https://graph.instagram.com/".$media['id']."?fields=id,caption,media_url,permalink,timestamp&access_token=".$accessToken."";
+                $customUrl = "https://graph.instagram.com/".$media['id']."?fields=id,caption,media_url,permalink,timestamp,media_type&access_token=".$accessToken."";
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_URL, $customUrl);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
@@ -305,6 +306,7 @@ class RhizomeController extends Controller
                     'media_url'=>$customMedia['media_url'],
                     'permalink'=>$customMedia['permalink'],
                     'timestamp'=>$customMedia['timestamp'],
+                    'type'=>$customMedia['media_type'],
                 ];
                 array_push($results, $result);
                 $i++;
